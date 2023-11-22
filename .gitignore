@@ -23,7 +23,9 @@ bin/
 /.nb-gradle/
 
 ###Productions of Compiler
-/Production/
+/Production/*.asm
+/Production/*.txt
+
 
 ### VS Code ###
 .vscode/
