@@ -1,0 +1,1740 @@
+
+@0    [programe'->•programe]                                                               传播符号[$]                                                                             	->	@2    [programe'->programe•]                                                               
+orgSize=0,curSize=1
+
+@0    [programe'->•programe]                                                               传播符号[$]                                                                             	->	@1    [programe->import_staments •top_decls]                                               
+orgSize=0,curSize=1
+
+@0    [programe'->•programe]                                                               传播符号[$]                                                                             	->	@1    [import_staments->import_staments •import_stament]                                   
+orgSize=18,curSize=19
+
+@0    [programe'->•programe]                                                               传播符号[$]                                                                             	->	@0    [import_staments-•]                                                                  
+orgSize=18,curSize=19
+
+@1    [import_staments->import_staments •import_stament]                                   传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@3    [import_staments->import_staments import_stament•]                                   
+orgSize=0,curSize=19
+
+@1    [import_staments->import_staments •import_stament]                                   传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@4    [import_stament->import •NAME]                                                       
+orgSize=0,curSize=19
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@19   [top_decls->top_decls top_decl•]                                                     
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@15   [top_decl->defun•]                                                                   
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@14   [top_decl->defvars•]                                                                 
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@9    [top_decl->defconst•]                                                                
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@10   [top_decl->defstruct•]                                                               
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@17   [top_decl->TYPEDEF•]                                                                 
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@13   [top_decl->defunion•]                                                                
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@16   [top_decl->extern •fun_decl]                                                         
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@16   [top_decl->extern •var_decl]                                                         
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@12   [defun->storage •type name ( params ) block]                                         
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@12   [defvars->storage •type name initial_expr other_vars ;]                              
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@21   [defconst->const •type id = expr ;]                                                  
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@22   [defstruct->struct •name member_list ;]                                              
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@20   [TYPEDEF->typedef •type typeName ;]                                                  
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@18   [defunion->union •name member_list ;]                                                
+orgSize=0,curSize=17
+
+@1    [programe->import_staments •top_decls]                                               传播符号[$]                                                                             	->	@5    [programe->import_staments top_decls•]                                               
+orgSize=0,curSize=1
+
+@1    [programe->import_staments •top_decls]                                               传播符号[$]                                                                             	->	@5    [top_decls->top_decls •top_decl]                                                     
+orgSize=17,curSize=18
+
+@1    [programe->import_staments •top_decls]                                               传播符号[$]                                                                             	->	@1    [top_decls-•]                                                                        
+orgSize=17,curSize=18
+
+@4    [import_stament->import •NAME]                                                       传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@7    [import_stament->import NAME•]                                                       
+orgSize=0,curSize=19
+
+@4    [import_stament->import •NAME]                                                       传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@6    [NAME->name •. NAME]                                                                 
+orgSize=0,curSize=19
+
+@4    [import_stament->import •NAME]                                                       传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@6    [NAME->name •;]                                                                      
+orgSize=0,curSize=19
+
+@16   [top_decl->extern •fun_decl]                                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@44   [top_decl->extern fun_decl•]                                                         
+orgSize=0,curSize=17
+
+@16   [top_decl->extern •fun_decl]                                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@43   [fun_decl->storage •type name ( param_decl ) ;]                                      
+orgSize=0,curSize=17
+
+@16   [top_decl->extern •var_decl]                                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@42   [top_decl->extern var_decl•]                                                         
+orgSize=0,curSize=17
+
+@16   [top_decl->extern •var_decl]                                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@43   [var_decl->storage •type name other_var_decls ;]                                     
+orgSize=0,curSize=17
+
+@50   [type_postfix->type_postfix •[ ]]                                                    传播符号[*, (, []                                                                       	->	@65   [type_postfix->type_postfix [ •]]                                                    
+orgSize=0,curSize=3
+
+@50   [type_postfix->type_postfix •[ INTEGER ]]                                            传播符号[*, (, []                                                                       	->	@65   [type_postfix->type_postfix [ •INTEGER ]]                                            
+orgSize=0,curSize=3
+
+@50   [type_postfix->type_postfix •*]                                                      传播符号[*, (, []                                                                       	->	@63   [type_postfix->type_postfix *•]                                                      
+orgSize=0,curSize=3
+
+@50   [type_postfix->type_postfix •( param_typerefs )]                                     传播符号[*, (, []                                                                       	->	@64   [type_postfix->type_postfix ( •param_typerefs )]                                     
+orgSize=0,curSize=3
+
+@50   [type_postfix->type_postfix •( void )]                                               传播符号[*, (, []                                                                       	->	@64   [type_postfix->type_postfix ( •void )]                                               
+orgSize=0,curSize=3
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@50   [type->primary_type type_postfix•]                                                   
+orgSize=0,curSize=3
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@30   [type_postfix-•]                                                                     
+orgSize=3,curSize=6
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@50   [type_postfix->type_postfix •[ ]]                                                    
+orgSize=3,curSize=6
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@50   [type_postfix->type_postfix •[ INTEGER ]]                                            
+orgSize=3,curSize=6
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@50   [type_postfix->type_postfix •*]                                                      
+orgSize=3,curSize=6
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@50   [type_postfix->type_postfix •( param_typerefs )]                                     
+orgSize=3,curSize=6
+
+@30   [type->primary_type •type_postfix]                                                   传播符号[comma, ), id]                                                                  	->	@50   [type_postfix->type_postfix •( void )]                                               
+orgSize=3,curSize=6
+
+@41   [primary_type->signed •int_type]                                                     传播符号[*, (, [, comma, ), id]                                                         	->	@56   [primary_type->signed int_type•]                                                     
+orgSize=0,curSize=6
+
+@39   [primary_type->unsigned •int_type]                                                   传播符号[*, (, [, comma, ), id]                                                         	->	@54   [primary_type->unsigned int_type•]                                                   
+orgSize=0,curSize=6
+
+@40   [primary_type->struct •id]                                                           传播符号[*, (, [, comma, ), id]                                                         	->	@55   [primary_type->struct id•]                                                           
+orgSize=0,curSize=6
+
+@33   [primary_type->union •id]                                                            传播符号[*, (, [, comma, ), id]                                                         	->	@51   [primary_type->union id•]                                                            
+orgSize=0,curSize=6
+
+@37   [int_type->long •long]                                                               传播符号[*, (, [, comma, ), id]                                                         	->	@53   [int_type->long long•]                                                               
+orgSize=0,curSize=6
+
+@12   [defun->storage •type name ( params ) block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@36   [defun->storage type •name ( params ) block]                                         
+orgSize=0,curSize=17
+
+@12   [defvars->storage •type name initial_expr other_vars ;]                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@36   [defvars->storage type •name initial_expr other_vars ;]                              
+orgSize=0,curSize=17
+
+@21   [defconst->const •type id = expr ;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@47   [defconst->const type •id = expr ;]                                                  
+orgSize=0,curSize=17
+
+@22   [defstruct->struct •name member_list ;]                                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@48   [defstruct->struct name •member_list ;]                                              
+orgSize=0,curSize=17
+
+@20   [TYPEDEF->typedef •type typeName ;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@46   [TYPEDEF->typedef type •typeName ;]                                                  
+orgSize=0,curSize=17
+
+@18   [defunion->union •name member_list ;]                                                传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@45   [defunion->union name •member_list ;]                                                
+orgSize=0,curSize=17
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@19   [top_decls->top_decls top_decl•]                                                     
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@15   [top_decl->defun•]                                                                   
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@14   [top_decl->defvars•]                                                                 
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@9    [top_decl->defconst•]                                                                
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@10   [top_decl->defstruct•]                                                               
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@17   [top_decl->TYPEDEF•]                                                                 
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@13   [top_decl->defunion•]                                                                
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@16   [top_decl->extern •fun_decl]                                                         
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@16   [top_decl->extern •var_decl]                                                         
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@12   [defun->storage •type name ( params ) block]                                         
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@12   [defvars->storage •type name initial_expr other_vars ;]                              
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@21   [defconst->const •type id = expr ;]                                                  
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@22   [defstruct->struct •name member_list ;]                                              
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@20   [TYPEDEF->typedef •type typeName ;]                                                  
+orgSize=17,curSize=18
+
+@5    [top_decls->top_decls •top_decl]                                                     传播符号[$]                                                                             	->	@18   [defunion->union •name member_list ;]                                                
+orgSize=17,curSize=18
+
+@6    [NAME->name •. NAME]                                                                 传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@24   [NAME->name . •NAME]                                                                 
+orgSize=0,curSize=19
+
+@6    [NAME->name •;]                                                                      传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@23   [NAME->name ;•]                                                                      
+orgSize=0,curSize=19
+
+@43   [fun_decl->storage •type name ( param_decl ) ;]                                      传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@57   [fun_decl->storage type •name ( param_decl ) ;]                                      
+orgSize=0,curSize=17
+
+@43   [var_decl->storage •type name other_var_decls ;]                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@57   [var_decl->storage type •name other_var_decls ;]                                     
+orgSize=0,curSize=17
+
+@65   [type_postfix->type_postfix [ •]]                                                    传播符号[*, (, []                                                                       	->	@79   [type_postfix->type_postfix [ ]•]                                                    
+orgSize=0,curSize=3
+
+@65   [type_postfix->type_postfix [ •INTEGER ]]                                            传播符号[*, (, []                                                                       	->	@80   [type_postfix->type_postfix [ INTEGER •]]                                            
+orgSize=0,curSize=3
+
+@75   [param_typerefs->fixed_param_ref •kwargs]                                            传播符号[)]                                                                             	->	@123  [param_typerefs->fixed_param_ref kwargs•]                                            
+orgSize=0,curSize=1
+
+@75   [param_typerefs->fixed_param_ref •kwargs]                                            传播符号[)]                                                                             	->	@75   [kwargs-•]                                                                           
+orgSize=0,curSize=1
+
+@75   [param_typerefs->fixed_param_ref •kwargs]                                            传播符号[)]                                                                             	->	@124  [kwargs->comma •...]                                                                 
+orgSize=0,curSize=1
+
+@75   [fixed_param_ref->fixed_param_ref •comma type]                                       传播符号[comma, )]                                                                      	->	@124  [fixed_param_ref->fixed_param_ref comma •type]                                       
+orgSize=0,curSize=2
+
+@64   [type_postfix->type_postfix ( •param_typerefs )]                                     传播符号[*, (, []                                                                       	->	@77   [type_postfix->type_postfix ( param_typerefs •)]                                     
+orgSize=0,curSize=3
+
+@64   [type_postfix->type_postfix ( •void )]                                               传播符号[*, (, []                                                                       	->	@76   [type_postfix->type_postfix ( void •)]                                               
+orgSize=0,curSize=3
+
+@50   [type_postfix->type_postfix •[ ]]                                                    传播符号[comma, ), id]                                                                  	->	@65   [type_postfix->type_postfix [ •]]                                                    
+orgSize=3,curSize=6
+
+@50   [type_postfix->type_postfix •[ INTEGER ]]                                            传播符号[comma, ), id]                                                                  	->	@65   [type_postfix->type_postfix [ •INTEGER ]]                                            
+orgSize=3,curSize=6
+
+@50   [type_postfix->type_postfix •*]                                                      传播符号[comma, ), id]                                                                  	->	@63   [type_postfix->type_postfix *•]                                                      
+orgSize=3,curSize=6
+
+@50   [type_postfix->type_postfix •( param_typerefs )]                                     传播符号[comma, ), id]                                                                  	->	@64   [type_postfix->type_postfix ( •param_typerefs )]                                     
+orgSize=3,curSize=6
+
+@50   [type_postfix->type_postfix •( void )]                                               传播符号[comma, ), id]                                                                  	->	@64   [type_postfix->type_postfix ( •void )]                                               
+orgSize=3,curSize=6
+
+@36   [defun->storage type •name ( params ) block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@52   [defun->storage type name •( params ) block]                                         
+orgSize=0,curSize=17
+
+@36   [defvars->storage type •name initial_expr other_vars ;]                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@52   [defvars->storage type name •initial_expr other_vars ;]                              
+orgSize=0,curSize=17
+
+@47   [defconst->const type •id = expr ;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@61   [defconst->const type id •= expr ;]                                                  
+orgSize=0,curSize=17
+
+@70   [slots->slots •type name ;]                                                          传播符号[bool, char, float, double, int, void, union, short, }, long, id, unsigned, struct, signed]	->	@120  [slots->slots type •name ;]                                                          
+orgSize=0,curSize=14
+
+@58   [member_list->{ •slots }]                                                            传播符号[;]                                                                             	->	@70   [member_list->{ slots •}]                                                            
+orgSize=0,curSize=1
+
+@48   [defstruct->struct name •member_list ;]                                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@62   [defstruct->struct name member_list •;]                                              
+orgSize=0,curSize=17
+
+@46   [TYPEDEF->typedef type •typeName ;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@60   [TYPEDEF->typedef type typeName •;]                                                  
+orgSize=0,curSize=17
+
+@45   [defunion->union name •member_list ;]                                                传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@59   [defunion->union name member_list •;]                                                
+orgSize=0,curSize=17
+
+@16   [top_decl->extern •fun_decl]                                                         传播符号[$]                                                                             	->	@44   [top_decl->extern fun_decl•]                                                         
+orgSize=17,curSize=18
+
+@16   [top_decl->extern •fun_decl]                                                         传播符号[$]                                                                             	->	@43   [fun_decl->storage •type name ( param_decl ) ;]                                      
+orgSize=17,curSize=18
+
+@16   [top_decl->extern •var_decl]                                                         传播符号[$]                                                                             	->	@42   [top_decl->extern var_decl•]                                                         
+orgSize=17,curSize=18
+
+@16   [top_decl->extern •var_decl]                                                         传播符号[$]                                                                             	->	@43   [var_decl->storage •type name other_var_decls ;]                                     
+orgSize=17,curSize=18
+
+@12   [defun->storage •type name ( params ) block]                                         传播符号[$]                                                                             	->	@36   [defun->storage type •name ( params ) block]                                         
+orgSize=17,curSize=18
+
+@12   [defvars->storage •type name initial_expr other_vars ;]                              传播符号[$]                                                                             	->	@36   [defvars->storage type •name initial_expr other_vars ;]                              
+orgSize=17,curSize=18
+
+@21   [defconst->const •type id = expr ;]                                                  传播符号[$]                                                                             	->	@47   [defconst->const type •id = expr ;]                                                  
+orgSize=17,curSize=18
+
+@22   [defstruct->struct •name member_list ;]                                              传播符号[$]                                                                             	->	@48   [defstruct->struct name •member_list ;]                                              
+orgSize=17,curSize=18
+
+@20   [TYPEDEF->typedef •type typeName ;]                                                  传播符号[$]                                                                             	->	@46   [TYPEDEF->typedef type •typeName ;]                                                  
+orgSize=17,curSize=18
+
+@18   [defunion->union •name member_list ;]                                                传播符号[$]                                                                             	->	@45   [defunion->union name •member_list ;]                                                
+orgSize=17,curSize=18
+
+@24   [NAME->name . •NAME]                                                                 传播符号[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@49   [NAME->name . NAME•]                                                                 
+orgSize=0,curSize=19
+
+@57   [fun_decl->storage type •name ( param_decl ) ;]                                      传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@69   [fun_decl->storage type name •( param_decl ) ;]                                      
+orgSize=0,curSize=17
+
+@57   [var_decl->storage type •name other_var_decls ;]                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@69   [var_decl->storage type name •other_var_decls ;]                                     
+orgSize=0,curSize=17
+
+@80   [type_postfix->type_postfix [ INTEGER •]]                                            传播符号[*, (, []                                                                       	->	@127  [type_postfix->type_postfix [ INTEGER ]•]                                            
+orgSize=0,curSize=3
+
+@124  [kwargs->comma •...]                                                                 传播符号[)]                                                                             	->	@185  [kwargs->comma ...•]                                                                 
+orgSize=0,curSize=1
+
+@124  [fixed_param_ref->fixed_param_ref comma •type]                                       传播符号[comma, )]                                                                      	->	@184  [fixed_param_ref->fixed_param_ref comma type•]                                       
+orgSize=0,curSize=2
+
+@124  [fixed_param_ref->fixed_param_ref comma •type]                                       传播符号[comma]                                                                         	->	@32   [primary_type->void•]                                                                
+orgSize=5,curSize=6
+
+@77   [type_postfix->type_postfix ( param_typerefs •)]                                     传播符号[*, (, []                                                                       	->	@126  [type_postfix->type_postfix ( param_typerefs )•]                                     
+orgSize=0,curSize=3
+
+@76   [type_postfix->type_postfix ( void •)]                                               传播符号[*, (, []                                                                       	->	@125  [type_postfix->type_postfix ( void )•]                                               
+orgSize=0,curSize=3
+
+@65   [type_postfix->type_postfix [ •]]                                                    传播符号[comma, ), id]                                                                  	->	@79   [type_postfix->type_postfix [ ]•]                                                    
+orgSize=3,curSize=6
+
+@65   [type_postfix->type_postfix [ •INTEGER ]]                                            传播符号[comma, ), id]                                                                  	->	@80   [type_postfix->type_postfix [ INTEGER •]]                                            
+orgSize=3,curSize=6
+
+@64   [type_postfix->type_postfix ( •param_typerefs )]                                     传播符号[comma, ), id]                                                                  	->	@77   [type_postfix->type_postfix ( param_typerefs •)]                                     
+orgSize=3,curSize=6
+
+@64   [type_postfix->type_postfix ( •void )]                                               传播符号[comma, ), id]                                                                  	->	@76   [type_postfix->type_postfix ( void •)]                                               
+orgSize=3,curSize=6
+
+@52   [defun->storage type name •( params ) block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@66   [defun->storage type name ( •params ) block]                                         
+orgSize=0,curSize=17
+
+@94   [term->( •type ) unary_expr]                                                         传播符号[%=, <<, ), -, +=, ?, ||, /=, -=, /, %, <, *, &&, >=, !=, <=, >, ==, >>, =, *=, +]	->	@156  [term->( type •) unary_expr]                                                         
+orgSize=0,curSize=23
+
+@111  [postfix_expr->postfix_expr •[ expr ]]                                               传播符号[++, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, +]	->	@172  [postfix_expr->postfix_expr [ •expr ]]                                               
+orgSize=0,curSize=29
+
+@111  [postfix_expr->postfix_expr •( )]                                                    传播符号[++, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@171  [postfix_expr->postfix_expr ( •)]                                                    
+orgSize=0,curSize=30
+
+@111  [postfix_expr->postfix_expr •( args )]                                               传播符号[++, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@171  [postfix_expr->postfix_expr ( •args )]                                               
+orgSize=0,curSize=30
+
+@111  [postfix_expr->postfix_expr •. name]                                                 传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@173  [postfix_expr->postfix_expr . •name]                                                 
+orgSize=0,curSize=31
+
+@111  [postfix_expr->postfix_expr •-> name]                                                传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@170  [postfix_expr->postfix_expr -> •name]                                                
+orgSize=0,curSize=31
+
+@111  [postfix_expr->postfix_expr •++]                                                     传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@169  [postfix_expr->postfix_expr ++•]                                                     
+orgSize=0,curSize=31
+
+@111  [postfix_expr->postfix_expr •--]                                                     传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@174  [postfix_expr->postfix_expr --•]                                                     
+orgSize=0,curSize=31
+
+@93   [expr->term •= expr]                                                                 传播符号[comma, ), ]]                                                                   	->	@152  [expr->term = •expr]                                                                 
+orgSize=0,curSize=3
+
+@93   [expr->term •opassign_op expr]                                                       传播符号[comma, ), ]]                                                                   	->	@150  [expr->term opassign_op •expr]                                                       
+orgSize=0,curSize=3
+
+@92   [conditional_expr->logical_or_expr •? expr : conditional_expr]                       传播符号[comma, ), ]]                                                                   	->	@147  [conditional_expr->logical_or_expr ? •expr : conditional_expr]                       
+orgSize=0,curSize=3
+
+@87   [unary_expr->++ •unary_expr]                                                         传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@135  [unary_expr->++ unary_expr•]                                                         
+orgSize=0,curSize=26
+
+@87   [unary_expr->++ •unary_expr]                                                         传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@136  [primary_expr->( •expr )]                                                            
+orgSize=6,curSize=32
+
+@136  [primary_expr->( •expr )]                                                            传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@157  [primary_expr->( expr •)]                                                            
+orgSize=0,curSize=32
+
+@105  [unary_expr->-- •unary_expr]                                                         传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@167  [unary_expr->-- unary_expr•]                                                         
+orgSize=0,curSize=26
+
+@108  [unary_expr->unary_operator •term]                                                   传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@168  [unary_expr->unary_operator term•]                                                   
+orgSize=0,curSize=26
+
+@100  [unary_expr->SIZEOF •unary_expr]                                                     传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@164  [unary_expr->SIZEOF unary_expr•]                                                     
+orgSize=0,curSize=26
+
+@100  [unary_expr->SIZEOF •unary_expr]                                                     传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@165  [primary_expr->( •expr )]                                                            
+orgSize=6,curSize=32
+
+@100  [unary_expr->SIZEOF •( type )]                                                       传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@165  [unary_expr->SIZEOF ( •type )]                                                       
+orgSize=0,curSize=26
+
+@92   [logical_or_expr->logical_or_expr •|| logical_and_expr]                              传播符号[comma, ), ], ?, :, ||]                                                         	->	@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              
+orgSize=0,curSize=6
+
+@102  [logical_and_expr->logical_and_expr •&& equality_expr]                               传播符号[&&, comma, ), ], ?, :, ||]                                                     	->	@166  [logical_and_expr->logical_and_expr && •equality_expr]                               
+orgSize=0,curSize=7
+
+@90   [equality_expr->equality_expr •== relational_expr]                                   传播符号[&&, !=, comma, ), ==, ], ?, :, ||]                                             	->	@142  [equality_expr->equality_expr == •relational_expr]                                   
+orgSize=0,curSize=9
+
+@90   [equality_expr->equality_expr •!= relational_expr]                                   传播符号[&&, !=, comma, ), ==, ], ?, :, ||]                                             	->	@141  [equality_expr->equality_expr != •relational_expr]                                   
+orgSize=0,curSize=9
+
+@91   [relational_expr->relational_expr •< shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@143  [relational_expr->relational_expr < •shift_expr]                                     
+orgSize=0,curSize=13
+
+@91   [relational_expr->relational_expr •> shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@146  [relational_expr->relational_expr > •shift_expr]                                     
+orgSize=0,curSize=13
+
+@91   [relational_expr->relational_expr •<= shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@145  [relational_expr->relational_expr <= •shift_expr]                                    
+orgSize=0,curSize=13
+
+@91   [relational_expr->relational_expr •>= shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@144  [relational_expr->relational_expr >= •shift_expr]                                    
+orgSize=0,curSize=13
+
+@97   [shift_expr->shift_expr •<< additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@162  [shift_expr->shift_expr << •additive_expr]                                           
+orgSize=0,curSize=15
+
+@97   [shift_expr->shift_expr •>> additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@163  [shift_expr->shift_expr >> •additive_expr]                                           
+orgSize=0,curSize=15
+
+@88   [additive_expr->additive_expr •+ multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@138  [additive_expr->additive_expr + •multiplicative_expr]                                
+orgSize=0,curSize=17
+
+@88   [additive_expr->additive_expr •- multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@137  [additive_expr->additive_expr - •multiplicative_expr]                                
+orgSize=0,curSize=17
+
+@95   [multiplicative_expr->multiplicative_expr •* term]                                   传播符号[<<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], +]        	->	@159  [multiplicative_expr->multiplicative_expr * •term]                                   
+orgSize=0,curSize=20
+
+@95   [multiplicative_expr->multiplicative_expr •/ term]                                   传播符号[<<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], +]        	->	@161  [multiplicative_expr->multiplicative_expr / •term]                                   
+orgSize=0,curSize=20
+
+@95   [multiplicative_expr->multiplicative_expr •% term]                                   传播符号[<<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], +]        	->	@160  [multiplicative_expr->multiplicative_expr % •term]                                   
+orgSize=0,curSize=20
+
+@68   [initial_expr->= •expr]                                                              传播符号[;, comma]                                                                      	->	@101  [initial_expr->= expr•]                                                              
+orgSize=0,curSize=2
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@93   [expr->term •= expr]                                                                 
+orgSize=4,curSize=5
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@93   [expr->term •opassign_op expr]                                                       
+orgSize=4,curSize=5
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@110  [expr->conditional_expr•]                                                            
+orgSize=4,curSize=5
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@99   [term->unary_expr•]                                                                  
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@94   [term->( •type ) unary_expr]                                                         
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@92   [conditional_expr->logical_or_expr•]                                                 
+orgSize=4,curSize=5
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@92   [conditional_expr->logical_or_expr •? expr : conditional_expr]                       
+orgSize=4,curSize=5
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [unary_expr->postfix_expr•]                                                          
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@87   [unary_expr->++ •unary_expr]                                                         
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@105  [unary_expr->-- •unary_expr]                                                         
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@108  [unary_expr->unary_operator •term]                                                   
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@100  [unary_expr->SIZEOF •unary_expr]                                                     
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@100  [unary_expr->SIZEOF •( type )]                                                       
+orgSize=26,curSize=27
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@102  [logical_or_expr->logical_and_expr•]                                                 
+orgSize=6,curSize=7
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@92   [logical_or_expr->logical_or_expr •|| logical_and_expr]                              
+orgSize=6,curSize=7
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@115  [postfix_expr->primary_expr•]                                                        
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •[ expr ]]                                               
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •( )]                                                    
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •( args )]                                               
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •. name]                                                 
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •-> name]                                                
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •++]                                                     
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@111  [postfix_expr->postfix_expr •--]                                                     
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@90   [logical_and_expr->equality_expr•]                                                   
+orgSize=7,curSize=8
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@102  [logical_and_expr->logical_and_expr •&& equality_expr]                               
+orgSize=7,curSize=8
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@113  [primary_expr->id•]                                                                  
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@114  [primary_expr->CONSTANT•]                                                            
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@94   [primary_expr->( •expr )]                                                            
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@91   [equality_expr->relational_expr•]                                                    
+orgSize=9,curSize=10
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@90   [equality_expr->equality_expr •== relational_expr]                                   
+orgSize=9,curSize=10
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@90   [equality_expr->equality_expr •!= relational_expr]                                   
+orgSize=9,curSize=10
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@116  [CONSTANT->INTEGER•]                                                                 
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@109  [CONSTANT->CHARACTOR•]                                                               
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@112  [CONSTANT->STRING•]                                                                  
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@96   [CONSTANT->FLOAT•]                                                                   
+orgSize=32,curSize=33
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@97   [relational_expr->shift_expr•]                                                       
+orgSize=13,curSize=14
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@91   [relational_expr->relational_expr •< shift_expr]                                     
+orgSize=13,curSize=14
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@91   [relational_expr->relational_expr •> shift_expr]                                     
+orgSize=13,curSize=14
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@91   [relational_expr->relational_expr •<= shift_expr]                                    
+orgSize=13,curSize=14
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@91   [relational_expr->relational_expr •>= shift_expr]                                    
+orgSize=13,curSize=14
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@88   [shift_expr->additive_expr•]                                                         
+orgSize=15,curSize=16
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@97   [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=15,curSize=16
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@97   [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=15,curSize=16
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@95   [additive_expr->multiplicative_expr•]                                                
+orgSize=17,curSize=18
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@88   [additive_expr->additive_expr •+ multiplicative_expr]                                
+orgSize=17,curSize=18
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@88   [additive_expr->additive_expr •- multiplicative_expr]                                
+orgSize=17,curSize=18
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@93   [multiplicative_expr->term•]                                                         
+orgSize=20,curSize=21
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@95   [multiplicative_expr->multiplicative_expr •* term]                                   
+orgSize=20,curSize=21
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@95   [multiplicative_expr->multiplicative_expr •/ term]                                   
+orgSize=20,curSize=21
+
+@68   [initial_expr->= •expr]                                                              传播符号[;]                                                                             	->	@95   [multiplicative_expr->multiplicative_expr •% term]                                   
+orgSize=20,curSize=21
+
+@68   [initial_expr->= •{ expr_list }]                                                     传播符号[;, comma]                                                                      	->	@89   [initial_expr->= { •expr_list }]                                                     
+orgSize=0,curSize=2
+
+@52   [defvars->storage type name •initial_expr other_vars ;]                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@67   [defvars->storage type name initial_expr •other_vars ;]                              
+orgSize=0,curSize=17
+
+@61   [defconst->const type id •= expr ;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@73   [defconst->const type id = •expr ;]                                                  
+orgSize=0,curSize=17
+
+@120  [slots->slots type •name ;]                                                          传播符号[bool, char, float, double, int, void, union, short, }, long, id, unsigned, struct, signed]	->	@182  [slots->slots type name •;]                                                          
+orgSize=0,curSize=14
+
+@70   [member_list->{ slots •}]                                                            传播符号[;]                                                                             	->	@121  [member_list->{ slots }•]                                                            
+orgSize=0,curSize=1
+
+@62   [defstruct->struct name member_list •;]                                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@74   [defstruct->struct name member_list ;•]                                              
+orgSize=0,curSize=17
+
+@60   [TYPEDEF->typedef type typeName •;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@72   [TYPEDEF->typedef type typeName ;•]                                                  
+orgSize=0,curSize=17
+
+@59   [defunion->union name member_list •;]                                                传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@71   [defunion->union name member_list ;•]                                                
+orgSize=0,curSize=17
+
+@43   [fun_decl->storage •type name ( param_decl ) ;]                                      传播符号[$]                                                                             	->	@57   [fun_decl->storage type •name ( param_decl ) ;]                                      
+orgSize=17,curSize=18
+
+@43   [var_decl->storage •type name other_var_decls ;]                                     传播符号[$]                                                                             	->	@57   [var_decl->storage type •name other_var_decls ;]                                     
+orgSize=17,curSize=18
+
+@36   [defun->storage type •name ( params ) block]                                         传播符号[$]                                                                             	->	@52   [defun->storage type name •( params ) block]                                         
+orgSize=17,curSize=18
+
+@36   [defvars->storage type •name initial_expr other_vars ;]                              传播符号[$]                                                                             	->	@52   [defvars->storage type name •initial_expr other_vars ;]                              
+orgSize=17,curSize=18
+
+@47   [defconst->const type •id = expr ;]                                                  传播符号[$]                                                                             	->	@61   [defconst->const type id •= expr ;]                                                  
+orgSize=17,curSize=18
+
+@48   [defstruct->struct name •member_list ;]                                              传播符号[$]                                                                             	->	@62   [defstruct->struct name member_list •;]                                              
+orgSize=17,curSize=18
+
+@46   [TYPEDEF->typedef type •typeName ;]                                                  传播符号[$]                                                                             	->	@60   [TYPEDEF->typedef type typeName •;]                                                  
+orgSize=17,curSize=18
+
+@45   [defunion->union name •member_list ;]                                                传播符号[$]                                                                             	->	@59   [defunion->union name member_list •;]                                                
+orgSize=17,curSize=18
+
+@69   [fun_decl->storage type name •( param_decl ) ;]                                      传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@118  [fun_decl->storage type name ( •param_decl ) ;]                                      
+orgSize=0,curSize=17
+
+@119  [other_var_decls->other_var_decls •other_var_decl]                                   传播符号[;, comma]                                                                      	->	@181  [other_var_decls->other_var_decls other_var_decl•]                                   
+orgSize=0,curSize=2
+
+@119  [other_var_decls->other_var_decls •other_var_decl]                                   传播符号[;, comma]                                                                      	->	@180  [other_var_decl->comma •name]                                                        
+orgSize=0,curSize=2
+
+@69   [var_decl->storage type name •other_var_decls ;]                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@119  [var_decl->storage type name other_var_decls •;]                                     
+orgSize=0,curSize=17
+
+@80   [type_postfix->type_postfix [ INTEGER •]]                                            传播符号[comma, ), id]                                                                  	->	@127  [type_postfix->type_postfix [ INTEGER ]•]                                            
+orgSize=3,curSize=6
+
+@77   [type_postfix->type_postfix ( param_typerefs •)]                                     传播符号[comma, ), id]                                                                  	->	@126  [type_postfix->type_postfix ( param_typerefs )•]                                     
+orgSize=3,curSize=6
+
+@76   [type_postfix->type_postfix ( void •)]                                               传播符号[comma, ), id]                                                                  	->	@125  [type_postfix->type_postfix ( void )•]                                               
+orgSize=3,curSize=6
+
+@83   [params->fixed_params •kwargs]                                                       传播符号[)]                                                                             	->	@128  [params->fixed_params kwargs•]                                                       
+orgSize=0,curSize=1
+
+@83   [params->fixed_params •kwargs]                                                       传播符号[)]                                                                             	->	@83   [kwargs-•]                                                                           
+orgSize=0,curSize=1
+
+@83   [params->fixed_params •kwargs]                                                       传播符号[)]                                                                             	->	@129  [kwargs->comma •...]                                                                 
+orgSize=0,curSize=1
+
+@83   [fixed_params->fixed_params •comma param]                                            传播符号[comma, )]                                                                      	->	@129  [fixed_params->fixed_params comma •param]                                            
+orgSize=0,curSize=2
+
+@84   [param->type •name]                                                                  传播符号[comma, )]                                                                      	->	@130  [param->type name•]                                                                  
+orgSize=0,curSize=2
+
+@84   [param->type •name]                                                                  传播符号[)]                                                                             	->	@8    [name->id•]                                                                          
+orgSize=6,curSize=7
+
+@66   [defun->storage type name ( •params ) block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@85   [defun->storage type name ( params •) block]                                         
+orgSize=0,curSize=17
+
+@156  [term->( type •) unary_expr]                                                         传播符号[%=, <<, ), -, +=, ?, ||, /=, -=, /, %, <, *, &&, >=, !=, <=, >, ==, >>, =, *=, +]	->	@205  [term->( type ) •unary_expr]                                                         
+orgSize=0,curSize=23
+
+@94   [term->( •type ) unary_expr]                                                         传播符号[comma, ;, :, ], }]                                                             	->	@156  [term->( type •) unary_expr]                                                         
+orgSize=23,curSize=28
+
+@111  [postfix_expr->postfix_expr •[ expr ]]                                               传播符号[comma, ;, :, ], }]                                                             	->	@172  [postfix_expr->postfix_expr [ •expr ]]                                               
+orgSize=29,curSize=34
+
+@172  [postfix_expr->postfix_expr [ •expr ]]                                               传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]	->	@218  [postfix_expr->postfix_expr [ expr •]]                                               
+orgSize=0,curSize=34
+
+@171  [postfix_expr->postfix_expr ( •)]                                                    传播符号[++, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@215  [postfix_expr->postfix_expr ( )•]                                                    
+orgSize=0,curSize=30
+
+@216  [args->args •comma expr]                                                             传播符号[comma, )]                                                                      	->	@230  [args->args comma •expr]                                                             
+orgSize=0,curSize=2
+
+@111  [postfix_expr->postfix_expr •( )]                                                    传播符号[comma, ;, :, }]                                                                	->	@171  [postfix_expr->postfix_expr ( •)]                                                    
+orgSize=30,curSize=34
+
+@111  [postfix_expr->postfix_expr •( args )]                                               传播符号[comma, ;, :, }]                                                                	->	@171  [postfix_expr->postfix_expr ( •args )]                                               
+orgSize=30,curSize=34
+
+@171  [postfix_expr->postfix_expr ( •args )]                                               传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]	->	@216  [postfix_expr->postfix_expr ( args •)]                                               
+orgSize=0,curSize=34
+
+@173  [postfix_expr->postfix_expr . •name]                                                 传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@219  [postfix_expr->postfix_expr . name•]                                                 
+orgSize=0,curSize=31
+
+@173  [postfix_expr->postfix_expr . •name]                                                 传播符号[++, ?, -=, [, >=, *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, ], +]	->	@8    [name->id•]                                                                          
+orgSize=7,curSize=33
+
+@170  [postfix_expr->postfix_expr -> •name]                                                传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@214  [postfix_expr->postfix_expr -> name•]                                                
+orgSize=0,curSize=31
+
+@152  [expr->term = •expr]                                                                 传播符号[comma, ), ]]                                                                   	->	@204  [expr->term = expr•]                                                                 
+orgSize=0,curSize=3
+
+@150  [expr->term opassign_op •expr]                                                       传播符号[comma, ), ]]                                                                   	->	@203  [expr->term opassign_op expr•]                                                       
+orgSize=0,curSize=3
+
+@93   [expr->term •= expr]                                                                 传播符号[;, }, :]                                                                       	->	@152  [expr->term = •expr]                                                                 
+orgSize=3,curSize=6
+
+@93   [expr->term •opassign_op expr]                                                       传播符号[;, }, :]                                                                       	->	@150  [expr->term opassign_op •expr]                                                       
+orgSize=3,curSize=6
+
+@92   [conditional_expr->logical_or_expr •? expr : conditional_expr]                       传播符号[;, }, :]                                                                       	->	@147  [conditional_expr->logical_or_expr ? •expr : conditional_expr]                       
+orgSize=3,curSize=6
+
+@111  [postfix_expr->postfix_expr •. name]                                                 传播符号[;, :, }]                                                                       	->	@173  [postfix_expr->postfix_expr . •name]                                                 
+orgSize=31,curSize=34
+
+@111  [postfix_expr->postfix_expr •-> name]                                                传播符号[;, :, }]                                                                       	->	@170  [postfix_expr->postfix_expr -> •name]                                                
+orgSize=31,curSize=34
+
+@111  [postfix_expr->postfix_expr •++]                                                     传播符号[;, :, }]                                                                       	->	@169  [postfix_expr->postfix_expr ++•]                                                     
+orgSize=31,curSize=34
+
+@111  [postfix_expr->postfix_expr •--]                                                     传播符号[;, :, }]                                                                       	->	@174  [postfix_expr->postfix_expr --•]                                                     
+orgSize=31,curSize=34
+
+@147  [conditional_expr->logical_or_expr ? •expr : conditional_expr]                       传播符号[;, comma, ), ], }, :]                                                          	->	@201  [conditional_expr->logical_or_expr ? expr •: conditional_expr]                       
+orgSize=0,curSize=6
+
+@157  [primary_expr->( expr •)]                                                            传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@206  [primary_expr->( expr )•]                                                            
+orgSize=0,curSize=32
+
+@165  [unary_expr->SIZEOF ( •type )]                                                       传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@212  [unary_expr->SIZEOF ( type •)]                                                       
+orgSize=0,curSize=26
+
+@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              传播符号[comma, ), ], ?, :, ||]                                                         	->	@202  [logical_or_expr->logical_or_expr || logical_and_expr•]                              
+orgSize=0,curSize=6
+
+@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              传播符号[comma, ), ], ?, :, ||]                                                         	->	@202  [logical_and_expr->logical_and_expr •&& equality_expr]                               
+orgSize=1,curSize=7
+
+@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              传播符号[comma, ), ?, :, ||, ]]                                                         	->	@190  [multiplicative_expr->term•]                                                         
+orgSize=14,curSize=20
+
+@166  [logical_and_expr->logical_and_expr && •equality_expr]                               传播符号[&&, comma, ), ], ?, :, ||]                                                     	->	@213  [logical_and_expr->logical_and_expr && equality_expr•]                               
+orgSize=0,curSize=7
+
+@166  [logical_and_expr->logical_and_expr && •equality_expr]                               传播符号[&&, comma, ), ], ?, :, ||]                                                     	->	@213  [equality_expr->equality_expr •== relational_expr]                                   
+orgSize=2,curSize=9
+
+@166  [logical_and_expr->logical_and_expr && •equality_expr]                               传播符号[&&, comma, ), ], ?, :, ||]                                                     	->	@213  [equality_expr->equality_expr •!= relational_expr]                                   
+orgSize=2,curSize=9
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[&&, !=, comma, ), ==, ], ?, :, ||]                                             	->	@196  [equality_expr->equality_expr == relational_expr•]                                   
+orgSize=0,curSize=9
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@196  [relational_expr->relational_expr •< shift_expr]                                     
+orgSize=4,curSize=13
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@196  [relational_expr->relational_expr •> shift_expr]                                     
+orgSize=4,curSize=13
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@196  [relational_expr->relational_expr •<= shift_expr]                                    
+orgSize=4,curSize=13
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@196  [relational_expr->relational_expr •>= shift_expr]                                    
+orgSize=4,curSize=13
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[&&, !=, comma, ), ==, ], ?, :, ||]                                             	->	@195  [equality_expr->equality_expr != relational_expr•]                                   
+orgSize=0,curSize=9
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@195  [relational_expr->relational_expr •< shift_expr]                                     
+orgSize=4,curSize=13
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@195  [relational_expr->relational_expr •> shift_expr]                                     
+orgSize=4,curSize=13
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@195  [relational_expr->relational_expr •<= shift_expr]                                    
+orgSize=4,curSize=13
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[comma, ), ?, :, ||, &&, !=, ==, ]]                                             	->	@195  [relational_expr->relational_expr •>= shift_expr]                                    
+orgSize=4,curSize=13
+
+@143  [relational_expr->relational_expr < •shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@197  [relational_expr->relational_expr < shift_expr•]                                     
+orgSize=0,curSize=13
+
+@143  [relational_expr->relational_expr < •shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@197  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=2,curSize=15
+
+@143  [relational_expr->relational_expr < •shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@197  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=2,curSize=15
+
+@146  [relational_expr->relational_expr > •shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@200  [relational_expr->relational_expr > shift_expr•]                                     
+orgSize=0,curSize=13
+
+@146  [relational_expr->relational_expr > •shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@200  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=2,curSize=15
+
+@146  [relational_expr->relational_expr > •shift_expr]                                     传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@200  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=2,curSize=15
+
+@145  [relational_expr->relational_expr <= •shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@199  [relational_expr->relational_expr <= shift_expr•]                                    
+orgSize=0,curSize=13
+
+@145  [relational_expr->relational_expr <= •shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@199  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=2,curSize=15
+
+@145  [relational_expr->relational_expr <= •shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@199  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=2,curSize=15
+
+@144  [relational_expr->relational_expr >= •shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@198  [relational_expr->relational_expr >= shift_expr•]                                    
+orgSize=0,curSize=13
+
+@144  [relational_expr->relational_expr >= •shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@198  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=2,curSize=15
+
+@144  [relational_expr->relational_expr >= •shift_expr]                                    传播符号[comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ]]                               	->	@198  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=2,curSize=15
+
+@162  [shift_expr->shift_expr << •additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@210  [shift_expr->shift_expr << additive_expr•]                                           
+orgSize=0,curSize=15
+
+@162  [shift_expr->shift_expr << •additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@210  [additive_expr->additive_expr •+ multiplicative_expr]                                
+orgSize=2,curSize=17
+
+@162  [shift_expr->shift_expr << •additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@210  [additive_expr->additive_expr •- multiplicative_expr]                                
+orgSize=2,curSize=17
+
+@163  [shift_expr->shift_expr >> •additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@211  [shift_expr->shift_expr >> additive_expr•]                                           
+orgSize=0,curSize=15
+
+@163  [shift_expr->shift_expr >> •additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@211  [additive_expr->additive_expr •+ multiplicative_expr]                                
+orgSize=2,curSize=17
+
+@163  [shift_expr->shift_expr >> •additive_expr]                                           传播符号[<<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ]]                       	->	@211  [additive_expr->additive_expr •- multiplicative_expr]                                
+orgSize=2,curSize=17
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@192  [additive_expr->additive_expr + multiplicative_expr•]                                
+orgSize=0,curSize=17
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@192  [multiplicative_expr->multiplicative_expr •* term]                                   
+orgSize=3,curSize=20
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@192  [multiplicative_expr->multiplicative_expr •/ term]                                   
+orgSize=3,curSize=20
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@192  [multiplicative_expr->multiplicative_expr •% term]                                   
+orgSize=3,curSize=20
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@191  [additive_expr->additive_expr - multiplicative_expr•]                                
+orgSize=0,curSize=17
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@191  [multiplicative_expr->multiplicative_expr •* term]                                   
+orgSize=3,curSize=20
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@191  [multiplicative_expr->multiplicative_expr •/ term]                                   
+orgSize=3,curSize=20
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[<<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], +]                 	->	@191  [multiplicative_expr->multiplicative_expr •% term]                                   
+orgSize=3,curSize=20
+
+@159  [multiplicative_expr->multiplicative_expr * •term]                                   传播符号[<<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], +]        	->	@207  [multiplicative_expr->multiplicative_expr * term•]                                   
+orgSize=0,curSize=20
+
+@161  [multiplicative_expr->multiplicative_expr / •term]                                   传播符号[<<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], +]        	->	@209  [multiplicative_expr->multiplicative_expr / term•]                                   
+orgSize=0,curSize=20
+
+@160  [multiplicative_expr->multiplicative_expr % •term]                                   传播符号[<<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], +]        	->	@208  [multiplicative_expr->multiplicative_expr % term•]                                   
+orgSize=0,curSize=20
+
+@87   [unary_expr->++ •unary_expr]                                                         传播符号[;, }]                                                                          	->	@135  [unary_expr->++ unary_expr•]                                                         
+orgSize=26,curSize=28
+
+@87   [unary_expr->++ •unary_expr]                                                         传播符号[;, }]                                                                          	->	@136  [primary_expr->( •expr )]                                                            
+orgSize=32,curSize=34
+
+@105  [unary_expr->-- •unary_expr]                                                         传播符号[;, }]                                                                          	->	@167  [unary_expr->-- unary_expr•]                                                         
+orgSize=26,curSize=28
+
+@108  [unary_expr->unary_operator •term]                                                   传播符号[;, }]                                                                          	->	@168  [unary_expr->unary_operator term•]                                                   
+orgSize=26,curSize=28
+
+@100  [unary_expr->SIZEOF •unary_expr]                                                     传播符号[;, }]                                                                          	->	@164  [unary_expr->SIZEOF unary_expr•]                                                     
+orgSize=26,curSize=28
+
+@100  [unary_expr->SIZEOF •unary_expr]                                                     传播符号[;, }]                                                                          	->	@165  [primary_expr->( •expr )]                                                            
+orgSize=32,curSize=34
+
+@100  [unary_expr->SIZEOF •( type )]                                                       传播符号[;, }]                                                                          	->	@165  [unary_expr->SIZEOF ( •type )]                                                       
+orgSize=26,curSize=28
+
+@92   [logical_or_expr->logical_or_expr •|| logical_and_expr]                              传播符号[;, }]                                                                          	->	@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              
+orgSize=6,curSize=8
+
+@102  [logical_and_expr->logical_and_expr •&& equality_expr]                               传播符号[;, }]                                                                          	->	@166  [logical_and_expr->logical_and_expr && •equality_expr]                               
+orgSize=7,curSize=9
+
+@94   [primary_expr->( •expr )]                                                            传播符号[;, }]                                                                          	->	@157  [primary_expr->( expr •)]                                                            
+orgSize=32,curSize=34
+
+@90   [equality_expr->equality_expr •== relational_expr]                                   传播符号[;, }]                                                                          	->	@142  [equality_expr->equality_expr == •relational_expr]                                   
+orgSize=9,curSize=11
+
+@90   [equality_expr->equality_expr •!= relational_expr]                                   传播符号[;, }]                                                                          	->	@141  [equality_expr->equality_expr != •relational_expr]                                   
+orgSize=9,curSize=11
+
+@91   [relational_expr->relational_expr •< shift_expr]                                     传播符号[;, }]                                                                          	->	@143  [relational_expr->relational_expr < •shift_expr]                                     
+orgSize=13,curSize=15
+
+@91   [relational_expr->relational_expr •> shift_expr]                                     传播符号[;, }]                                                                          	->	@146  [relational_expr->relational_expr > •shift_expr]                                     
+orgSize=13,curSize=15
+
+@91   [relational_expr->relational_expr •<= shift_expr]                                    传播符号[;, }]                                                                          	->	@145  [relational_expr->relational_expr <= •shift_expr]                                    
+orgSize=13,curSize=15
+
+@91   [relational_expr->relational_expr •>= shift_expr]                                    传播符号[;, }]                                                                          	->	@144  [relational_expr->relational_expr >= •shift_expr]                                    
+orgSize=13,curSize=15
+
+@97   [shift_expr->shift_expr •<< additive_expr]                                           传播符号[;, }]                                                                          	->	@162  [shift_expr->shift_expr << •additive_expr]                                           
+orgSize=15,curSize=17
+
+@97   [shift_expr->shift_expr •>> additive_expr]                                           传播符号[;, }]                                                                          	->	@163  [shift_expr->shift_expr >> •additive_expr]                                           
+orgSize=15,curSize=17
+
+@88   [additive_expr->additive_expr •+ multiplicative_expr]                                传播符号[;, }]                                                                          	->	@138  [additive_expr->additive_expr + •multiplicative_expr]                                
+orgSize=17,curSize=19
+
+@88   [additive_expr->additive_expr •- multiplicative_expr]                                传播符号[;, }]                                                                          	->	@137  [additive_expr->additive_expr - •multiplicative_expr]                                
+orgSize=17,curSize=19
+
+@95   [multiplicative_expr->multiplicative_expr •* term]                                   传播符号[;, }]                                                                          	->	@159  [multiplicative_expr->multiplicative_expr * •term]                                   
+orgSize=20,curSize=22
+
+@95   [multiplicative_expr->multiplicative_expr •/ term]                                   传播符号[;, }]                                                                          	->	@161  [multiplicative_expr->multiplicative_expr / •term]                                   
+orgSize=20,curSize=22
+
+@95   [multiplicative_expr->multiplicative_expr •% term]                                   传播符号[;, }]                                                                          	->	@160  [multiplicative_expr->multiplicative_expr % •term]                                   
+orgSize=20,curSize=22
+
+@139  [expr_list->expr_list •comma expr]                                                   传播符号[comma, }]                                                                      	->	@193  [expr_list->expr_list comma •expr]                                                   
+orgSize=0,curSize=2
+
+@89   [initial_expr->= { •expr_list }]                                                     传播符号[;, comma]                                                                      	->	@139  [initial_expr->= { expr_list •}]                                                     
+orgSize=0,curSize=2
+
+@86   [other_vars->other_vars •other_var]                                                  传播符号[;, comma]                                                                      	->	@134  [other_vars->other_vars other_var•]                                                  
+orgSize=0,curSize=2
+
+@86   [other_vars->other_vars •other_var]                                                  传播符号[;, comma]                                                                      	->	@133  [other_var->comma •name initial_expr]                                                
+orgSize=0,curSize=2
+
+@67   [defvars->storage type name initial_expr •other_vars ;]                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@86   [defvars->storage type name initial_expr other_vars •;]                              
+orgSize=0,curSize=17
+
+@73   [defconst->const type id = •expr ;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@122  [defconst->const type id = expr •;]                                                  
+orgSize=0,curSize=17
+
+@182  [slots->slots type name •;]                                                          传播符号[bool, char, float, double, int, void, union, short, }, long, id, unsigned, struct, signed]	->	@223  [slots->slots type name ;•]                                                          
+orgSize=0,curSize=14
+
+@57   [fun_decl->storage type •name ( param_decl ) ;]                                      传播符号[$]                                                                             	->	@69   [fun_decl->storage type name •( param_decl ) ;]                                      
+orgSize=17,curSize=18
+
+@57   [var_decl->storage type •name other_var_decls ;]                                     传播符号[$]                                                                             	->	@69   [var_decl->storage type name •other_var_decls ;]                                     
+orgSize=17,curSize=18
+
+@52   [defun->storage type name •( params ) block]                                         传播符号[$]                                                                             	->	@66   [defun->storage type name ( •params ) block]                                         
+orgSize=17,curSize=18
+
+@52   [defvars->storage type name •initial_expr other_vars ;]                              传播符号[$]                                                                             	->	@67   [defvars->storage type name initial_expr •other_vars ;]                              
+orgSize=17,curSize=18
+
+@61   [defconst->const type id •= expr ;]                                                  传播符号[$]                                                                             	->	@73   [defconst->const type id = •expr ;]                                                  
+orgSize=17,curSize=18
+
+@62   [defstruct->struct name member_list •;]                                              传播符号[$]                                                                             	->	@74   [defstruct->struct name member_list ;•]                                              
+orgSize=17,curSize=18
+
+@60   [TYPEDEF->typedef type typeName •;]                                                  传播符号[$]                                                                             	->	@72   [TYPEDEF->typedef type typeName ;•]                                                  
+orgSize=17,curSize=18
+
+@59   [defunion->union name member_list •;]                                                传播符号[$]                                                                             	->	@71   [defunion->union name member_list ;•]                                                
+orgSize=17,curSize=18
+
+@177  [param_decl->fixed_params •kwargs]                                                   传播符号[)]                                                                             	->	@221  [param_decl->fixed_params kwargs•]                                                   
+orgSize=0,curSize=1
+
+@177  [param_decl->fixed_params •kwargs]                                                   传播符号[)]                                                                             	->	@177  [kwargs-•]                                                                           
+orgSize=0,curSize=1
+
+@118  [fun_decl->storage type name ( •param_decl ) ;]                                      传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@175  [fun_decl->storage type name ( param_decl •) ;]                                      
+orgSize=0,curSize=17
+
+@180  [other_var_decl->comma •name]                                                        传播符号[;, comma]                                                                      	->	@222  [other_var_decl->comma name•]                                                        
+orgSize=0,curSize=2
+
+@119  [var_decl->storage type name other_var_decls •;]                                     传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@179  [var_decl->storage type name other_var_decls ;•]                                     
+orgSize=0,curSize=17
+
+@129  [fixed_params->fixed_params comma •param]                                            传播符号[comma, )]                                                                      	->	@186  [fixed_params->fixed_params comma param•]                                            
+orgSize=0,curSize=2
+
+@85   [defun->storage type name ( params •) block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@131  [defun->storage type name ( params ) •block]                                         
+orgSize=0,curSize=17
+
+@205  [term->( type ) •unary_expr]                                                         传播符号[%=, <<, ), -, +=, ?, ||, /=, -=, /, %, <, *, &&, >=, !=, <=, >, ==, >>, =, *=, +]	->	@228  [term->( type ) unary_expr•]                                                         
+orgSize=0,curSize=23
+
+@156  [term->( type •) unary_expr]                                                         传播符号[comma, ;, :, ], }]                                                             	->	@205  [term->( type ) •unary_expr]                                                         
+orgSize=23,curSize=28
+
+@218  [postfix_expr->postfix_expr [ expr •]]                                               传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]	->	@232  [postfix_expr->postfix_expr [ expr ]•]                                               
+orgSize=0,curSize=34
+
+@230  [args->args comma •expr]                                                             传播符号[comma, )]                                                                      	->	@265  [args->args comma expr•]                                                             
+orgSize=0,curSize=2
+
+@171  [postfix_expr->postfix_expr ( •)]                                                    传播符号[comma, ;, :, }]                                                                	->	@215  [postfix_expr->postfix_expr ( )•]                                                    
+orgSize=30,curSize=34
+
+@216  [postfix_expr->postfix_expr ( args •)]                                               传播符号[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]	->	@231  [postfix_expr->postfix_expr ( args )•]                                               
+orgSize=0,curSize=34
+
+@152  [expr->term = •expr]                                                                 传播符号[;, }, :]                                                                       	->	@204  [expr->term = expr•]                                                                 
+orgSize=3,curSize=6
+
+@150  [expr->term opassign_op •expr]                                                       传播符号[;, }, :]                                                                       	->	@203  [expr->term opassign_op expr•]                                                       
+orgSize=3,curSize=6
+
+@173  [postfix_expr->postfix_expr . •name]                                                 传播符号[;, :, }]                                                                       	->	@219  [postfix_expr->postfix_expr . name•]                                                 
+orgSize=31,curSize=34
+
+@173  [postfix_expr->postfix_expr . •name]                                                 传播符号[:, }]                                                                          	->	@8    [name->id•]                                                                          
+orgSize=33,curSize=35
+
+@170  [postfix_expr->postfix_expr -> •name]                                                传播符号[;, :, }]                                                                       	->	@214  [postfix_expr->postfix_expr -> name•]                                                
+orgSize=31,curSize=34
+
+@201  [conditional_expr->logical_or_expr ? expr •: conditional_expr]                       传播符号[;, comma, ), ], }, :]                                                          	->	@227  [conditional_expr->logical_or_expr ? expr : •conditional_expr]                       
+orgSize=0,curSize=6
+
+@212  [unary_expr->SIZEOF ( type •)]                                                       传播符号[comma, ), ?, -=, >=, *=, %=, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], +]	->	@229  [unary_expr->SIZEOF ( type )•]                                                       
+orgSize=0,curSize=26
+
+@165  [unary_expr->SIZEOF ( •type )]                                                       传播符号[;, }]                                                                          	->	@212  [unary_expr->SIZEOF ( type •)]                                                       
+orgSize=26,curSize=28
+
+@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              传播符号[;, }]                                                                          	->	@202  [logical_or_expr->logical_or_expr || logical_and_expr•]                              
+orgSize=6,curSize=8
+
+@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              传播符号[;, }]                                                                          	->	@202  [logical_and_expr->logical_and_expr •&& equality_expr]                               
+orgSize=7,curSize=9
+
+@148  [logical_or_expr->logical_or_expr || •logical_and_expr]                              传播符号[;, }]                                                                          	->	@190  [multiplicative_expr->term•]                                                         
+orgSize=20,curSize=22
+
+@166  [logical_and_expr->logical_and_expr && •equality_expr]                               传播符号[;, }]                                                                          	->	@213  [logical_and_expr->logical_and_expr && equality_expr•]                               
+orgSize=7,curSize=9
+
+@166  [logical_and_expr->logical_and_expr && •equality_expr]                               传播符号[;, }]                                                                          	->	@213  [equality_expr->equality_expr •== relational_expr]                                   
+orgSize=9,curSize=11
+
+@166  [logical_and_expr->logical_and_expr && •equality_expr]                               传播符号[;, }]                                                                          	->	@213  [equality_expr->equality_expr •!= relational_expr]                                   
+orgSize=9,curSize=11
+
+@157  [primary_expr->( expr •)]                                                            传播符号[;, }]                                                                          	->	@206  [primary_expr->( expr )•]                                                            
+orgSize=32,curSize=34
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[;, }]                                                                          	->	@196  [equality_expr->equality_expr == relational_expr•]                                   
+orgSize=9,curSize=11
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[;, }]                                                                          	->	@196  [relational_expr->relational_expr •< shift_expr]                                     
+orgSize=13,curSize=15
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[;, }]                                                                          	->	@196  [relational_expr->relational_expr •> shift_expr]                                     
+orgSize=13,curSize=15
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[;, }]                                                                          	->	@196  [relational_expr->relational_expr •<= shift_expr]                                    
+orgSize=13,curSize=15
+
+@142  [equality_expr->equality_expr == •relational_expr]                                   传播符号[;, }]                                                                          	->	@196  [relational_expr->relational_expr •>= shift_expr]                                    
+orgSize=13,curSize=15
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[;, }]                                                                          	->	@195  [equality_expr->equality_expr != relational_expr•]                                   
+orgSize=9,curSize=11
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[;, }]                                                                          	->	@195  [relational_expr->relational_expr •< shift_expr]                                     
+orgSize=13,curSize=15
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[;, }]                                                                          	->	@195  [relational_expr->relational_expr •> shift_expr]                                     
+orgSize=13,curSize=15
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[;, }]                                                                          	->	@195  [relational_expr->relational_expr •<= shift_expr]                                    
+orgSize=13,curSize=15
+
+@141  [equality_expr->equality_expr != •relational_expr]                                   传播符号[;, }]                                                                          	->	@195  [relational_expr->relational_expr •>= shift_expr]                                    
+orgSize=13,curSize=15
+
+@143  [relational_expr->relational_expr < •shift_expr]                                     传播符号[;, }]                                                                          	->	@197  [relational_expr->relational_expr < shift_expr•]                                     
+orgSize=13,curSize=15
+
+@143  [relational_expr->relational_expr < •shift_expr]                                     传播符号[;, }]                                                                          	->	@197  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=15,curSize=17
+
+@143  [relational_expr->relational_expr < •shift_expr]                                     传播符号[;, }]                                                                          	->	@197  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=15,curSize=17
+
+@146  [relational_expr->relational_expr > •shift_expr]                                     传播符号[;, }]                                                                          	->	@200  [relational_expr->relational_expr > shift_expr•]                                     
+orgSize=13,curSize=15
+
+@146  [relational_expr->relational_expr > •shift_expr]                                     传播符号[;, }]                                                                          	->	@200  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=15,curSize=17
+
+@146  [relational_expr->relational_expr > •shift_expr]                                     传播符号[;, }]                                                                          	->	@200  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=15,curSize=17
+
+@145  [relational_expr->relational_expr <= •shift_expr]                                    传播符号[;, }]                                                                          	->	@199  [relational_expr->relational_expr <= shift_expr•]                                    
+orgSize=13,curSize=15
+
+@145  [relational_expr->relational_expr <= •shift_expr]                                    传播符号[;, }]                                                                          	->	@199  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=15,curSize=17
+
+@145  [relational_expr->relational_expr <= •shift_expr]                                    传播符号[;, }]                                                                          	->	@199  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=15,curSize=17
+
+@144  [relational_expr->relational_expr >= •shift_expr]                                    传播符号[;, }]                                                                          	->	@198  [relational_expr->relational_expr >= shift_expr•]                                    
+orgSize=13,curSize=15
+
+@144  [relational_expr->relational_expr >= •shift_expr]                                    传播符号[;, }]                                                                          	->	@198  [shift_expr->shift_expr •<< additive_expr]                                           
+orgSize=15,curSize=17
+
+@144  [relational_expr->relational_expr >= •shift_expr]                                    传播符号[;, }]                                                                          	->	@198  [shift_expr->shift_expr •>> additive_expr]                                           
+orgSize=15,curSize=17
+
+@162  [shift_expr->shift_expr << •additive_expr]                                           传播符号[;, }]                                                                          	->	@210  [shift_expr->shift_expr << additive_expr•]                                           
+orgSize=15,curSize=17
+
+@162  [shift_expr->shift_expr << •additive_expr]                                           传播符号[;, }]                                                                          	->	@210  [additive_expr->additive_expr •+ multiplicative_expr]                                
+orgSize=17,curSize=19
+
+@162  [shift_expr->shift_expr << •additive_expr]                                           传播符号[;, }]                                                                          	->	@210  [additive_expr->additive_expr •- multiplicative_expr]                                
+orgSize=17,curSize=19
+
+@163  [shift_expr->shift_expr >> •additive_expr]                                           传播符号[;, }]                                                                          	->	@211  [shift_expr->shift_expr >> additive_expr•]                                           
+orgSize=15,curSize=17
+
+@163  [shift_expr->shift_expr >> •additive_expr]                                           传播符号[;, }]                                                                          	->	@211  [additive_expr->additive_expr •+ multiplicative_expr]                                
+orgSize=17,curSize=19
+
+@163  [shift_expr->shift_expr >> •additive_expr]                                           传播符号[;, }]                                                                          	->	@211  [additive_expr->additive_expr •- multiplicative_expr]                                
+orgSize=17,curSize=19
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@192  [additive_expr->additive_expr + multiplicative_expr•]                                
+orgSize=17,curSize=19
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@192  [multiplicative_expr->multiplicative_expr •* term]                                   
+orgSize=20,curSize=22
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@192  [multiplicative_expr->multiplicative_expr •/ term]                                   
+orgSize=20,curSize=22
+
+@138  [additive_expr->additive_expr + •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@192  [multiplicative_expr->multiplicative_expr •% term]                                   
+orgSize=20,curSize=22
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@191  [additive_expr->additive_expr - multiplicative_expr•]                                
+orgSize=17,curSize=19
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@191  [multiplicative_expr->multiplicative_expr •* term]                                   
+orgSize=20,curSize=22
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@191  [multiplicative_expr->multiplicative_expr •/ term]                                   
+orgSize=20,curSize=22
+
+@137  [additive_expr->additive_expr - •multiplicative_expr]                                传播符号[;, }]                                                                          	->	@191  [multiplicative_expr->multiplicative_expr •% term]                                   
+orgSize=20,curSize=22
+
+@159  [multiplicative_expr->multiplicative_expr * •term]                                   传播符号[;, }]                                                                          	->	@207  [multiplicative_expr->multiplicative_expr * term•]                                   
+orgSize=20,curSize=22
+
+@161  [multiplicative_expr->multiplicative_expr / •term]                                   传播符号[;, }]                                                                          	->	@209  [multiplicative_expr->multiplicative_expr / term•]                                   
+orgSize=20,curSize=22
+
+@160  [multiplicative_expr->multiplicative_expr % •term]                                   传播符号[;, }]                                                                          	->	@208  [multiplicative_expr->multiplicative_expr % term•]                                   
+orgSize=20,curSize=22
+
+@193  [expr_list->expr_list comma •expr]                                                   传播符号[comma, }]                                                                      	->	@226  [expr_list->expr_list comma expr•]                                                   
+orgSize=0,curSize=2
+
+@139  [initial_expr->= { expr_list •}]                                                     传播符号[;, comma]                                                                      	->	@194  [initial_expr->= { expr_list }•]                                                     
+orgSize=0,curSize=2
+
+@133  [other_var->comma •name initial_expr]                                                传播符号[;, comma]                                                                      	->	@189  [other_var->comma name •initial_expr]                                                
+orgSize=0,curSize=2
+
+@86   [defvars->storage type name initial_expr other_vars •;]                              传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@132  [defvars->storage type name initial_expr other_vars ;•]                              
+orgSize=0,curSize=17
+
+@122  [defconst->const type id = expr •;]                                                  传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@183  [defconst->const type id = expr ;•]                                                  
+orgSize=0,curSize=17
+
+@69   [fun_decl->storage type name •( param_decl ) ;]                                      传播符号[$]                                                                             	->	@118  [fun_decl->storage type name ( •param_decl ) ;]                                      
+orgSize=17,curSize=18
+
+@69   [var_decl->storage type name •other_var_decls ;]                                     传播符号[$]                                                                             	->	@119  [var_decl->storage type name other_var_decls •;]                                     
+orgSize=17,curSize=18
+
+@66   [defun->storage type name ( •params ) block]                                         传播符号[$]                                                                             	->	@85   [defun->storage type name ( params •) block]                                         
+orgSize=17,curSize=18
+
+@67   [defvars->storage type name initial_expr •other_vars ;]                              传播符号[$]                                                                             	->	@86   [defvars->storage type name initial_expr other_vars •;]                              
+orgSize=17,curSize=18
+
+@73   [defconst->const type id = •expr ;]                                                  传播符号[$]                                                                             	->	@122  [defconst->const type id = expr •;]                                                  
+orgSize=17,curSize=18
+
+@175  [fun_decl->storage type name ( param_decl •) ;]                                      传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@220  [fun_decl->storage type name ( param_decl ) •;]                                      
+orgSize=0,curSize=17
+
+@131  [defun->storage type name ( params ) •block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@188  [defun->storage type name ( params ) block•]                                         
+orgSize=0,curSize=17
+
+@131  [defun->storage type name ( params ) •block]                                         传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@187  [block->{ •block_componets }]                                                        
+orgSize=0,curSize=17
+
+@205  [term->( type ) •unary_expr]                                                         传播符号[comma, ;, :, ], }]                                                             	->	@228  [term->( type ) unary_expr•]                                                         
+orgSize=23,curSize=28
+
+@227  [conditional_expr->logical_or_expr ? expr : •conditional_expr]                       传播符号[;, comma, ), ], }, :]                                                          	->	@264  [conditional_expr->logical_or_expr ? expr : conditional_expr•]                       
+orgSize=0,curSize=6
+
+@212  [unary_expr->SIZEOF ( type •)]                                                       传播符号[;, }]                                                                          	->	@229  [unary_expr->SIZEOF ( type )•]                                                       
+orgSize=26,curSize=28
+
+@189  [other_var->comma name •initial_expr]                                                传播符号[;, comma]                                                                      	->	@225  [other_var->comma name initial_expr•]                                                
+orgSize=0,curSize=2
+
+@189  [other_var->comma name •initial_expr]                                                传播符号[;, comma]                                                                      	->	@189  [initial_expr-•]                                                                     
+orgSize=0,curSize=2
+
+@118  [fun_decl->storage type name ( •param_decl ) ;]                                      传播符号[$]                                                                             	->	@175  [fun_decl->storage type name ( param_decl •) ;]                                      
+orgSize=17,curSize=18
+
+@119  [var_decl->storage type name other_var_decls •;]                                     传播符号[$]                                                                             	->	@179  [var_decl->storage type name other_var_decls ;•]                                     
+orgSize=17,curSize=18
+
+@85   [defun->storage type name ( params •) block]                                         传播符号[$]                                                                             	->	@131  [defun->storage type name ( params ) •block]                                         
+orgSize=17,curSize=18
+
+@86   [defvars->storage type name initial_expr other_vars •;]                              传播符号[$]                                                                             	->	@132  [defvars->storage type name initial_expr other_vars ;•]                              
+orgSize=17,curSize=18
+
+@122  [defconst->const type id = expr •;]                                                  传播符号[$]                                                                             	->	@183  [defconst->const type id = expr ;•]                                                  
+orgSize=17,curSize=18
+
+@220  [fun_decl->storage type name ( param_decl ) •;]                                      传播符号[bool, char, static, float, double, int, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]	->	@233  [fun_decl->storage type name ( param_decl ) ;•]                                      
+orgSize=0,curSize=17
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@237  [block_componets->block_componets block_componet•]                                   
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@247  [block_componet->defvars•]                                                           
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@234  [block_componet->stmt•]                                                              
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@235  [defvars->storage •type name initial_expr other_vars ;]                              
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@255  [stmt->;•]                                                                           
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@261  [stmt->block•]                                                                       
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@239  [stmt->label_stmt•]                                                                  
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@254  [stmt->expr •;]                                                                      
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@251  [stmt->if_stmt•]                                                                     
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@248  [stmt->while_stmt•]                                                                  
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@241  [stmt->dowhile_stmt•]                                                                
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@246  [stmt->for_stmt•]                                                                    
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@238  [stmt->switch_stmt•]                                                                 
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@257  [stmt->goto_stmt•]                                                                   
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@244  [stmt->break_stmt•]                                                                  
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@250  [stmt->continue_stmt•]                                                               
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@253  [stmt->return_stmt•]                                                                 
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[++, {, while, (, switch, FLOAT, &, for, SIZEOF, ;, goto, -, ~, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, break, return, INTEGER, +]	->	@187  [block->{ •block_componets }]                                                        
+orgSize=17,curSize=45
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@263  [label_stmt->id •: stmt]                                                             
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@259  [label_stmt->case •INTEGER : stmt]                                                   
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@258  [label_stmt->defult •:]                                                              
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@242  [if_stmt->if •( expr ) stmt]                                                         
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@242  [if_stmt->if •( expr ) stmt else stmt]                                               
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@236  [while_stmt->while •( expr ) stmt]                                                   
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@260  [dowhile_stmt->do •stmt while ( expr ) ;]                                            
+orgSize=0,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@252  [for_stmt->for •( forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       
+orgSize=1,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@249  [switch_stmt->switch •( expr ) { label_stmts }]                                      
+orgSize=1,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@256  [goto_stmt->goto •id ;]                                                              
+orgSize=1,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@245  [break_stmt->break •;]                                                               
+orgSize=1,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@240  [continue_stmt->continue •;]                                                         
+orgSize=1,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@243  [return_stmt->return •;]                                                             
+orgSize=1,curSize=42
+
+@224  [block_componets->block_componets •block_componet]                                   传播符号[bool, ++, {, int, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@243  [return_stmt->return •expr ;]                                                        
+orgSize=1,curSize=42
+
+@187  [block->{ •block_componets }]                                                        传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]	->	@224  [block->{ block_componets •}]                                                        
+orgSize=0,curSize=45
+
+@175  [fun_decl->storage type name ( param_decl •) ;]                                      传播符号[$]                                                                             	->	@220  [fun_decl->storage type name ( param_decl ) •;]                                      
+orgSize=17,curSize=18
+
+@131  [defun->storage type name ( params ) •block]                                         传播符号[$]                                                                             	->	@188  [defun->storage type name ( params ) block•]                                         
+orgSize=17,curSize=18
+
+@131  [defun->storage type name ( params ) •block]                                         传播符号[$]                                                                             	->	@187  [block->{ •block_componets }]                                                        
+orgSize=45,curSize=46
+
+@235  [defvars->storage •type name initial_expr other_vars ;]                              传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@266  [defvars->storage type •name initial_expr other_vars ;]                              
+orgSize=0,curSize=42
+
+@254  [stmt->expr •;]                                                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@275  [stmt->expr ;•]                                                                      
+orgSize=0,curSize=42
+
+@263  [label_stmt->id •: stmt]                                                             传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@280  [label_stmt->id : •stmt]                                                             
+orgSize=0,curSize=42
+
+@259  [label_stmt->case •INTEGER : stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@278  [label_stmt->case INTEGER •: stmt]                                                   
+orgSize=0,curSize=42
+
+@258  [label_stmt->defult •:]                                                              传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@277  [label_stmt->defult :•]                                                              
+orgSize=0,curSize=42
+
+@242  [if_stmt->if •( expr ) stmt]                                                         传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@269  [if_stmt->if ( •expr ) stmt]                                                         
+orgSize=0,curSize=42
+
+@242  [if_stmt->if •( expr ) stmt else stmt]                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@269  [if_stmt->if ( •expr ) stmt else stmt]                                               
+orgSize=0,curSize=42
+
+@236  [while_stmt->while •( expr ) stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@267  [while_stmt->while ( •expr ) stmt]                                                   
+orgSize=0,curSize=42
+
+@260  [dowhile_stmt->do •stmt while ( expr ) ;]                                            传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@279  [dowhile_stmt->do stmt •while ( expr ) ;]                                            
+orgSize=0,curSize=42
+
+@252  [for_stmt->for •( forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@274  [for_stmt->for ( •forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       
+orgSize=0,curSize=42
+
+@249  [switch_stmt->switch •( expr ) { label_stmts }]                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@273  [switch_stmt->switch ( •expr ) { label_stmts }]                                      
+orgSize=0,curSize=42
+
+@256  [goto_stmt->goto •id ;]                                                              传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@276  [goto_stmt->goto id •;]                                                              
+orgSize=0,curSize=42
+
+@245  [break_stmt->break •;]                                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@272  [break_stmt->break ;•]                                                               
+orgSize=0,curSize=42
+
+@240  [continue_stmt->continue •;]                                                         传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@268  [continue_stmt->continue ;•]                                                         
+orgSize=0,curSize=42
+
+@243  [return_stmt->return •;]                                                             传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@271  [return_stmt->return ;•]                                                             
+orgSize=0,curSize=42
+
+@243  [return_stmt->return •expr ;]                                                        传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@270  [return_stmt->return expr •;]                                                        
+orgSize=0,curSize=42
+
+@224  [block->{ block_componets •}]                                                        传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]	->	@262  [block->{ block_componets }•]                                                        
+orgSize=0,curSize=45
+
+@220  [fun_decl->storage type name ( param_decl ) •;]                                      传播符号[$]                                                                             	->	@233  [fun_decl->storage type name ( param_decl ) ;•]                                      
+orgSize=17,curSize=18
+
+@187  [block->{ •block_componets }]                                                        传播符号[$]                                                                             	->	@224  [block->{ block_componets •}]                                                        
+orgSize=45,curSize=46
+
+@266  [defvars->storage type •name initial_expr other_vars ;]                              传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@281  [defvars->storage type name •initial_expr other_vars ;]                              
+orgSize=0,curSize=42
+
+@280  [label_stmt->id : •stmt]                                                             传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@294  [label_stmt->id : stmt•]                                                             
+orgSize=0,curSize=42
+
+@278  [label_stmt->case INTEGER •: stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@292  [label_stmt->case INTEGER : •stmt]                                                   
+orgSize=0,curSize=42
+
+@269  [if_stmt->if ( •expr ) stmt]                                                         传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@283  [if_stmt->if ( expr •) stmt]                                                         
+orgSize=0,curSize=42
+
+@269  [if_stmt->if ( •expr ) stmt else stmt]                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@283  [if_stmt->if ( expr •) stmt else stmt]                                               
+orgSize=0,curSize=42
+
+@267  [while_stmt->while ( •expr ) stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@282  [while_stmt->while ( expr •) stmt]                                                   
+orgSize=0,curSize=42
+
+@279  [dowhile_stmt->do stmt •while ( expr ) ;]                                            传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@293  [dowhile_stmt->do stmt while •( expr ) ;]                                            
+orgSize=0,curSize=42
+
+@289  [forIniitialer->optional_for_exprs •;]                                               传播符号[++, SIZEOF, ;, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &] 	->	@298  [forIniitialer->optional_for_exprs ;•]                                               
+orgSize=0,curSize=16
+
+@289  [optional_for_exprs->optional_for_exprs •comma optional_for_expr]                    传播符号[;, comma]                                                                      	->	@299  [optional_for_exprs->optional_for_exprs comma •optional_for_expr]                    
+orgSize=0,curSize=2
+
+@274  [for_stmt->for ( •forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@290  [for_stmt->for ( forIniitialer •optional_for_expr ; optional_for_exprs ) stmt]       
+orgSize=0,curSize=42
+
+@273  [switch_stmt->switch ( •expr ) { label_stmts }]                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@285  [switch_stmt->switch ( expr •) { label_stmts }]                                      
+orgSize=0,curSize=42
+
+@276  [goto_stmt->goto id •;]                                                              传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@291  [goto_stmt->goto id ;•]                                                              
+orgSize=0,curSize=42
+
+@270  [return_stmt->return expr •;]                                                        传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@284  [return_stmt->return expr ;•]                                                        
+orgSize=0,curSize=42
+
+@224  [block->{ block_componets •}]                                                        传播符号[$]                                                                             	->	@262  [block->{ block_componets }•]                                                        
+orgSize=45,curSize=46
+
+@281  [defvars->storage type name •initial_expr other_vars ;]                              传播符号[++, {, while, (, switch, FLOAT, &, for, SIZEOF, ;, goto, -, ~, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, break, return, INTEGER, +]	->	@67   [defvars->storage type name initial_expr •other_vars ;]                              
+orgSize=18,curSize=46
+
+@292  [label_stmt->case INTEGER : •stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@301  [label_stmt->case INTEGER : stmt•]                                                   
+orgSize=0,curSize=42
+
+@283  [if_stmt->if ( expr •) stmt]                                                         传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@296  [if_stmt->if ( expr ) •stmt]                                                         
+orgSize=0,curSize=42
+
+@283  [if_stmt->if ( expr •) stmt else stmt]                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@296  [if_stmt->if ( expr ) •stmt else stmt]                                               
+orgSize=0,curSize=42
+
+@282  [while_stmt->while ( expr •) stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@295  [while_stmt->while ( expr ) •stmt]                                                   
+orgSize=0,curSize=42
+
+@293  [dowhile_stmt->do stmt while •( expr ) ;]                                            传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@302  [dowhile_stmt->do stmt while ( •expr ) ;]                                            
+orgSize=0,curSize=42
+
+@299  [optional_for_exprs->optional_for_exprs comma •optional_for_expr]                    传播符号[;, comma]                                                                      	->	@306  [optional_for_exprs->optional_for_exprs comma optional_for_expr•]                    
+orgSize=0,curSize=2
+
+@299  [optional_for_exprs->optional_for_exprs comma •optional_for_expr]                    传播符号[;, comma]                                                                      	->	@299  [optional_for_expr-•]                                                                
+orgSize=0,curSize=2
+
+@290  [for_stmt->for ( forIniitialer •optional_for_expr ; optional_for_exprs ) stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@300  [for_stmt->for ( forIniitialer optional_for_expr •; optional_for_exprs ) stmt]       
+orgSize=0,curSize=42
+
+@285  [switch_stmt->switch ( expr •) { label_stmts }]                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@297  [switch_stmt->switch ( expr ) •{ label_stmts }]                                      
+orgSize=0,curSize=42
+
+@67   [defvars->storage type name initial_expr •other_vars ;]                              传播符号[++, {, while, (, switch, FLOAT, &, for, SIZEOF, ;, goto, -, ~, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, break, return, INTEGER, +]	->	@86   [defvars->storage type name initial_expr other_vars •;]                              
+orgSize=18,curSize=46
+
+@296  [if_stmt->if ( expr ) •stmt]                                                         传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@304  [if_stmt->if ( expr ) stmt•]                                                         
+orgSize=0,curSize=42
+
+@254  [stmt->expr •;]                                                                      传播符号[else]                                                                          	->	@275  [stmt->expr ;•]                                                                      
+orgSize=42,curSize=43
+
+@187  [block->{ •block_componets }]                                                        传播符号[else]                                                                          	->	@224  [block->{ block_componets •}]                                                        
+orgSize=46,curSize=47
+
+@263  [label_stmt->id •: stmt]                                                             传播符号[else]                                                                          	->	@280  [label_stmt->id : •stmt]                                                             
+orgSize=42,curSize=43
+
+@259  [label_stmt->case •INTEGER : stmt]                                                   传播符号[else]                                                                          	->	@278  [label_stmt->case INTEGER •: stmt]                                                   
+orgSize=42,curSize=43
+
+@258  [label_stmt->defult •:]                                                              传播符号[else]                                                                          	->	@277  [label_stmt->defult :•]                                                              
+orgSize=42,curSize=43
+
+@242  [if_stmt->if •( expr ) stmt]                                                         传播符号[else]                                                                          	->	@269  [if_stmt->if ( •expr ) stmt]                                                         
+orgSize=42,curSize=43
+
+@242  [if_stmt->if •( expr ) stmt else stmt]                                               传播符号[else]                                                                          	->	@269  [if_stmt->if ( •expr ) stmt else stmt]                                               
+orgSize=42,curSize=43
+
+@236  [while_stmt->while •( expr ) stmt]                                                   传播符号[else]                                                                          	->	@267  [while_stmt->while ( •expr ) stmt]                                                   
+orgSize=42,curSize=43
+
+@260  [dowhile_stmt->do •stmt while ( expr ) ;]                                            传播符号[else]                                                                          	->	@279  [dowhile_stmt->do stmt •while ( expr ) ;]                                            
+orgSize=42,curSize=43
+
+@252  [for_stmt->for •( forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       传播符号[else]                                                                          	->	@274  [for_stmt->for ( •forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       
+orgSize=42,curSize=43
+
+@249  [switch_stmt->switch •( expr ) { label_stmts }]                                      传播符号[else]                                                                          	->	@273  [switch_stmt->switch ( •expr ) { label_stmts }]                                      
+orgSize=42,curSize=43
+
+@256  [goto_stmt->goto •id ;]                                                              传播符号[else]                                                                          	->	@276  [goto_stmt->goto id •;]                                                              
+orgSize=42,curSize=43
+
+@245  [break_stmt->break •;]                                                               传播符号[else]                                                                          	->	@272  [break_stmt->break ;•]                                                               
+orgSize=42,curSize=43
+
+@240  [continue_stmt->continue •;]                                                         传播符号[else]                                                                          	->	@268  [continue_stmt->continue ;•]                                                         
+orgSize=42,curSize=43
+
+@243  [return_stmt->return •;]                                                             传播符号[else]                                                                          	->	@271  [return_stmt->return ;•]                                                             
+orgSize=42,curSize=43
+
+@243  [return_stmt->return •expr ;]                                                        传播符号[else]                                                                          	->	@270  [return_stmt->return expr •;]                                                        
+orgSize=42,curSize=43
+
+@296  [if_stmt->if ( expr ) •stmt else stmt]                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@304  [if_stmt->if ( expr ) stmt •else stmt]                                               
+orgSize=0,curSize=42
+
+@295  [while_stmt->while ( expr ) •stmt]                                                   传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@303  [while_stmt->while ( expr ) stmt•]                                                   
+orgSize=0,curSize=42
+
+@302  [dowhile_stmt->do stmt while ( •expr ) ;]                                            传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@308  [dowhile_stmt->do stmt while ( expr •) ;]                                            
+orgSize=0,curSize=42
+
+@300  [for_stmt->for ( forIniitialer optional_for_expr •; optional_for_exprs ) stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@307  [for_stmt->for ( forIniitialer optional_for_expr ; •optional_for_exprs ) stmt]       
+orgSize=0,curSize=42
+
+@297  [switch_stmt->switch ( expr ) •{ label_stmts }]                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@305  [switch_stmt->switch ( expr ) { •label_stmts }]                                      
+orgSize=0,curSize=42
+
+@86   [defvars->storage type name initial_expr other_vars •;]                              传播符号[++, {, while, (, switch, FLOAT, &, for, SIZEOF, ;, goto, -, ~, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, break, return, INTEGER, +]	->	@132  [defvars->storage type name initial_expr other_vars ;•]                              
+orgSize=18,curSize=46
+
+@224  [block->{ block_componets •}]                                                        传播符号[else]                                                                          	->	@262  [block->{ block_componets }•]                                                        
+orgSize=46,curSize=47
+
+@280  [label_stmt->id : •stmt]                                                             传播符号[else]                                                                          	->	@294  [label_stmt->id : stmt•]                                                             
+orgSize=42,curSize=43
+
+@278  [label_stmt->case INTEGER •: stmt]                                                   传播符号[else]                                                                          	->	@292  [label_stmt->case INTEGER : •stmt]                                                   
+orgSize=42,curSize=43
+
+@269  [if_stmt->if ( •expr ) stmt]                                                         传播符号[else]                                                                          	->	@283  [if_stmt->if ( expr •) stmt]                                                         
+orgSize=42,curSize=43
+
+@269  [if_stmt->if ( •expr ) stmt else stmt]                                               传播符号[else]                                                                          	->	@283  [if_stmt->if ( expr •) stmt else stmt]                                               
+orgSize=42,curSize=43
+
+@267  [while_stmt->while ( •expr ) stmt]                                                   传播符号[else]                                                                          	->	@282  [while_stmt->while ( expr •) stmt]                                                   
+orgSize=42,curSize=43
+
+@279  [dowhile_stmt->do stmt •while ( expr ) ;]                                            传播符号[else]                                                                          	->	@293  [dowhile_stmt->do stmt while •( expr ) ;]                                            
+orgSize=42,curSize=43
+
+@274  [for_stmt->for ( •forIniitialer optional_for_expr ; optional_for_exprs ) stmt]       传播符号[else]                                                                          	->	@290  [for_stmt->for ( forIniitialer •optional_for_expr ; optional_for_exprs ) stmt]       
+orgSize=42,curSize=43
+
+@273  [switch_stmt->switch ( •expr ) { label_stmts }]                                      传播符号[else]                                                                          	->	@285  [switch_stmt->switch ( expr •) { label_stmts }]                                      
+orgSize=42,curSize=43
+
+@276  [goto_stmt->goto id •;]                                                              传播符号[else]                                                                          	->	@291  [goto_stmt->goto id ;•]                                                              
+orgSize=42,curSize=43
+
+@270  [return_stmt->return expr •;]                                                        传播符号[else]                                                                          	->	@284  [return_stmt->return expr ;•]                                                        
+orgSize=42,curSize=43
+
+@304  [if_stmt->if ( expr ) stmt •else stmt]                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@309  [if_stmt->if ( expr ) stmt else •stmt]                                               
+orgSize=0,curSize=42
+
+@308  [dowhile_stmt->do stmt while ( expr •) ;]                                            传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@314  [dowhile_stmt->do stmt while ( expr ) •;]                                            
+orgSize=0,curSize=42
+
+@313  [optional_for_exprs->optional_for_exprs •comma optional_for_expr]                    传播符号[)]                                                                             	->	@299  [optional_for_exprs->optional_for_exprs comma •optional_for_expr]                    
+orgSize=2,curSize=3
+
+@307  [for_stmt->for ( forIniitialer optional_for_expr ; •optional_for_exprs ) stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@313  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs •) stmt]       
+orgSize=0,curSize=42
+
+@310  [label_stmts->label_stmts •label_stmt]                                               传播符号[}, id, defult, case]                                                           	->	@317  [label_stmts->label_stmts label_stmt•]                                               
+orgSize=0,curSize=4
+
+@305  [switch_stmt->switch ( expr ) { •label_stmts }]                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@310  [switch_stmt->switch ( expr ) { label_stmts •}]                                      
+orgSize=0,curSize=42
+
+@292  [label_stmt->case INTEGER : •stmt]                                                   传播符号[else]                                                                          	->	@301  [label_stmt->case INTEGER : stmt•]                                                   
+orgSize=42,curSize=43
+
+@283  [if_stmt->if ( expr •) stmt]                                                         传播符号[else]                                                                          	->	@296  [if_stmt->if ( expr ) •stmt]                                                         
+orgSize=42,curSize=43
+
+@283  [if_stmt->if ( expr •) stmt else stmt]                                               传播符号[else]                                                                          	->	@296  [if_stmt->if ( expr ) •stmt else stmt]                                               
+orgSize=42,curSize=43
+
+@282  [while_stmt->while ( expr •) stmt]                                                   传播符号[else]                                                                          	->	@295  [while_stmt->while ( expr ) •stmt]                                                   
+orgSize=42,curSize=43
+
+@293  [dowhile_stmt->do stmt while •( expr ) ;]                                            传播符号[else]                                                                          	->	@302  [dowhile_stmt->do stmt while ( •expr ) ;]                                            
+orgSize=42,curSize=43
+
+@290  [for_stmt->for ( forIniitialer •optional_for_expr ; optional_for_exprs ) stmt]       传播符号[else]                                                                          	->	@300  [for_stmt->for ( forIniitialer optional_for_expr •; optional_for_exprs ) stmt]       
+orgSize=42,curSize=43
+
+@285  [switch_stmt->switch ( expr •) { label_stmts }]                                      传播符号[else]                                                                          	->	@297  [switch_stmt->switch ( expr ) •{ label_stmts }]                                      
+orgSize=42,curSize=43
+
+@309  [if_stmt->if ( expr ) stmt else •stmt]                                               传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@315  [if_stmt->if ( expr ) stmt else stmt•]                                               
+orgSize=0,curSize=42
+
+@314  [dowhile_stmt->do stmt while ( expr ) •;]                                            传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@319  [dowhile_stmt->do stmt while ( expr ) ;•]                                            
+orgSize=0,curSize=42
+
+@299  [optional_for_exprs->optional_for_exprs comma •optional_for_expr]                    传播符号[)]                                                                             	->	@306  [optional_for_exprs->optional_for_exprs comma optional_for_expr•]                    
+orgSize=2,curSize=3
+
+@299  [optional_for_exprs->optional_for_exprs comma •optional_for_expr]                    传播符号[)]                                                                             	->	@299  [optional_for_expr-•]                                                                
+orgSize=2,curSize=3
+
+@313  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs •) stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@318  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) •stmt]       
+orgSize=0,curSize=42
+
+@310  [switch_stmt->switch ( expr ) { label_stmts •}]                                      传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@316  [switch_stmt->switch ( expr ) { label_stmts }•]                                      
+orgSize=0,curSize=42
+
+@296  [if_stmt->if ( expr ) •stmt]                                                         传播符号[else]                                                                          	->	@304  [if_stmt->if ( expr ) stmt•]                                                         
+orgSize=42,curSize=43
+
+@296  [if_stmt->if ( expr ) •stmt else stmt]                                               传播符号[else]                                                                          	->	@304  [if_stmt->if ( expr ) stmt •else stmt]                                               
+orgSize=42,curSize=43
+
+@295  [while_stmt->while ( expr ) •stmt]                                                   传播符号[else]                                                                          	->	@303  [while_stmt->while ( expr ) stmt•]                                                   
+orgSize=42,curSize=43
+
+@302  [dowhile_stmt->do stmt while ( •expr ) ;]                                            传播符号[else]                                                                          	->	@308  [dowhile_stmt->do stmt while ( expr •) ;]                                            
+orgSize=42,curSize=43
+
+@300  [for_stmt->for ( forIniitialer optional_for_expr •; optional_for_exprs ) stmt]       传播符号[else]                                                                          	->	@307  [for_stmt->for ( forIniitialer optional_for_expr ; •optional_for_exprs ) stmt]       
+orgSize=42,curSize=43
+
+@297  [switch_stmt->switch ( expr ) •{ label_stmts }]                                      传播符号[else]                                                                          	->	@305  [switch_stmt->switch ( expr ) { •label_stmts }]                                      
+orgSize=42,curSize=43
+
+@318  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) •stmt]       传播符号[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]	->	@320  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) stmt•]       
+orgSize=0,curSize=42
+
+@304  [if_stmt->if ( expr ) stmt •else stmt]                                               传播符号[else]                                                                          	->	@309  [if_stmt->if ( expr ) stmt else •stmt]                                               
+orgSize=42,curSize=43
+
+@308  [dowhile_stmt->do stmt while ( expr •) ;]                                            传播符号[else]                                                                          	->	@314  [dowhile_stmt->do stmt while ( expr ) •;]                                            
+orgSize=42,curSize=43
+
+@307  [for_stmt->for ( forIniitialer optional_for_expr ; •optional_for_exprs ) stmt]       传播符号[else]                                                                          	->	@313  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs •) stmt]       
+orgSize=42,curSize=43
+
+@305  [switch_stmt->switch ( expr ) { •label_stmts }]                                      传播符号[else]                                                                          	->	@310  [switch_stmt->switch ( expr ) { label_stmts •}]                                      
+orgSize=42,curSize=43
+
+@309  [if_stmt->if ( expr ) stmt else •stmt]                                               传播符号[else]                                                                          	->	@315  [if_stmt->if ( expr ) stmt else stmt•]                                               
+orgSize=42,curSize=43
+
+@314  [dowhile_stmt->do stmt while ( expr ) •;]                                            传播符号[else]                                                                          	->	@319  [dowhile_stmt->do stmt while ( expr ) ;•]                                            
+orgSize=42,curSize=43
+
+@313  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs •) stmt]       传播符号[else]                                                                          	->	@318  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) •stmt]       
+orgSize=42,curSize=43
+
+@310  [switch_stmt->switch ( expr ) { label_stmts •}]                                      传播符号[else]                                                                          	->	@316  [switch_stmt->switch ( expr ) { label_stmts }•]                                      
+orgSize=42,curSize=43
+
+@318  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) •stmt]       传播符号[else]                                                                          	->	@320  [for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) stmt•]       
+orgSize=42,curSize=43

@@ -1,0 +1,13 @@
+import	.	;	id	comma	=	
+static	(	)	void	...	{	
+}	struct	union	typedef	[	]	
+INTEGER	*	-=	signed	unsigned	char	
+if	else	while	do	for	break	
+goto	continue	return	:	case	defult	
+switch	?	||	&&	==	!=	
+<	>	<=	>=	<<	>>	
++	-	/	%	++	--	
+SIZEOF	!	~	&	->	CHARACTOR	
+STRING	FLOAT	+=	*=	/=	%=	
+const	bool	float	double	long	short	
+int	extern	

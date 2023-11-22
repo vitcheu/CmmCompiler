@@ -1,0 +1,30 @@
+
+在[@5  ,   union]	中发生冲突,冲突项为: 	shift to 18                   和	reduced storage	->	 (pid=20)  
+
+
+在[@5  ,  struct]	中发生冲突,冲突项为: 	shift to 22                   和	reduced storage	->	 (pid=20)  
+
+
+在[@76 ,       )]	中发生冲突,冲突项为: 	shift to 125                  和	reduced primary_type	->	void	 (pid=54)
+
+
+在[@158,       )]	中发生冲突,冲突项为: 	reduced typeName	->	id	 (pid=171)和	reduced primary_expr	->	id	 (pid=139)
+
+
+在[@158,       (]	中发生冲突,冲突项为: 	reduced typeName	->	id	 (pid=171)和	reduced primary_expr	->	id	 (pid=139)
+
+
+在[@158,       []	中发生冲突,冲突项为: 	reduced typeName	->	id	 (pid=171)和	reduced primary_expr	->	id	 (pid=139)
+
+
+在[@158,       *]	中发生冲突,冲突项为: 	reduced typeName	->	id	 (pid=171)和	reduced primary_expr	->	id	 (pid=139)
+
+
+在[@224,      id]	中发生冲突,冲突项为: 	shift to 263                  和	reduced storage	->	 (pid=20)  
+
+
+在[@274,      id]	中发生冲突,冲突项为: 	shift to 113                  和	reduced storage	->	 (pid=20)  
+
+
+在[@304,    else]	中发生冲突,冲突项为: 	shift to 309                  和	reduced if_stmt	->	if	(	expr	)	stmt	 (pid=72)
+

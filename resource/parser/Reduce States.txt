@@ -1,0 +1,2410 @@
+共有194个规约项
+
+
+##############<状态0>#############
+[import_staments-•,[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+[programe'->•programe,[$]]
+
+--------------------------------------------
+[import_staments->•import_staments import_stament,[]]
+
+[programe->•import_staments top_decls,[]]
+
+
+##############</状态0>#############
+
+##############<状态1>#############
+[import_staments->import_staments •import_stament,[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+[programe->import_staments •top_decls,[$]]
+
+[top_decls-•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+[import_stament->•import NAME,[]]
+
+[top_decls->•top_decls top_decl,[]]
+
+
+##############</状态1>#############
+
+##############<状态2>#############
+[programe'->programe•,[$]]
+
+--------------------------------------------
+
+##############</状态2>#############
+
+##############<状态3>#############
+[import_staments->import_staments import_stament•,[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态3>#############
+
+##############<状态5>#############
+[programe->import_staments top_decls•,[$]]
+
+[storage-•,[bool, char, float, double, int, void, union, short, long, id, unsigned, struct, signed]]
+
+[top_decls->top_decls •top_decl,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+[TYPEDEF->•typedef type typeName ;,[]]
+
+[defconst->•const type id = expr ;,[]]
+
+[defstruct->•struct name member_list ;,[]]
+
+[defun->•storage type name ( params ) block,[]]
+
+[defunion->•union name member_list ;,[]]
+
+[defvars->•storage type name initial_expr other_vars ;,[]]
+
+[storage->•static,[]]
+
+[top_decl->•defconst,[]]
+
+[top_decl->•defunion,[]]
+
+[top_decl->•defstruct,[]]
+
+[top_decl->•TYPEDEF,[]]
+
+[top_decl->•extern var_decl,[]]
+
+[top_decl->•defvars,[]]
+
+[top_decl->•defun,[]]
+
+[top_decl->•extern fun_decl,[]]
+
+
+##############</状态5>#############
+
+##############<状态7>#############
+[import_stament->import NAME•,[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态7>#############
+
+##############<状态8>#############
+[name->id•,[++, {, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态8>#############
+
+##############<状态9>#############
+[top_decl->defconst•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态9>#############
+
+##############<状态10>#############
+[top_decl->defstruct•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态10>#############
+
+##############<状态11>#############
+[storage->static•,[bool, char, float, double, int, void, union, short, long, id, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态11>#############
+
+##############<状态13>#############
+[top_decl->defunion•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态13>#############
+
+##############<状态14>#############
+[top_decl->defvars•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态14>#############
+
+##############<状态15>#############
+[top_decl->defun•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态15>#############
+
+##############<状态16>#############
+[storage-•,[bool, char, float, double, int, void, union, short, long, id, unsigned, struct, signed]]
+
+[top_decl->extern •fun_decl,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+[top_decl->extern •var_decl,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+[fun_decl->•storage type name ( param_decl ) ;,[]]
+
+[storage->•static,[]]
+
+[var_decl->•storage type name other_var_decls ;,[]]
+
+
+##############</状态16>#############
+
+##############<状态17>#############
+[top_decl->TYPEDEF•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态17>#############
+
+##############<状态19>#############
+[top_decls->top_decls top_decl•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态19>#############
+
+##############<状态23>#############
+[NAME->name ;•,[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态23>#############
+
+##############<状态25>#############
+[primary_type->bool•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态25>#############
+
+##############<状态26>#############
+[primary_type->int_type•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态26>#############
+
+##############<状态27>#############
+[primary_type->char•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态27>#############
+
+##############<状态28>#############
+[primary_type->double•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态28>#############
+
+##############<状态29>#############
+[primary_type->float•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态29>#############
+
+##############<状态30>#############
+[type->primary_type •type_postfix,[comma, ), id]]
+
+[type_postfix-•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+[type_postfix->•type_postfix *,[]]
+
+[type_postfix->•type_postfix ( void ),[]]
+
+[type_postfix->•type_postfix [ INTEGER ],[]]
+
+[type_postfix->•type_postfix [ ],[]]
+
+[type_postfix->•type_postfix ( param_typerefs ),[]]
+
+
+##############</状态30>#############
+
+##############<状态31>#############
+[int_type->int•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态31>#############
+
+##############<状态32>#############
+[primary_type->void•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态32>#############
+
+##############<状态34>#############
+[int_type->short•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态34>#############
+
+##############<状态35>#############
+[typeName->id•,[*, (, ;, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态35>#############
+
+##############<状态37>#############
+[int_type->long •long,[*, (, [, comma, ), id]]
+
+[int_type->long•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态37>#############
+
+##############<状态38>#############
+[primary_type->typeName•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态38>#############
+
+##############<状态42>#############
+[top_decl->extern var_decl•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态42>#############
+
+##############<状态44>#############
+[top_decl->extern fun_decl•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态44>#############
+
+##############<状态49>#############
+[NAME->name . NAME•,[bool, char, static, float, double, import, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态49>#############
+
+##############<状态50>#############
+[type->primary_type type_postfix•,[comma, ), id]]
+
+[type_postfix->type_postfix •*,[*, (, [, comma, ), id]]
+
+[type_postfix->type_postfix •[ INTEGER ],[*, (, [, comma, ), id]]
+
+[type_postfix->type_postfix •( void ),[*, (, [, comma, ), id]]
+
+[type_postfix->type_postfix •[ ],[*, (, [, comma, ), id]]
+
+[type_postfix->type_postfix •( param_typerefs ),[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态50>#############
+
+##############<状态51>#############
+[primary_type->union id•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态51>#############
+
+##############<状态52>#############
+[defun->storage type name •( params ) block,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+[defvars->storage type name •initial_expr other_vars ;,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+[initial_expr-•,[;, comma]]
+
+--------------------------------------------
+[initial_expr->•= expr,[]]
+
+[initial_expr->•= { expr_list },[]]
+
+
+##############</状态52>#############
+
+##############<状态53>#############
+[int_type->long long•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态53>#############
+
+##############<状态54>#############
+[primary_type->unsigned int_type•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态54>#############
+
+##############<状态55>#############
+[primary_type->struct id•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态55>#############
+
+##############<状态56>#############
+[primary_type->signed int_type•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态56>#############
+
+##############<状态58>#############
+[member_list->{ •slots },[;]]
+
+[slots-•,[bool, char, float, double, int, void, union, short, }, long, id, unsigned, struct, signed]]
+
+--------------------------------------------
+[slots->•slots type name ;,[]]
+
+
+##############</状态58>#############
+
+##############<状态63>#############
+[type_postfix->type_postfix *•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态63>#############
+
+##############<状态67>#############
+[defvars->storage type name initial_expr •other_vars ;,[bool, ++, {, int, $, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]]
+
+[other_vars-•,[;, comma]]
+
+--------------------------------------------
+[other_vars->•other_vars other_var,[]]
+
+
+##############</状态67>#############
+
+##############<状态69>#############
+[fun_decl->storage type name •( param_decl ) ;,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+[other_var_decls-•,[;, comma]]
+
+[var_decl->storage type name •other_var_decls ;,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+[other_var_decls->•other_var_decls other_var_decl,[]]
+
+
+##############</状态69>#############
+
+##############<状态71>#############
+[defunion->union name member_list ;•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态71>#############
+
+##############<状态72>#############
+[TYPEDEF->typedef type typeName ;•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态72>#############
+
+##############<状态74>#############
+[defstruct->struct name member_list ;•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态74>#############
+
+##############<状态75>#############
+[fixed_param_ref->fixed_param_ref •comma type,[comma, )]]
+
+[kwargs-•,[)]]
+
+[param_typerefs->fixed_param_ref •kwargs,[)]]
+
+--------------------------------------------
+[kwargs->•comma ...,[]]
+
+
+##############</状态75>#############
+
+##############<状态76>#############
+[primary_type->void•,[*, (, [, comma, )]]
+
+[type_postfix->type_postfix ( void •),[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态76>#############
+
+##############<状态78>#############
+[fixed_param_ref->type•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态78>#############
+
+##############<状态79>#############
+[type_postfix->type_postfix [ ]•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态79>#############
+
+##############<状态81>#############
+[fixed_params->param•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态81>#############
+
+##############<状态82>#############
+[params->void•,[)]]
+
+[primary_type->void•,[*, (, [, id]]
+
+--------------------------------------------
+
+##############</状态82>#############
+
+##############<状态83>#############
+[fixed_params->fixed_params •comma param,[comma, )]]
+
+[kwargs-•,[)]]
+
+[params->fixed_params •kwargs,[)]]
+
+--------------------------------------------
+[kwargs->•comma ...,[]]
+
+
+##############</状态83>#############
+
+##############<状态88>#############
+[additive_expr->additive_expr •- multiplicative_expr,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[additive_expr->additive_expr •+ multiplicative_expr,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[shift_expr->additive_expr•,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态88>#############
+
+##############<状态89>#############
+[expr_list-•,[comma, }]]
+
+[initial_expr->= { •expr_list },[;, comma]]
+
+--------------------------------------------
+[CONSTANT->•INTEGER,[]]
+
+[CONSTANT->•FLOAT,[]]
+
+[CONSTANT->•STRING,[]]
+
+[CONSTANT->•CHARACTOR,[]]
+
+[additive_expr->•multiplicative_expr,[]]
+
+[additive_expr->•additive_expr + multiplicative_expr,[]]
+
+[additive_expr->•additive_expr - multiplicative_expr,[]]
+
+[conditional_expr->•logical_or_expr,[]]
+
+[conditional_expr->•logical_or_expr ? expr : conditional_expr,[]]
+
+[equality_expr->•equality_expr != relational_expr,[]]
+
+[equality_expr->•relational_expr,[]]
+
+[equality_expr->•equality_expr == relational_expr,[]]
+
+[expr->•term opassign_op expr,[]]
+
+[expr->•conditional_expr,[]]
+
+[expr->•term = expr,[]]
+
+[expr_list->•expr_list comma expr,[]]
+
+[expr_list->•expr,[]]
+
+[logical_and_expr->•logical_and_expr && equality_expr,[]]
+
+[logical_and_expr->•equality_expr,[]]
+
+[logical_or_expr->•logical_or_expr || logical_and_expr,[]]
+
+[logical_or_expr->•logical_and_expr,[]]
+
+[multiplicative_expr->•term,[]]
+
+[multiplicative_expr->•multiplicative_expr / term,[]]
+
+[multiplicative_expr->•multiplicative_expr * term,[]]
+
+[multiplicative_expr->•multiplicative_expr % term,[]]
+
+[postfix_expr->•postfix_expr --,[]]
+
+[postfix_expr->•postfix_expr . name,[]]
+
+[postfix_expr->•postfix_expr ++,[]]
+
+[postfix_expr->•postfix_expr [ expr ],[]]
+
+[postfix_expr->•primary_expr,[]]
+
+[postfix_expr->•postfix_expr -> name,[]]
+
+[postfix_expr->•postfix_expr ( args ),[]]
+
+[postfix_expr->•postfix_expr ( ),[]]
+
+[primary_expr->•id,[]]
+
+[primary_expr->•( expr ),[]]
+
+[primary_expr->•CONSTANT,[]]
+
+[relational_expr->•relational_expr <= shift_expr,[]]
+
+[relational_expr->•shift_expr,[]]
+
+[relational_expr->•relational_expr >= shift_expr,[]]
+
+[relational_expr->•relational_expr < shift_expr,[]]
+
+[relational_expr->•relational_expr > shift_expr,[]]
+
+[shift_expr->•shift_expr << additive_expr,[]]
+
+[shift_expr->•shift_expr >> additive_expr,[]]
+
+[shift_expr->•additive_expr,[]]
+
+[term->•unary_expr,[]]
+
+[term->•( type ) unary_expr,[]]
+
+[unary_expr->•unary_operator term,[]]
+
+[unary_expr->•SIZEOF ( type ),[]]
+
+[unary_expr->•SIZEOF unary_expr,[]]
+
+[unary_expr->•postfix_expr,[]]
+
+[unary_expr->•++ unary_expr,[]]
+
+[unary_expr->•-- unary_expr,[]]
+
+[unary_operator->•-,[]]
+
+[unary_operator->•+,[]]
+
+[unary_operator->•*,[]]
+
+[unary_operator->•!,[]]
+
+[unary_operator->•~,[]]
+
+[unary_operator->•&,[]]
+
+
+##############</状态89>#############
+
+##############<状态90>#############
+[equality_expr->equality_expr •== relational_expr,[&&, ;, !=, comma, ), ==, ], }, ?, :, ||]]
+
+[equality_expr->equality_expr •!= relational_expr,[&&, ;, !=, comma, ), ==, ], }, ?, :, ||]]
+
+[logical_and_expr->equality_expr•,[&&, ;, comma, ), ], }, ?, :, ||]]
+
+--------------------------------------------
+
+##############</状态90>#############
+
+##############<状态91>#############
+[equality_expr->relational_expr•,[&&, ;, !=, comma, ), ==, ], }, ?, :, ||]]
+
+[relational_expr->relational_expr •<= shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •>= shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •> shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •< shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+--------------------------------------------
+
+##############</状态91>#############
+
+##############<状态92>#############
+[conditional_expr->logical_or_expr•,[;, comma, ), ], }, :]]
+
+[conditional_expr->logical_or_expr •? expr : conditional_expr,[;, comma, ), ], }, :]]
+
+[logical_or_expr->logical_or_expr •|| logical_and_expr,[;, comma, ), ], }, ?, :, ||]]
+
+--------------------------------------------
+
+##############</状态92>#############
+
+##############<状态93>#############
+[expr->term •opassign_op expr,[;, comma, ), ], }, :]]
+
+[expr->term •= expr,[;, comma, ), ], }, :]]
+
+[multiplicative_expr->term•,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+[opassign_op->•+=,[]]
+
+[opassign_op->•%=,[]]
+
+[opassign_op->•*=,[]]
+
+[opassign_op->•/=,[]]
+
+[opassign_op->•-=,[]]
+
+
+##############</状态93>#############
+
+##############<状态95>#############
+[additive_expr->multiplicative_expr•,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •% term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •/ term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •* term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态95>#############
+
+##############<状态96>#############
+[CONSTANT->FLOAT•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态96>#############
+
+##############<状态97>#############
+[relational_expr->shift_expr•,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[shift_expr->shift_expr •>> additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+[shift_expr->shift_expr •<< additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态97>#############
+
+##############<状态98>#############
+[unary_operator->&•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态98>#############
+
+##############<状态99>#############
+[term->unary_expr•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态99>#############
+
+##############<状态101>#############
+[initial_expr->= expr•,[;, comma]]
+
+--------------------------------------------
+
+##############</状态101>#############
+
+##############<状态102>#############
+[logical_and_expr->logical_and_expr •&& equality_expr,[&&, ;, comma, ), ], }, ?, :, ||]]
+
+[logical_or_expr->logical_and_expr•,[;, comma, ), ], }, ?, :, ||]]
+
+--------------------------------------------
+
+##############</状态102>#############
+
+##############<状态103>#############
+[unary_operator->-•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态103>#############
+
+##############<状态104>#############
+[unary_operator->~•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态104>#############
+
+##############<状态106>#############
+[unary_operator->*•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态106>#############
+
+##############<状态107>#############
+[unary_operator->!•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态107>#############
+
+##############<状态109>#############
+[CONSTANT->CHARACTOR•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态109>#############
+
+##############<状态110>#############
+[expr->conditional_expr•,[;, comma, ), ], }, :]]
+
+--------------------------------------------
+
+##############</状态110>#############
+
+##############<状态111>#############
+[postfix_expr->postfix_expr •. name,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[postfix_expr->postfix_expr •( args ),[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[postfix_expr->postfix_expr •( ),[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[postfix_expr->postfix_expr •[ expr ],[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[postfix_expr->postfix_expr •++,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[postfix_expr->postfix_expr •--,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[postfix_expr->postfix_expr •-> name,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+[unary_expr->postfix_expr•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态111>#############
+
+##############<状态112>#############
+[CONSTANT->STRING•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态112>#############
+
+##############<状态113>#############
+[primary_expr->id•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态113>#############
+
+##############<状态114>#############
+[primary_expr->CONSTANT•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态114>#############
+
+##############<状态115>#############
+[postfix_expr->primary_expr•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态115>#############
+
+##############<状态116>#############
+[CONSTANT->INTEGER•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态116>#############
+
+##############<状态117>#############
+[unary_operator->+•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态117>#############
+
+##############<状态121>#############
+[member_list->{ slots }•,[;]]
+
+--------------------------------------------
+
+##############</状态121>#############
+
+##############<状态123>#############
+[param_typerefs->fixed_param_ref kwargs•,[)]]
+
+--------------------------------------------
+
+##############</状态123>#############
+
+##############<状态125>#############
+[type_postfix->type_postfix ( void )•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态125>#############
+
+##############<状态126>#############
+[type_postfix->type_postfix ( param_typerefs )•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态126>#############
+
+##############<状态127>#############
+[type_postfix->type_postfix [ INTEGER ]•,[*, (, [, comma, ), id]]
+
+--------------------------------------------
+
+##############</状态127>#############
+
+##############<状态128>#############
+[params->fixed_params kwargs•,[)]]
+
+--------------------------------------------
+
+##############</状态128>#############
+
+##############<状态130>#############
+[param->type name•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态130>#############
+
+##############<状态132>#############
+[defvars->storage type name initial_expr other_vars ;•,[bool, ++, {, int, $, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态132>#############
+
+##############<状态134>#############
+[other_vars->other_vars other_var•,[;, comma]]
+
+--------------------------------------------
+
+##############</状态134>#############
+
+##############<状态135>#############
+[unary_expr->++ unary_expr•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态135>#############
+
+##############<状态140>#############
+[expr_list->expr•,[comma, }]]
+
+--------------------------------------------
+
+##############</状态140>#############
+
+##############<状态149>#############
+[opassign_op->%=•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态149>#############
+
+##############<状态151>#############
+[opassign_op->+=•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态151>#############
+
+##############<状态153>#############
+[opassign_op->*=•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态153>#############
+
+##############<状态154>#############
+[opassign_op->/=•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态154>#############
+
+##############<状态155>#############
+[opassign_op->-=•,[++, SIZEOF, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态155>#############
+
+##############<状态158>#############
+[primary_expr->id•,[++, ), ?, -=, (, [, >=, ., *=, %=, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, +]]
+
+[typeName->id•,[*, (, [, )]]
+
+--------------------------------------------
+
+##############</状态158>#############
+
+##############<状态164>#############
+[unary_expr->SIZEOF unary_expr•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态164>#############
+
+##############<状态167>#############
+[unary_expr->-- unary_expr•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态167>#############
+
+##############<状态168>#############
+[unary_expr->unary_operator term•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态168>#############
+
+##############<状态169>#############
+[postfix_expr->postfix_expr ++•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态169>#############
+
+##############<状态174>#############
+[postfix_expr->postfix_expr --•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态174>#############
+
+##############<状态176>#############
+[param_decl->param_typerefs•,[)]]
+
+--------------------------------------------
+
+##############</状态176>#############
+
+##############<状态177>#############
+[fixed_params->fixed_params •comma param,[comma, )]]
+
+[kwargs-•,[)]]
+
+[param_decl->fixed_params •kwargs,[)]]
+
+--------------------------------------------
+[kwargs->•comma ...,[]]
+
+
+##############</状态177>#############
+
+##############<状态178>#############
+[fixed_param_ref->type•,[comma, )]]
+
+[param->type •name,[comma, )]]
+
+--------------------------------------------
+[name->•id,[]]
+
+
+##############</状态178>#############
+
+##############<状态179>#############
+[var_decl->storage type name other_var_decls ;•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态179>#############
+
+##############<状态181>#############
+[other_var_decls->other_var_decls other_var_decl•,[;, comma]]
+
+--------------------------------------------
+
+##############</状态181>#############
+
+##############<状态183>#############
+[defconst->const type id = expr ;•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态183>#############
+
+##############<状态184>#############
+[fixed_param_ref->fixed_param_ref comma type•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态184>#############
+
+##############<状态185>#############
+[kwargs->comma ...•,[)]]
+
+--------------------------------------------
+
+##############</状态185>#############
+
+##############<状态186>#############
+[fixed_params->fixed_params comma param•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态186>#############
+
+##############<状态187>#############
+[block->{ •block_componets },[bool, ++, {, else, int, $, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]]
+
+[block_componets-•,[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+[block_componets->•block_componets block_componet,[]]
+
+
+##############</状态187>#############
+
+##############<状态188>#############
+[defun->storage type name ( params ) block•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态188>#############
+
+##############<状态189>#############
+[initial_expr-•,[;, comma]]
+
+[other_var->comma name •initial_expr,[;, comma]]
+
+--------------------------------------------
+[initial_expr->•= expr,[]]
+
+[initial_expr->•= { expr_list },[]]
+
+
+##############</状态189>#############
+
+##############<状态190>#############
+[multiplicative_expr->term•,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态190>#############
+
+##############<状态191>#############
+[additive_expr->additive_expr - multiplicative_expr•,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •% term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •/ term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •* term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态191>#############
+
+##############<状态192>#############
+[additive_expr->additive_expr + multiplicative_expr•,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •% term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •/ term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[multiplicative_expr->multiplicative_expr •* term,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态192>#############
+
+##############<状态194>#############
+[initial_expr->= { expr_list }•,[;, comma]]
+
+--------------------------------------------
+
+##############</状态194>#############
+
+##############<状态195>#############
+[equality_expr->equality_expr != relational_expr•,[&&, ;, !=, comma, ), ==, ], }, ?, :, ||]]
+
+[relational_expr->relational_expr •<= shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •>= shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •> shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •< shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+--------------------------------------------
+
+##############</状态195>#############
+
+##############<状态196>#############
+[equality_expr->equality_expr == relational_expr•,[&&, ;, !=, comma, ), ==, ], }, ?, :, ||]]
+
+[relational_expr->relational_expr •<= shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •>= shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •> shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[relational_expr->relational_expr •< shift_expr,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+--------------------------------------------
+
+##############</状态196>#############
+
+##############<状态197>#############
+[relational_expr->relational_expr < shift_expr•,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[shift_expr->shift_expr •>> additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+[shift_expr->shift_expr •<< additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态197>#############
+
+##############<状态198>#############
+[relational_expr->relational_expr >= shift_expr•,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[shift_expr->shift_expr •>> additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+[shift_expr->shift_expr •<< additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态198>#############
+
+##############<状态199>#############
+[relational_expr->relational_expr <= shift_expr•,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[shift_expr->shift_expr •>> additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+[shift_expr->shift_expr •<< additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态199>#############
+
+##############<状态200>#############
+[relational_expr->relational_expr > shift_expr•,[;, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, ], }]]
+
+[shift_expr->shift_expr •>> additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+[shift_expr->shift_expr •<< additive_expr,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态200>#############
+
+##############<状态202>#############
+[logical_and_expr->logical_and_expr •&& equality_expr,[&&, ;, comma, ), ], }, ?, :, ||]]
+
+[logical_or_expr->logical_or_expr || logical_and_expr•,[;, comma, ), ], }, ?, :, ||]]
+
+--------------------------------------------
+
+##############</状态202>#############
+
+##############<状态203>#############
+[expr->term opassign_op expr•,[;, comma, ), ], }, :]]
+
+--------------------------------------------
+
+##############</状态203>#############
+
+##############<状态204>#############
+[expr->term = expr•,[;, comma, ), ], }, :]]
+
+--------------------------------------------
+
+##############</状态204>#############
+
+##############<状态206>#############
+[primary_expr->( expr )•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态206>#############
+
+##############<状态207>#############
+[multiplicative_expr->multiplicative_expr * term•,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态207>#############
+
+##############<状态208>#############
+[multiplicative_expr->multiplicative_expr % term•,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态208>#############
+
+##############<状态209>#############
+[multiplicative_expr->multiplicative_expr / term•,[;, <<, comma, ), -, ?, :, ||, /, %, <, *, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+--------------------------------------------
+
+##############</状态209>#############
+
+##############<状态210>#############
+[additive_expr->additive_expr •- multiplicative_expr,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[additive_expr->additive_expr •+ multiplicative_expr,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[shift_expr->shift_expr << additive_expr•,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态210>#############
+
+##############<状态211>#############
+[additive_expr->additive_expr •- multiplicative_expr,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[additive_expr->additive_expr •+ multiplicative_expr,[;, <<, comma, ), -, ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }, +]]
+
+[shift_expr->shift_expr >> additive_expr•,[;, <<, comma, ), ?, :, ||, <, &&, >=, !=, <=, >, ==, >>, ], }]]
+
+--------------------------------------------
+
+##############</状态211>#############
+
+##############<状态213>#############
+[equality_expr->equality_expr •== relational_expr,[&&, ;, !=, comma, ==, ), ], }, ?, :, ||]]
+
+[equality_expr->equality_expr •!= relational_expr,[&&, ;, !=, comma, ==, ), ], }, ?, :, ||]]
+
+[logical_and_expr->logical_and_expr && equality_expr•,[&&, ;, comma, ), ], }, ?, :, ||]]
+
+--------------------------------------------
+
+##############</状态213>#############
+
+##############<状态214>#############
+[postfix_expr->postfix_expr -> name•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态214>#############
+
+##############<状态215>#############
+[postfix_expr->postfix_expr ( )•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态215>#############
+
+##############<状态217>#############
+[args->expr•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态217>#############
+
+##############<状态219>#############
+[postfix_expr->postfix_expr . name•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态219>#############
+
+##############<状态221>#############
+[param_decl->fixed_params kwargs•,[)]]
+
+--------------------------------------------
+
+##############</状态221>#############
+
+##############<状态222>#############
+[other_var_decl->comma name•,[;, comma]]
+
+--------------------------------------------
+
+##############</状态222>#############
+
+##############<状态223>#############
+[slots->slots type name ;•,[bool, char, float, double, int, void, union, short, }, long, id, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态223>#############
+
+##############<状态224>#############
+[block->{ block_componets •},[bool, ++, {, else, int, $, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]]
+
+[block_componets->block_componets •block_componet,[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[storage-•,[bool, char, float, double, int, void, union, short, long, id, unsigned, struct, signed]]
+
+--------------------------------------------
+[CONSTANT->•INTEGER,[]]
+
+[CONSTANT->•FLOAT,[]]
+
+[CONSTANT->•STRING,[]]
+
+[CONSTANT->•CHARACTOR,[]]
+
+[additive_expr->•multiplicative_expr,[]]
+
+[additive_expr->•additive_expr + multiplicative_expr,[]]
+
+[additive_expr->•additive_expr - multiplicative_expr,[]]
+
+[block->•{ block_componets },[]]
+
+[block_componet->•defvars,[]]
+
+[block_componet->•stmt,[]]
+
+[break_stmt->•break ;,[]]
+
+[conditional_expr->•logical_or_expr,[]]
+
+[conditional_expr->•logical_or_expr ? expr : conditional_expr,[]]
+
+[continue_stmt->•continue ;,[]]
+
+[defvars->•storage type name initial_expr other_vars ;,[]]
+
+[dowhile_stmt->•do stmt while ( expr ) ;,[]]
+
+[equality_expr->•equality_expr != relational_expr,[]]
+
+[equality_expr->•relational_expr,[]]
+
+[equality_expr->•equality_expr == relational_expr,[]]
+
+[expr->•term opassign_op expr,[]]
+
+[expr->•conditional_expr,[]]
+
+[expr->•term = expr,[]]
+
+[for_stmt->•for ( forIniitialer optional_for_expr ; optional_for_exprs ) stmt,[]]
+
+[goto_stmt->•goto id ;,[]]
+
+[if_stmt->•if ( expr ) stmt,[]]
+
+[if_stmt->•if ( expr ) stmt else stmt,[]]
+
+[label_stmt->•case INTEGER : stmt,[]]
+
+[label_stmt->•id : stmt,[]]
+
+[label_stmt->•defult :,[]]
+
+[logical_and_expr->•logical_and_expr && equality_expr,[]]
+
+[logical_and_expr->•equality_expr,[]]
+
+[logical_or_expr->•logical_or_expr || logical_and_expr,[]]
+
+[logical_or_expr->•logical_and_expr,[]]
+
+[multiplicative_expr->•term,[]]
+
+[multiplicative_expr->•multiplicative_expr / term,[]]
+
+[multiplicative_expr->•multiplicative_expr * term,[]]
+
+[multiplicative_expr->•multiplicative_expr % term,[]]
+
+[postfix_expr->•postfix_expr --,[]]
+
+[postfix_expr->•postfix_expr . name,[]]
+
+[postfix_expr->•postfix_expr ++,[]]
+
+[postfix_expr->•postfix_expr [ expr ],[]]
+
+[postfix_expr->•primary_expr,[]]
+
+[postfix_expr->•postfix_expr -> name,[]]
+
+[postfix_expr->•postfix_expr ( args ),[]]
+
+[postfix_expr->•postfix_expr ( ),[]]
+
+[primary_expr->•id,[]]
+
+[primary_expr->•( expr ),[]]
+
+[primary_expr->•CONSTANT,[]]
+
+[relational_expr->•relational_expr <= shift_expr,[]]
+
+[relational_expr->•shift_expr,[]]
+
+[relational_expr->•relational_expr >= shift_expr,[]]
+
+[relational_expr->•relational_expr < shift_expr,[]]
+
+[relational_expr->•relational_expr > shift_expr,[]]
+
+[return_stmt->•return expr ;,[]]
+
+[return_stmt->•return ;,[]]
+
+[shift_expr->•shift_expr << additive_expr,[]]
+
+[shift_expr->•shift_expr >> additive_expr,[]]
+
+[shift_expr->•additive_expr,[]]
+
+[stmt->•;,[]]
+
+[stmt->•for_stmt,[]]
+
+[stmt->•expr ;,[]]
+
+[stmt->•dowhile_stmt,[]]
+
+[stmt->•return_stmt,[]]
+
+[stmt->•if_stmt,[]]
+
+[stmt->•continue_stmt,[]]
+
+[stmt->•block,[]]
+
+[stmt->•switch_stmt,[]]
+
+[stmt->•break_stmt,[]]
+
+[stmt->•while_stmt,[]]
+
+[stmt->•goto_stmt,[]]
+
+[stmt->•label_stmt,[]]
+
+[storage->•static,[]]
+
+[switch_stmt->•switch ( expr ) { label_stmts },[]]
+
+[term->•unary_expr,[]]
+
+[term->•( type ) unary_expr,[]]
+
+[unary_expr->•unary_operator term,[]]
+
+[unary_expr->•SIZEOF ( type ),[]]
+
+[unary_expr->•SIZEOF unary_expr,[]]
+
+[unary_expr->•postfix_expr,[]]
+
+[unary_expr->•++ unary_expr,[]]
+
+[unary_expr->•-- unary_expr,[]]
+
+[unary_operator->•-,[]]
+
+[unary_operator->•+,[]]
+
+[unary_operator->•*,[]]
+
+[unary_operator->•!,[]]
+
+[unary_operator->•~,[]]
+
+[unary_operator->•&,[]]
+
+[while_stmt->•while ( expr ) stmt,[]]
+
+
+##############</状态224>#############
+
+##############<状态225>#############
+[other_var->comma name initial_expr•,[;, comma]]
+
+--------------------------------------------
+
+##############</状态225>#############
+
+##############<状态226>#############
+[expr_list->expr_list comma expr•,[comma, }]]
+
+--------------------------------------------
+
+##############</状态226>#############
+
+##############<状态228>#############
+[term->( type ) unary_expr•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态228>#############
+
+##############<状态229>#############
+[unary_expr->SIZEOF ( type )•,[comma, ), ?, -=, >=, *=, %=, ;, <<, -, +=, :, ||, /=, /, %, <, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态229>#############
+
+##############<状态231>#############
+[postfix_expr->postfix_expr ( args )•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态231>#############
+
+##############<状态232>#############
+[postfix_expr->postfix_expr [ expr ]•,[++, comma, ), ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, :, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, ], }, +]]
+
+--------------------------------------------
+
+##############</状态232>#############
+
+##############<状态233>#############
+[fun_decl->storage type name ( param_decl ) ;•,[bool, char, static, float, double, int, $, void, extern, union, short, long, id, typedef, const, unsigned, struct, signed]]
+
+--------------------------------------------
+
+##############</状态233>#############
+
+##############<状态234>#############
+[block_componet->stmt•,[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态234>#############
+
+##############<状态237>#############
+[block_componets->block_componets block_componet•,[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态237>#############
+
+##############<状态238>#############
+[stmt->switch_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态238>#############
+
+##############<状态239>#############
+[stmt->label_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态239>#############
+
+##############<状态241>#############
+[stmt->dowhile_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态241>#############
+
+##############<状态244>#############
+[stmt->break_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态244>#############
+
+##############<状态246>#############
+[stmt->for_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态246>#############
+
+##############<状态247>#############
+[block_componet->defvars•,[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态247>#############
+
+##############<状态248>#############
+[stmt->while_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态248>#############
+
+##############<状态250>#############
+[stmt->continue_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态250>#############
+
+##############<状态251>#############
+[stmt->if_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态251>#############
+
+##############<状态253>#############
+[stmt->return_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态253>#############
+
+##############<状态255>#############
+[stmt->;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态255>#############
+
+##############<状态257>#############
+[stmt->goto_stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态257>#############
+
+##############<状态261>#############
+[stmt->block•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态261>#############
+
+##############<状态262>#############
+[block->{ block_componets }•,[bool, ++, {, else, int, $, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, extern, do, continue, !, *, CHARACTOR, STRING, if, long, id, typedef, }, break, return, const, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态262>#############
+
+##############<状态263>#############
+[label_stmt->id •: stmt,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[primary_expr->id•,[++, ?, -=, (, [, >=, ., *=, %=, ;, <<, -, +=, --, ||, /=, /, %, <, ->, *, &&, !=, <=, >, ==, >>, =, +]]
+
+--------------------------------------------
+
+##############</状态263>#############
+
+##############<状态264>#############
+[conditional_expr->logical_or_expr ? expr : conditional_expr•,[;, comma, ), ], }, :]]
+
+--------------------------------------------
+
+##############</状态264>#############
+
+##############<状态265>#############
+[args->args comma expr•,[comma, )]]
+
+--------------------------------------------
+
+##############</状态265>#############
+
+##############<状态268>#############
+[continue_stmt->continue ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态268>#############
+
+##############<状态271>#############
+[return_stmt->return ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态271>#############
+
+##############<状态272>#############
+[break_stmt->break ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态272>#############
+
+##############<状态274>#############
+[for_stmt->for ( •forIniitialer optional_for_expr ; optional_for_exprs ) stmt,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[optional_for_expr-•,[;, comma]]
+
+[storage-•,[bool, char, float, double, int, void, union, short, long, id, unsigned, struct, signed]]
+
+--------------------------------------------
+[CONSTANT->•INTEGER,[]]
+
+[CONSTANT->•FLOAT,[]]
+
+[CONSTANT->•STRING,[]]
+
+[CONSTANT->•CHARACTOR,[]]
+
+[additive_expr->•multiplicative_expr,[]]
+
+[additive_expr->•additive_expr + multiplicative_expr,[]]
+
+[additive_expr->•additive_expr - multiplicative_expr,[]]
+
+[conditional_expr->•logical_or_expr,[]]
+
+[conditional_expr->•logical_or_expr ? expr : conditional_expr,[]]
+
+[defvars->•storage type name initial_expr other_vars ;,[]]
+
+[equality_expr->•equality_expr != relational_expr,[]]
+
+[equality_expr->•relational_expr,[]]
+
+[equality_expr->•equality_expr == relational_expr,[]]
+
+[expr->•term opassign_op expr,[]]
+
+[expr->•conditional_expr,[]]
+
+[expr->•term = expr,[]]
+
+[forIniitialer->•optional_for_exprs ;,[]]
+
+[forIniitialer->•defvars,[]]
+
+[logical_and_expr->•logical_and_expr && equality_expr,[]]
+
+[logical_and_expr->•equality_expr,[]]
+
+[logical_or_expr->•logical_or_expr || logical_and_expr,[]]
+
+[logical_or_expr->•logical_and_expr,[]]
+
+[multiplicative_expr->•term,[]]
+
+[multiplicative_expr->•multiplicative_expr / term,[]]
+
+[multiplicative_expr->•multiplicative_expr * term,[]]
+
+[multiplicative_expr->•multiplicative_expr % term,[]]
+
+[optional_for_expr->•expr,[]]
+
+[optional_for_exprs->•optional_for_exprs comma optional_for_expr,[]]
+
+[optional_for_exprs->•optional_for_expr,[]]
+
+[postfix_expr->•postfix_expr --,[]]
+
+[postfix_expr->•postfix_expr . name,[]]
+
+[postfix_expr->•postfix_expr ++,[]]
+
+[postfix_expr->•postfix_expr [ expr ],[]]
+
+[postfix_expr->•primary_expr,[]]
+
+[postfix_expr->•postfix_expr -> name,[]]
+
+[postfix_expr->•postfix_expr ( args ),[]]
+
+[postfix_expr->•postfix_expr ( ),[]]
+
+[primary_expr->•id,[]]
+
+[primary_expr->•( expr ),[]]
+
+[primary_expr->•CONSTANT,[]]
+
+[relational_expr->•relational_expr <= shift_expr,[]]
+
+[relational_expr->•shift_expr,[]]
+
+[relational_expr->•relational_expr >= shift_expr,[]]
+
+[relational_expr->•relational_expr < shift_expr,[]]
+
+[relational_expr->•relational_expr > shift_expr,[]]
+
+[shift_expr->•shift_expr << additive_expr,[]]
+
+[shift_expr->•shift_expr >> additive_expr,[]]
+
+[shift_expr->•additive_expr,[]]
+
+[storage->•static,[]]
+
+[term->•unary_expr,[]]
+
+[term->•( type ) unary_expr,[]]
+
+[unary_expr->•unary_operator term,[]]
+
+[unary_expr->•SIZEOF ( type ),[]]
+
+[unary_expr->•SIZEOF unary_expr,[]]
+
+[unary_expr->•postfix_expr,[]]
+
+[unary_expr->•++ unary_expr,[]]
+
+[unary_expr->•-- unary_expr,[]]
+
+[unary_operator->•-,[]]
+
+[unary_operator->•+,[]]
+
+[unary_operator->•*,[]]
+
+[unary_operator->•!,[]]
+
+[unary_operator->•~,[]]
+
+[unary_operator->•&,[]]
+
+
+##############</状态274>#############
+
+##############<状态275>#############
+[stmt->expr ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态275>#############
+
+##############<状态277>#############
+[label_stmt->defult :•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态277>#############
+
+##############<状态281>#############
+[defvars->storage type name •initial_expr other_vars ;,[bool, ++, {, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[initial_expr-•,[;, comma]]
+
+--------------------------------------------
+[initial_expr->•= expr,[]]
+
+[initial_expr->•= { expr_list },[]]
+
+
+##############</状态281>#############
+
+##############<状态284>#############
+[return_stmt->return expr ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态284>#############
+
+##############<状态286>#############
+[forIniitialer->defvars•,[++, SIZEOF, ;, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态286>#############
+
+##############<状态287>#############
+[optional_for_exprs->optional_for_expr•,[;, comma, )]]
+
+--------------------------------------------
+
+##############</状态287>#############
+
+##############<状态288>#############
+[optional_for_expr->expr•,[;, comma, )]]
+
+--------------------------------------------
+
+##############</状态288>#############
+
+##############<状态290>#############
+[for_stmt->for ( forIniitialer •optional_for_expr ; optional_for_exprs ) stmt,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[optional_for_expr-•,[;]]
+
+--------------------------------------------
+[CONSTANT->•INTEGER,[]]
+
+[CONSTANT->•FLOAT,[]]
+
+[CONSTANT->•STRING,[]]
+
+[CONSTANT->•CHARACTOR,[]]
+
+[additive_expr->•multiplicative_expr,[]]
+
+[additive_expr->•additive_expr + multiplicative_expr,[]]
+
+[additive_expr->•additive_expr - multiplicative_expr,[]]
+
+[conditional_expr->•logical_or_expr,[]]
+
+[conditional_expr->•logical_or_expr ? expr : conditional_expr,[]]
+
+[equality_expr->•equality_expr != relational_expr,[]]
+
+[equality_expr->•relational_expr,[]]
+
+[equality_expr->•equality_expr == relational_expr,[]]
+
+[expr->•term opassign_op expr,[]]
+
+[expr->•conditional_expr,[]]
+
+[expr->•term = expr,[]]
+
+[logical_and_expr->•logical_and_expr && equality_expr,[]]
+
+[logical_and_expr->•equality_expr,[]]
+
+[logical_or_expr->•logical_or_expr || logical_and_expr,[]]
+
+[logical_or_expr->•logical_and_expr,[]]
+
+[multiplicative_expr->•term,[]]
+
+[multiplicative_expr->•multiplicative_expr / term,[]]
+
+[multiplicative_expr->•multiplicative_expr * term,[]]
+
+[multiplicative_expr->•multiplicative_expr % term,[]]
+
+[optional_for_expr->•expr,[]]
+
+[postfix_expr->•postfix_expr --,[]]
+
+[postfix_expr->•postfix_expr . name,[]]
+
+[postfix_expr->•postfix_expr ++,[]]
+
+[postfix_expr->•postfix_expr [ expr ],[]]
+
+[postfix_expr->•primary_expr,[]]
+
+[postfix_expr->•postfix_expr -> name,[]]
+
+[postfix_expr->•postfix_expr ( args ),[]]
+
+[postfix_expr->•postfix_expr ( ),[]]
+
+[primary_expr->•id,[]]
+
+[primary_expr->•( expr ),[]]
+
+[primary_expr->•CONSTANT,[]]
+
+[relational_expr->•relational_expr <= shift_expr,[]]
+
+[relational_expr->•shift_expr,[]]
+
+[relational_expr->•relational_expr >= shift_expr,[]]
+
+[relational_expr->•relational_expr < shift_expr,[]]
+
+[relational_expr->•relational_expr > shift_expr,[]]
+
+[shift_expr->•shift_expr << additive_expr,[]]
+
+[shift_expr->•shift_expr >> additive_expr,[]]
+
+[shift_expr->•additive_expr,[]]
+
+[term->•unary_expr,[]]
+
+[term->•( type ) unary_expr,[]]
+
+[unary_expr->•unary_operator term,[]]
+
+[unary_expr->•SIZEOF ( type ),[]]
+
+[unary_expr->•SIZEOF unary_expr,[]]
+
+[unary_expr->•postfix_expr,[]]
+
+[unary_expr->•++ unary_expr,[]]
+
+[unary_expr->•-- unary_expr,[]]
+
+[unary_operator->•-,[]]
+
+[unary_operator->•+,[]]
+
+[unary_operator->•*,[]]
+
+[unary_operator->•!,[]]
+
+[unary_operator->•~,[]]
+
+[unary_operator->•&,[]]
+
+
+##############</状态290>#############
+
+##############<状态291>#############
+[goto_stmt->goto id ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态291>#############
+
+##############<状态294>#############
+[label_stmt->id : stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态294>#############
+
+##############<状态298>#############
+[forIniitialer->optional_for_exprs ;•,[++, SIZEOF, ;, -, ~, --, (, !, *, CHARACTOR, FLOAT, STRING, id, INTEGER, +, &]]
+
+--------------------------------------------
+
+##############</状态298>#############
+
+##############<状态299>#############
+[optional_for_expr-•,[;, comma, )]]
+
+[optional_for_exprs->optional_for_exprs comma •optional_for_expr,[;, comma, )]]
+
+--------------------------------------------
+[CONSTANT->•INTEGER,[]]
+
+[CONSTANT->•FLOAT,[]]
+
+[CONSTANT->•STRING,[]]
+
+[CONSTANT->•CHARACTOR,[]]
+
+[additive_expr->•multiplicative_expr,[]]
+
+[additive_expr->•additive_expr + multiplicative_expr,[]]
+
+[additive_expr->•additive_expr - multiplicative_expr,[]]
+
+[conditional_expr->•logical_or_expr,[]]
+
+[conditional_expr->•logical_or_expr ? expr : conditional_expr,[]]
+
+[equality_expr->•equality_expr != relational_expr,[]]
+
+[equality_expr->•relational_expr,[]]
+
+[equality_expr->•equality_expr == relational_expr,[]]
+
+[expr->•term opassign_op expr,[]]
+
+[expr->•conditional_expr,[]]
+
+[expr->•term = expr,[]]
+
+[logical_and_expr->•logical_and_expr && equality_expr,[]]
+
+[logical_and_expr->•equality_expr,[]]
+
+[logical_or_expr->•logical_or_expr || logical_and_expr,[]]
+
+[logical_or_expr->•logical_and_expr,[]]
+
+[multiplicative_expr->•term,[]]
+
+[multiplicative_expr->•multiplicative_expr / term,[]]
+
+[multiplicative_expr->•multiplicative_expr * term,[]]
+
+[multiplicative_expr->•multiplicative_expr % term,[]]
+
+[optional_for_expr->•expr,[]]
+
+[postfix_expr->•postfix_expr --,[]]
+
+[postfix_expr->•postfix_expr . name,[]]
+
+[postfix_expr->•postfix_expr ++,[]]
+
+[postfix_expr->•postfix_expr [ expr ],[]]
+
+[postfix_expr->•primary_expr,[]]
+
+[postfix_expr->•postfix_expr -> name,[]]
+
+[postfix_expr->•postfix_expr ( args ),[]]
+
+[postfix_expr->•postfix_expr ( ),[]]
+
+[primary_expr->•id,[]]
+
+[primary_expr->•( expr ),[]]
+
+[primary_expr->•CONSTANT,[]]
+
+[relational_expr->•relational_expr <= shift_expr,[]]
+
+[relational_expr->•shift_expr,[]]
+
+[relational_expr->•relational_expr >= shift_expr,[]]
+
+[relational_expr->•relational_expr < shift_expr,[]]
+
+[relational_expr->•relational_expr > shift_expr,[]]
+
+[shift_expr->•shift_expr << additive_expr,[]]
+
+[shift_expr->•shift_expr >> additive_expr,[]]
+
+[shift_expr->•additive_expr,[]]
+
+[term->•unary_expr,[]]
+
+[term->•( type ) unary_expr,[]]
+
+[unary_expr->•unary_operator term,[]]
+
+[unary_expr->•SIZEOF ( type ),[]]
+
+[unary_expr->•SIZEOF unary_expr,[]]
+
+[unary_expr->•postfix_expr,[]]
+
+[unary_expr->•++ unary_expr,[]]
+
+[unary_expr->•-- unary_expr,[]]
+
+[unary_operator->•-,[]]
+
+[unary_operator->•+,[]]
+
+[unary_operator->•*,[]]
+
+[unary_operator->•!,[]]
+
+[unary_operator->•~,[]]
+
+[unary_operator->•&,[]]
+
+
+##############</状态299>#############
+
+##############<状态301>#############
+[label_stmt->case INTEGER : stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态301>#############
+
+##############<状态303>#############
+[while_stmt->while ( expr ) stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态303>#############
+
+##############<状态304>#############
+[if_stmt->if ( expr ) stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[if_stmt->if ( expr ) stmt •else stmt,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态304>#############
+
+##############<状态306>#############
+[optional_for_exprs->optional_for_exprs comma optional_for_expr•,[;, comma, )]]
+
+--------------------------------------------
+
+##############</状态306>#############
+
+##############<状态307>#############
+[for_stmt->for ( forIniitialer optional_for_expr ; •optional_for_exprs ) stmt,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+[optional_for_expr-•,[comma, )]]
+
+--------------------------------------------
+[CONSTANT->•INTEGER,[]]
+
+[CONSTANT->•FLOAT,[]]
+
+[CONSTANT->•STRING,[]]
+
+[CONSTANT->•CHARACTOR,[]]
+
+[additive_expr->•multiplicative_expr,[]]
+
+[additive_expr->•additive_expr + multiplicative_expr,[]]
+
+[additive_expr->•additive_expr - multiplicative_expr,[]]
+
+[conditional_expr->•logical_or_expr,[]]
+
+[conditional_expr->•logical_or_expr ? expr : conditional_expr,[]]
+
+[equality_expr->•equality_expr != relational_expr,[]]
+
+[equality_expr->•relational_expr,[]]
+
+[equality_expr->•equality_expr == relational_expr,[]]
+
+[expr->•term opassign_op expr,[]]
+
+[expr->•conditional_expr,[]]
+
+[expr->•term = expr,[]]
+
+[logical_and_expr->•logical_and_expr && equality_expr,[]]
+
+[logical_and_expr->•equality_expr,[]]
+
+[logical_or_expr->•logical_or_expr || logical_and_expr,[]]
+
+[logical_or_expr->•logical_and_expr,[]]
+
+[multiplicative_expr->•term,[]]
+
+[multiplicative_expr->•multiplicative_expr / term,[]]
+
+[multiplicative_expr->•multiplicative_expr * term,[]]
+
+[multiplicative_expr->•multiplicative_expr % term,[]]
+
+[optional_for_expr->•expr,[]]
+
+[optional_for_exprs->•optional_for_exprs comma optional_for_expr,[]]
+
+[optional_for_exprs->•optional_for_expr,[]]
+
+[postfix_expr->•postfix_expr --,[]]
+
+[postfix_expr->•postfix_expr . name,[]]
+
+[postfix_expr->•postfix_expr ++,[]]
+
+[postfix_expr->•postfix_expr [ expr ],[]]
+
+[postfix_expr->•primary_expr,[]]
+
+[postfix_expr->•postfix_expr -> name,[]]
+
+[postfix_expr->•postfix_expr ( args ),[]]
+
+[postfix_expr->•postfix_expr ( ),[]]
+
+[primary_expr->•id,[]]
+
+[primary_expr->•( expr ),[]]
+
+[primary_expr->•CONSTANT,[]]
+
+[relational_expr->•relational_expr <= shift_expr,[]]
+
+[relational_expr->•shift_expr,[]]
+
+[relational_expr->•relational_expr >= shift_expr,[]]
+
+[relational_expr->•relational_expr < shift_expr,[]]
+
+[relational_expr->•relational_expr > shift_expr,[]]
+
+[shift_expr->•shift_expr << additive_expr,[]]
+
+[shift_expr->•shift_expr >> additive_expr,[]]
+
+[shift_expr->•additive_expr,[]]
+
+[term->•unary_expr,[]]
+
+[term->•( type ) unary_expr,[]]
+
+[unary_expr->•unary_operator term,[]]
+
+[unary_expr->•SIZEOF ( type ),[]]
+
+[unary_expr->•SIZEOF unary_expr,[]]
+
+[unary_expr->•postfix_expr,[]]
+
+[unary_expr->•++ unary_expr,[]]
+
+[unary_expr->•-- unary_expr,[]]
+
+[unary_operator->•-,[]]
+
+[unary_operator->•+,[]]
+
+[unary_operator->•*,[]]
+
+[unary_operator->•!,[]]
+
+[unary_operator->•~,[]]
+
+[unary_operator->•&,[]]
+
+
+##############</状态307>#############
+
+##############<状态312>#############
+[label_stmts->label_stmt•,[}, id, defult, case]]
+
+--------------------------------------------
+
+##############</状态312>#############
+
+##############<状态315>#############
+[if_stmt->if ( expr ) stmt else stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态315>#############
+
+##############<状态316>#############
+[switch_stmt->switch ( expr ) { label_stmts }•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态316>#############
+
+##############<状态317>#############
+[label_stmts->label_stmts label_stmt•,[}, id, defult, case]]
+
+--------------------------------------------
+
+##############</状态317>#############
+
+##############<状态319>#############
+[dowhile_stmt->do stmt while ( expr ) ;•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态319>#############
+
+##############<状态320>#############
+[for_stmt->for ( forIniitialer optional_for_expr ; optional_for_exprs ) stmt•,[bool, ++, {, else, int, while, (, union, switch, short, FLOAT, signed, &, for, SIZEOF, char, ;, goto, static, float, double, -, ~, void, defult, --, case, do, continue, !, *, CHARACTOR, STRING, if, }, long, id, break, return, INTEGER, unsigned, struct, +]]
+
+--------------------------------------------
+
+##############</状态320>#############

@@ -1,0 +1,12 @@
+programe	import_staments	import_stament	NAME	name	top_decls	
+top_decl	defvars	other_vars	other_var	initial_expr	storage	
+defun	params	fixed_params	param	kwargs	block	
+block_componets	defstruct	defunion	member_list	slots	TYPEDEF	
+type	type_postfix	param_typerefs	fixed_param_ref	opassign_op	primary_type	
+stmts	stmt	if_stmt	while_stmt	dowhile_stmt	for_stmt	
+optional_for_expr	break_stmt	goto_stmt	continue_stmt	return_stmt	label_stmt	
+switch_stmt	label_stmts	expr	conditional_expr	logical_or_expr	logical_and_expr	
+equality_expr	relational_expr	shift_expr	additive_expr	multiplicative_expr	term	
+unary_expr	unary_operator	postfix_expr	primary_expr	CONSTANT	defconst	
+args	int_type	block_componet	forIniitialer	optional_for_exprs	expr_list	
+typeName	fun_decl	param_decl	var_decl	other_var_decls	other_var_decl	
