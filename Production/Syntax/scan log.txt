@@ -1,0 +1,59 @@
+
+-------第1行开始:// stdarg.h
+本行tokens:
+
+
+-------第2行开始:
+本行tokens:
+
+
+-------第3行开始:typedef unsigned long va_arg_t;
+id=typedef
+id=unsigned
+id=long
+id=va_arg_t
+本行tokens:
+
+typedef	#0	(3,0)
+unsigned	#0	(3,8)
+long	#0	(3,17)
+id	#va_arg_t	(3,22)
+;	#0	(3,30)
+
+-------第4行开始:typedef va_arg_t* va_list;
+id=typedef
+id=va_arg_t
+****解析到运算符：*
+id=va_list
+本行tokens:
+
+*	#0	(4,16)
+
+-------第5行开始:
+本行tokens:
+
+
+-------第6行开始:extern va_list va_init(void* arg);
+id=extern
+id=va_list
+id=va_init
+id=void
+****解析到运算符：*
+id=arg
+本行tokens:
+
+extern	#0	(6,0)
+(	#0	(6,22)
+void	#0	(6,23)
+)	#0	(6,32)
+
+-------第7行开始:extern void* va_next(va_list* ap);
+id=extern
+id=void
+****解析到运算符：*
+id=va_next
+id=va_list
+****解析到运算符：*
+id=ap
+本行tokens:
+

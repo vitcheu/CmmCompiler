@@ -1,0 +1,60 @@
+
+--------------<Loading:.\resource\import\stdio.h>--------------------
+
+--------------<Loading:.\resource\import\stddef.h>--------------------
+#Added Items:
+DefConst@NULL#void* (3,0)
+Defined type:#size_t
+Defined type:#ptrdiff_t
+--------------<Loaded:.\resource\import\stddef.h!>--------------------
+
+--------------<Loading:.\resource\import\stdarg.h>--------------------
+#Added Items:
+Defined type:#va_arg_t
+Defined type:#va_list
+@va_init
+@va_next
+--------------<Loaded:.\resource\import\stdarg.h!>--------------------
+#Added Items:
+Defined type:#FILE
+$stdin
+$stdout
+$stderr
+@fopen
+@fdopen
+@freopen
+@fclose
+@getchar
+@getc
+@fgetc
+@ungetc
+@gets
+@fgets
+@putc
+@putchar
+@fputc
+@puts
+@fputs
+@printf
+@fprintf
+@sprintf
+@snprintf
+@fread
+@fwrite
+@feof
+@ferror
+@fileno
+@clearerr
+@perror
+@vprintf
+@vfprintf
+@vsprintf
+@vsnprintf
+DefConst@NULL#void* (3,0)
+Defined type:#size_t
+Defined type:#ptrdiff_t
+Defined type:#va_arg_t
+Defined type:#va_list
+@va_init
+@va_next
+--------------<Loaded:.\resource\import\stdio.h!>--------------------

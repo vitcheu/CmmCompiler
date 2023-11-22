@@ -1,0 +1,1853 @@
+
+
+
+-------------------------全局活跃性分析-------------------------
+
+Turn 0
+
+B2
+Exit:[]
+Use:  	[]                  
+
+B3
+Exit:[]
+Use:  	[]                  
+
+B4
+Exit:[]
+Use:  	[$a, $i, $j]        
+
+B5
+Exit:[$a, $j, $i]
+Use:  	[$a, $i, $j]        
+
+B6
+Exit:[]
+Use:  	[$a, $i]            
+
+B7
+Exit:[$a, $i]
+Use:  	[$a, $i, $x]        
+
+B8
+Exit:[]
+Use:  	[$i]                
+
+B9
+Exit:[]
+Use:  	[$i]                
+
+B10
+Exit:[]
+Use:  	[$a, $i]            
+
+(ENTER)B0
+Exit:[]
+Use:  	[]                  
+
+(EXIT)B1
+Exit:[]
+Use:  	[]                  
+
+B13
+Exit:[]
+Use:  	[]                  
+
+Turn 1
+
+B2
+Exit:[$i]
+Use:  	[]                  
+
+B3
+Exit:[$a, $j, $i]
+Use:  	[$a, $i]            
+
+B4
+Exit:[$a, $j, $i]
+Use:  	[$a, $i, $j]        
+
+B5
+Exit:[$a, $j, $i]
+Use:  	[$a, $i, $j]        
+
+B6
+Exit:[$a, $i, $x]
+Use:  	[$a, $i, $x]        
+
+B7
+Exit:[$a, $i, $x]
+Use:  	[$a, $i, $x]        
+
+B8
+Exit:[$i]
+Use:  	[$i]                
+
+B9
+Exit:[$a, $i]
+Use:  	[$a, $i]            
+
+B10
+Exit:[]
+Use:  	[$a, $i]            
+
+(ENTER)B0
+Exit:[]
+Use:  	[]                  
+
+(EXIT)B1
+Exit:[]
+Use:  	[]                  
+
+B13
+Exit:[]
+Use:  	[]                  
+
+Turn 2
+
+B2
+Exit:[$a, $i]
+Use:  	[$a]                
+
+B3
+Exit:[$a, $j, $i]
+Use:  	[$a, $i]            
+
+B4
+Exit:[$a, $j, $i]
+Use:  	[$a, $i, $j]        
+
+B5
+Exit:[$a, $j, $i, $x]
+Use:  	[$a, $i, $j, $x]    
+
+B6
+Exit:[$a, $i, $x]
+Use:  	[$a, $i, $x]        
+
+B7
+Exit:[$a, $i, $x]
+Use:  	[$a, $i, $x]        
+
+B8
+Exit:[$a, $i]
+Use:  	[$a, $i]            
+
+B9
+Exit:[$a, $i]
+Use:  	[$a, $i]            
+
+B10
+Exit:[]
+Use:  	[$a, $i]            
+
+(ENTER)B0
+Exit:[$a]
+Use:  	[$a]                
+
+(EXIT)B1
+Exit:[]
+Use:  	[]                  
+
+B13
+Exit:[]
+Use:  	[]                  
+
+Turn 3
+
+B2
+Exit:[$a, $i]
+Use:  	[$a]                
+
+B3
+Exit:[$a, $j, $i, $x]
+Use:  	[$a, $i]            
+
+B4
+Exit:[$a, $x, $j, $i]
+Use:  	[$a, $i, $j]        
+
+B5
+Exit:[$a, $j, $i, $x]
+Use:  	[$a, $i, $j, $x]    
+
+B6
+Exit:[$a, $i, $x]
+Use:  	[$a, $i, $x]        
+
+B7
+Exit:[$a, $i, $x]
+Use:  	[$a, $i, $x]        
+
+B8
+Exit:[$a, $i]
+Use:  	[$a, $i]            
+
+B9
+Exit:[$a, $i]
+Use:  	[$a, $i]            
+
+B10
+Exit:[]
+Use:  	[$a, $i]            
+
+(ENTER)B0
+Exit:[$a]
+Use:  	[$a]                
+
+(EXIT)B1
+Exit:[]
+Use:  	[]                  
+
+B13
+Exit:[]
+Use:  	[]                  
+
+
+
+--------------------------<B2>------------------------------
+Entry 	[$a]                
+Exit  	[$a, $i]            
+
+     I0  :	 enter asmMain	@@3
+
+     I1  :	 $i = 0	@@5
+#create: $0([0])@INI{none}<5>
+$0([0, $i])@INI{none}<5>
+
+     I2  :	 $i = 0	@@6
+$0([0, $i])@INI{none}<5>
+
+     I3  :	 jump L4	@@6
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$0([0, $i])@INI{none}<5>,isRoot?true
+
+#add $0([0, $i])@INI{none}<5>
+
+
+------------------------
+重构根节点:$0([0, $i])@INI{none}<5>
+     I52 :	 $i = 0
+重构根节点 $0([0, $i])@INI{none}<5> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+     I0  :	 enter asmMain                       	@3        
+
+     I52 :	 $i = 0                              	@6        
+     I3  :	 jump L4                             	@6        
+指令数:3
+
+--------------------------</B2>-----------------------------
+
+
+
+--------------------------<B3>------------------------------
+Entry 	[$a, $i]            
+Exit  	[$a, $j, $i, $x]    
+
+(L3) I4  :	 $x = 1	@@7
+#create: $1([1])@INI{none}<7>
+$1([1, $x])@INI{none}<7>
+
+     I5  :	 $j = 0	@@8
+#create: $2([0])@INI{none}<8>
+$2([0, $j])@INI{none}<8>
+
+     I6  :	 jump L9	@@8
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$1([1, $x])@INI{none}<7>,isRoot?true
+
+#add $1([1, $x])@INI{none}<7>
+
+visiting :$2([0, $j])@INI{none}<8>,isRoot?true
+
+#add $2([0, $j])@INI{none}<8>
+
+
+------------------------
+重构根节点:$1([1, $x])@INI{none}<7>
+(L3) I53 :	 $x = 1
+重构根节点 $1([1, $x])@INI{none}<7> 结束
+------------------------
+
+
+------------------------
+重构根节点:$2([0, $j])@INI{none}<8>
+     I54 :	 $j = 0
+重构根节点 $2([0, $j])@INI{none}<8> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L3) I53 :	 $x = 1                              	@7        
+
+     I54 :	 $j = 0                              	@8        
+     I6  :	 jump L9                             	@8        
+指令数:3
+
+--------------------------</B3>-----------------------------
+
+
+
+--------------------------<B4>------------------------------
+Entry 	[$a, $j, $i]        
+Exit  	[$a, $j, $i, $x]    
+
+(L8) I7  :	 t0 = $i * 40	@@9
+#create: $3([$i])@INI{none}<9>
+#create: $4([40])@INI{none}<9>
+$buildNode:$5([t0])@mul{^INI[$i],^INI[40]}<9>
+
+     I8  :	 t1 = $j * 4	@@9
+#create: $6([$j])@INI{none}<9>
+#create: $7([4])@INI{none}<9>
+$buildNode:$8([t1])@mul{^INI[$j],^INI[4]}<9>
+
+     I9  :	 t2 = t0 + t1	@@9
+$buildNode:$9([t2])@add{^mul[t0],^mul[t1]}<9>
+
+     I10 :	 t3 = offset $a[t2]	@@9
+#create: $10([$a])@INI{none}<9>
+$buildNode:$11([t3])@Array_Assigned{^INI[$a],^add[t2]}<9>
+creating new entry:$a
+#removeArray_ref,dependents=[$a]
+#移除依赖于$a的节点:
+
+     I11 :	 t3 = 0	@@9
+#create: $12([0])@INI{none}<9>
+
+     I12 :	 t4 = $i * 40	@@10
+$useNode:$5([t0])@mul{^INI[$i],^INI[40]}<9>
+
+     I13 :	 t5 = $j * 4	@@10
+$useNode:$8([t1])@mul{^INI[$j],^INI[4]}<9>
+
+     I14 :	 t6 = t4 + t5	@@10
+$useNode:$9([t2])@add{^mul[t0, t4],^mul[t1, t5]}<9>
+
+     I15 :	 t7 = $a[t6]	@@10
+$useNode:$12([0])@INI{none}<9>
+#addArray_ref,array:$a,newNode:$12([0, t7])@INI{none}<9>
+#依赖于$a的结点:
+$11([t3])@Array_Assigned{^INI[$a],^add[t2, t6],^INI[0, t7]}<9>
+$12([0, t7])@INI{none}<9>
+
+$12([0, t7])@INI{none}<9>所依赖的值: [$a]
+
+
+     I16 :	 $x = t7	@@10
+$12([0, t7, $x])@INI{none}<9>
+
+     I17 :	 t8 = $j + 1	@@8
+#create: $17([1])@INI{none}<8>
+$buildNode:$18([t8])@add{^INI[$j],^INI[1]}<8>
+
+     I18 :	 $j = t8	@@8
+$18([t8, $j])@add{^INI[$j],^INI[1]}<8>
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$3([$i])@INI{none}<9>,isRoot?false
+
+visiting :$4([40])@INI{none}<9>,isRoot?false
+
+visiting :$5([t0, t4])@mul{^INI[$i],^INI[40]}<9>,isRoot?false
+
+visiting :$6([$j])@INI{none}<9>,isRoot?false
+
+visiting :$7([4])@INI{none}<9>,isRoot?false
+
+visiting :$8([t1, t5])@mul{^INI[$j],^INI[4]}<9>,isRoot?false
+
+visiting :$9([t2, t6])@add{^mul[t0, t4],^mul[t1, t5]}<9>,isRoot?false
+
+visiting :$10([$a])@INI{none}<9>,isRoot?false
+
+visiting :$12([0, t7, $x])@INI{none}<9>,isRoot?false
+
+visiting :$11([t3])@Array_Assigned{^INI[$a],^add[t2, t6],^INI[0, t7, $x]}<9>,isRoot?true
+
+#add $11([t3])@Array_Assigned{^INI[$a],^add[t2, t6],^INI[0, t7, $x]}<9>
+
+visiting :$17([1])@INI{none}<8>,isRoot?false
+
+visiting :$18([t8, $j])@add{^INI[$j],^INI[1]}<8>,isRoot?true
+
+#add $18([t8, $j])@add{^INI[$j],^INI[1]}<8>
+
+***Turn:2
+visiting :$3([$i])@INI{none}<9>,isRoot?false
+
+visiting :$4([40])@INI{none}<9>,isRoot?false
+
+visiting :$5([t0, t4])@mul{^INI[$i],^INI[40]}<9>,isRoot?false
+
+visiting :$6([$j])@INI{none}<9>,isRoot?false
+
+visiting :$7([4])@INI{none}<9>,isRoot?false
+
+visiting :$8([t1, t5])@mul{^INI[$j],^INI[4]}<9>,isRoot?false
+
+visiting :$9([t2, t6])@add{^mul[t0, t4],^mul[t1, t5]}<9>,isRoot?false
+
+visiting :$10([$a])@INI{none}<9>,isRoot?false
+
+visiting :$12([0, t7, $x])@INI{none}<9>,isRoot?false
+
+visiting :$17([1])@INI{none}<8>,isRoot?false
+
+
+------------------------
+重构根节点:$11([t3])@Array_Assigned{^INI[$a],^add[t2, t6],^INI[0, t7, $x]}<9>
+
+------------------------
+重构根节点:$10([$a])@INI{none}<9>
+重构根节点 $10([$a])@INI{none}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$9([t2, t6])@add{^mul[t0, t4],^mul[t1, t5]}<9>
+
+------------------------
+重构根节点:$5([t0, t4])@mul{^INI[$i],^INI[40]}<9>
+
+------------------------
+重构根节点:$3([$i])@INI{none}<9>
+重构根节点 $3([$i])@INI{none}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$4([40])@INI{none}<9>
+重构根节点 $4([40])@INI{none}<9> 结束
+------------------------
+
+(L8) I55 :	 t0 = $i * 40
+重构根节点 $5([t0, t4])@mul{^INI[$i],^INI[40]}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$8([t1, t5])@mul{^INI[$j],^INI[4]}<9>
+
+------------------------
+重构根节点:$6([$j])@INI{none}<9>
+重构根节点 $6([$j])@INI{none}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$7([4])@INI{none}<9>
+重构根节点 $7([4])@INI{none}<9> 结束
+------------------------
+
+     I56 :	 t1 = $j * 4
+重构根节点 $8([t1, t5])@mul{^INI[$j],^INI[4]}<9> 结束
+------------------------
+
+     I57 :	 t2 = t0 + t1
+重构根节点 $9([t2, t6])@add{^mul[t0, t4],^mul[t1, t5]}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$12([0, t7, $x])@INI{none}<9>
+     I58 :	 t7 = 0
+     I59 :	 $x = 0
+重构根节点 $12([0, t7, $x])@INI{none}<9> 结束
+------------------------
+
+     I60 :	 t3 = offset $a[t2]
+     I61 :	 t3 = 0
+重构根节点 $11([t3])@Array_Assigned{^INI[$a],^add[t2, t6],^INI[0, t7, $x]}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$18([t8, $j])@add{^INI[$j],^INI[1]}<8>
+
+------------------------
+重构根节点:$6([$j])@INI{none}<9>
+重构根节点 $6([$j])@INI{none}<9> 结束
+------------------------
+
+
+------------------------
+重构根节点:$17([1])@INI{none}<8>
+重构根节点 $17([1])@INI{none}<8> 结束
+------------------------
+
+     I62 :	 t8 = $j + 1
+     I63 :	 $j = t8
+重构根节点 $18([t8, $j])@add{^INI[$j],^INI[1]}<8> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L8) I55 :	 t0 = $i * 40                        	@9        
+     I56 :	 t1 = $j * 4                         	@9        
+     I57 :	 t2 = t0 + t1                        	@9        
+     I60 :	 t3 = offset $a[t2]                  	@9        
+     I61 :	 t3 = 0                              	@9        
+
+     I58 :	 t7 = 0                              	@10       
+     I59 :	 $x = 0                              	@10       
+
+     I62 :	 t8 = $j + 1                         	@8        
+     I63 :	 $j = t8                             	@8        
+指令数:9
+
+--------------------------</B4>-----------------------------
+
+
+
+--------------------------<B5>------------------------------
+Entry 	[$a, $j, $i, $x]    
+Exit  	[$a, $j, $i, $x]    
+
+(L9) I19 :	 if_jump $j < $i   L8	@@8
+#create: $19([$j])@INI{none}<8>
+#create: $20([$i])@INI{none}<8>
+$buildNode:$21([L8])@if_jump{^INI[$j],^INI[$i]}<8>
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$19([$j])@INI{none}<8>,isRoot?false
+
+visiting :$20([$i])@INI{none}<8>,isRoot?false
+
+visiting :$21([L8])@if_jump{^INI[$j],^INI[$i]}<8>,isRoot?true
+
+#add $21([L8])@if_jump{^INI[$j],^INI[$i]}<8>
+
+***Turn:2
+visiting :$19([$j])@INI{none}<8>,isRoot?false
+
+visiting :$20([$i])@INI{none}<8>,isRoot?false
+
+
+------------------------
+重构根节点:$21([L8])@if_jump{^INI[$j],^INI[$i]}<8>
+
+------------------------
+重构根节点:$19([$j])@INI{none}<8>
+重构根节点 $19([$j])@INI{none}<8> 结束
+------------------------
+
+
+------------------------
+重构根节点:$20([$i])@INI{none}<8>
+重构根节点 $20([$i])@INI{none}<8> 结束
+------------------------
+
+(L9) I64 :	 if_jump $j < $i   L8
+重构根节点 $21([L8])@if_jump{^INI[$j],^INI[$i]}<8> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L9) I64 :	 if_jump $j < $i   L8                	@8        
+指令数:1
+
+--------------------------</B5>-----------------------------
+
+
+
+--------------------------<B6>------------------------------
+Entry 	[$a, $i, $x]        
+Exit  	[$a, $i, $x]        
+
+(L7) I20 :	 t9 = $i * 4	@@14
+#create: $22([$i])@INI{none}<14>
+#create: $23([4])@INI{none}<14>
+$buildNode:$24([t9])@mul{^INI[$i],^INI[4]}<14>
+
+     I21 :	 t10 = 0 + t9	@@14
+#create: $25([0])@INI{none}<14>
+$useNode:$24([t9])@mul{^INI[$i],^INI[4]}<14>
+
+     I22 :	 t11 = $a[t10]	@@14
+#create: $26([$a])@INI{none}<14>
+$buildNode:$27([t11])@Array_Assigning{^INI[$a],^mul[t9, t10]}<14>
+creating new entry:$a
+
+     I23 :	 if_jump t11 > 10   L13	@@14
+#create: $28([10])@INI{none}<14>
+$buildNode:$29([L13])@if_jump{^Array_Assigning[t11],^INI[10]}<14>
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$22([$i])@INI{none}<14>,isRoot?false
+
+visiting :$23([4])@INI{none}<14>,isRoot?false
+
+visiting :$24([t9, t10])@mul{^INI[$i],^INI[4]}<14>,isRoot?false
+
+visiting :$25([0])@INI{none}<14>,isRoot?true
+
+visiting :$26([$a])@INI{none}<14>,isRoot?false
+
+visiting :$27([t11])@Array_Assigning{^INI[$a],^mul[t9, t10]}<14>,isRoot?false
+
+visiting :$28([10])@INI{none}<14>,isRoot?false
+
+visiting :$29([L13])@if_jump{^Array_Assigning[t11],^INI[10]}<14>,isRoot?true
+
+#add $29([L13])@if_jump{^Array_Assigning[t11],^INI[10]}<14>
+
+***Turn:2
+visiting :$22([$i])@INI{none}<14>,isRoot?false
+
+visiting :$23([4])@INI{none}<14>,isRoot?false
+
+visiting :$24([t9, t10])@mul{^INI[$i],^INI[4]}<14>,isRoot?false
+
+visiting :$26([$a])@INI{none}<14>,isRoot?false
+
+visiting :$27([t11])@Array_Assigning{^INI[$a],^mul[t9, t10]}<14>,isRoot?false
+
+visiting :$28([10])@INI{none}<14>,isRoot?false
+
+
+------------------------
+重构根节点:$29([L13])@if_jump{^Array_Assigning[t11],^INI[10]}<14>
+
+------------------------
+重构根节点:$27([t11])@Array_Assigning{^INI[$a],^mul[t9, t10]}<14>
+
+------------------------
+重构根节点:$26([$a])@INI{none}<14>
+重构根节点 $26([$a])@INI{none}<14> 结束
+------------------------
+
+
+------------------------
+重构根节点:$24([t9, t10])@mul{^INI[$i],^INI[4]}<14>
+
+------------------------
+重构根节点:$22([$i])@INI{none}<14>
+重构根节点 $22([$i])@INI{none}<14> 结束
+------------------------
+
+
+------------------------
+重构根节点:$23([4])@INI{none}<14>
+重构根节点 $23([4])@INI{none}<14> 结束
+------------------------
+
+(L7) I65 :	 t9 = $i * 4
+重构根节点 $24([t9, t10])@mul{^INI[$i],^INI[4]}<14> 结束
+------------------------
+
+     I66 :	 t11 = $a[t9]
+重构根节点 $27([t11])@Array_Assigning{^INI[$a],^mul[t9, t10]}<14> 结束
+------------------------
+
+
+------------------------
+重构根节点:$28([10])@INI{none}<14>
+重构根节点 $28([10])@INI{none}<14> 结束
+------------------------
+
+     I67 :	 if_jump t11 > 10   L13
+重构根节点 $29([L13])@if_jump{^Array_Assigning[t11],^INI[10]}<14> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L7) I65 :	 t9 = $i * 4                         	@14       
+     I66 :	 t11 = $a[t9]                        	@14       
+     I67 :	 if_jump t11 > 10   L13              	@14       
+指令数:3
+
+--------------------------</B6>-----------------------------
+
+
+
+--------------------------<B7>------------------------------
+Entry 	[$a, $i, $x]        
+Exit  	[$a, $i, $x]        
+
+(L14) I25 :	 t12 = $x + 1	@@16
+#create: $30([$x])@INI{none}<16>
+#create: $31([1])@INI{none}<16>
+$buildNode:$32([t12])@add{^INI[$x],^INI[1]}<16>
+
+     I26 :	 $x = t12	@@16
+$32([t12, $x])@add{^INI[$x],^INI[1]}<16>
+
+     I27 :	 t13 = $i + 1	@@17
+#create: $33([$i])@INI{none}<17>
+$buildNode:$34([t13])@add{^INI[$i],^INI[1]}<17>
+
+     I28 :	 $i = t13	@@17
+$34([t13, $i])@add{^INI[$i],^INI[1]}<17>
+
+     I29 :	 param "hello\n"	@@18
+#create: $35(["hello\n"])@INI{none}<18>
+$buildNode:$36([])@param{^INI["hello\n"]}<>
+
+     I30 :	 t14 = call @printf	@@18
+#$killAllNodes
+
+     I31 :	 param $a	@@19
+#create: $37([$a])@INI{none}<19>
+$buildNode:$38([])@param{^INI[$a]}<>
+creating new entry:$a
+
+     I32 :	 param $x	@@19
+#create: $39([$x])@INI{none}<19>
+$buildNode:$40([])@param{^INI[$x]}<>
+
+     I33 :	 param $i	@@19
+#create: $41([$i])@INI{none}<19>
+$buildNode:$42([])@param{^INI[$i]}<>
+
+     I34 :	 param "i=%d,x%d\n,a=%p"	@@19
+#create: $43(["i=%d,x%d\n,a=%p"])@INI{none}<19>
+$buildNode:$44([])@param{^INI["i=%d,x%d\n,a=%p"]}<>
+
+     I35 :	 t15 = call @printf	@@19
+#$killAllNodes
+
+     I36 :	 jump L7	@@13
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$30([$x])@INI{none}<16>,isRoot?false
+
+visiting :$31([1])@INI{none}<16>,isRoot?false
+
+visiting :$32([t12, $x])@add{^INI[$x],^INI[1]}<16>,isRoot?true
+
+#add $32([t12, $x])@add{^INI[$x],^INI[1]}<16>
+
+visiting :$33([$i])@INI{none}<17>,isRoot?false
+
+visiting :$34([t13, $i])@add{^INI[$i],^INI[1]}<17>,isRoot?true
+
+#add $34([t13, $i])@add{^INI[$i],^INI[1]}<17>
+
+visiting :$35(["hello\n"])@INI{none}<18>,isRoot?false
+
+visiting :$36([])@param{^INI["hello\n"]}<>,isRoot?true
+
+#add $36([])@param{^INI["hello\n"]}<>
+
+visiting :$37([$a])@INI{none}<19>,isRoot?false
+
+visiting :$38([])@param{^INI[$a]}<>,isRoot?true
+
+#add $38([])@param{^INI[$a]}<>
+
+visiting :$39([$x])@INI{none}<19>,isRoot?false
+
+visiting :$40([])@param{^INI[$x]}<>,isRoot?true
+
+#add $40([])@param{^INI[$x]}<>
+
+visiting :$41([$i])@INI{none}<19>,isRoot?false
+
+visiting :$42([])@param{^INI[$i]}<>,isRoot?true
+
+#add $42([])@param{^INI[$i]}<>
+
+visiting :$43(["i=%d,x%d\n,a=%p"])@INI{none}<19>,isRoot?false
+
+visiting :$44([])@param{^INI["i=%d,x%d\n,a=%p"]}<>,isRoot?true
+
+#add $44([])@param{^INI["i=%d,x%d\n,a=%p"]}<>
+
+***Turn:2
+visiting :$30([$x])@INI{none}<16>,isRoot?false
+
+visiting :$31([1])@INI{none}<16>,isRoot?false
+
+visiting :$33([$i])@INI{none}<17>,isRoot?false
+
+visiting :$35(["hello\n"])@INI{none}<18>,isRoot?false
+
+visiting :$37([$a])@INI{none}<19>,isRoot?false
+
+visiting :$39([$x])@INI{none}<19>,isRoot?false
+
+visiting :$41([$i])@INI{none}<19>,isRoot?false
+
+visiting :$43(["i=%d,x%d\n,a=%p"])@INI{none}<19>,isRoot?false
+
+
+------------------------
+重构根节点:$32([t12, $x])@add{^INI[$x],^INI[1]}<16>
+
+------------------------
+重构根节点:$30([$x])@INI{none}<16>
+重构根节点 $30([$x])@INI{none}<16> 结束
+------------------------
+
+
+------------------------
+重构根节点:$31([1])@INI{none}<16>
+重构根节点 $31([1])@INI{none}<16> 结束
+------------------------
+
+(L14) I68 :	 t12 = $x + 1
+     I69 :	 $x = t12
+重构根节点 $32([t12, $x])@add{^INI[$x],^INI[1]}<16> 结束
+------------------------
+
+
+------------------------
+重构根节点:$34([t13, $i])@add{^INI[$i],^INI[1]}<17>
+
+------------------------
+重构根节点:$33([$i])@INI{none}<17>
+重构根节点 $33([$i])@INI{none}<17> 结束
+------------------------
+
+
+------------------------
+重构根节点:$31([1])@INI{none}<16>
+重构根节点 $31([1])@INI{none}<16> 结束
+------------------------
+
+     I70 :	 t13 = $i + 1
+     I71 :	 $i = t13
+重构根节点 $34([t13, $i])@add{^INI[$i],^INI[1]}<17> 结束
+------------------------
+
+
+------------------------
+重构根节点:$36([])@param{^INI["hello\n"]}<>
+
+------------------------
+重构根节点:$35(["hello\n"])@INI{none}<18>
+重构根节点 $35(["hello\n"])@INI{none}<18> 结束
+------------------------
+
+     I72 :	 param "hello\n"
+重构根节点 $36([])@param{^INI["hello\n"]}<> 结束
+------------------------
+
+
+------------------------
+重构根节点:$38([])@param{^INI[$a]}<>
+
+------------------------
+重构根节点:$37([$a])@INI{none}<19>
+重构根节点 $37([$a])@INI{none}<19> 结束
+------------------------
+
+     I73 :	 param $a
+重构根节点 $38([])@param{^INI[$a]}<> 结束
+------------------------
+
+
+------------------------
+重构根节点:$40([])@param{^INI[$x]}<>
+
+------------------------
+重构根节点:$39([$x])@INI{none}<19>
+重构根节点 $39([$x])@INI{none}<19> 结束
+------------------------
+
+     I74 :	 param $x
+重构根节点 $40([])@param{^INI[$x]}<> 结束
+------------------------
+
+
+------------------------
+重构根节点:$42([])@param{^INI[$i]}<>
+
+------------------------
+重构根节点:$41([$i])@INI{none}<19>
+重构根节点 $41([$i])@INI{none}<19> 结束
+------------------------
+
+     I75 :	 param $i
+重构根节点 $42([])@param{^INI[$i]}<> 结束
+------------------------
+
+
+------------------------
+重构根节点:$44([])@param{^INI["i=%d,x%d\n,a=%p"]}<>
+
+------------------------
+重构根节点:$43(["i=%d,x%d\n,a=%p"])@INI{none}<19>
+重构根节点 $43(["i=%d,x%d\n,a=%p"])@INI{none}<19> 结束
+------------------------
+
+     I76 :	 param "i=%d,x%d\n,a=%p"
+重构根节点 $44([])@param{^INI["i=%d,x%d\n,a=%p"]}<> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L14) I68 :	 t12 = $x + 1                       	@16       
+     I69 :	 $x = t12                            	@16       
+
+     I70 :	 t13 = $i + 1                        	@17       
+     I71 :	 $i = t13                            	@17       
+
+     I72 :	 param "hello\n"                     	@18       
+     I30 :	 t14 = call @printf                  	@18       
+
+     I73 :	 param $a                            	@19       
+     I74 :	 param $x                            	@19       
+     I75 :	 param $i                            	@19       
+     I76 :	 param "i=%d,x%d\n,a=%p"             	@19       
+     I35 :	 t15 = call @printf                  	@19       
+
+     I36 :	 jump L7                             	@13       
+指令数:12
+
+--------------------------</B7>-----------------------------
+
+
+
+--------------------------<B8>------------------------------
+Entry 	[$a, $i]            
+Exit  	[$a, $i]            
+
+(L13) I37 :	 t16 = $i + 1	@@21
+#create: $45([$i])@INI{none}<21>
+#create: $46([1])@INI{none}<21>
+$buildNode:$47([t16])@add{^INI[$i],^INI[1]}<21>
+
+     I38 :	 $i = t16	@@21
+$47([t16, $i])@add{^INI[$i],^INI[1]}<21>
+
+     I39 :	 t17 = $i + 1	@@6
+$buildNode:$48([t17])@add{^add[t16, $i],^INI[1]}<6>
+
+     I40 :	 $i = t17	@@6
+$48([t17, $i])@add{^add[t16],^INI[1]}<6>
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$45([$i])@INI{none}<21>,isRoot?false
+
+visiting :$46([1])@INI{none}<21>,isRoot?false
+
+visiting :$47([t16])@add{^INI[$i],^INI[1]}<21>,isRoot?false
+
+visiting :$48([t17, $i])@add{^add[t16],^INI[1]}<6>,isRoot?true
+
+#add $48([t17, $i])@add{^add[t16],^INI[1]}<6>
+
+***Turn:2
+visiting :$45([$i])@INI{none}<21>,isRoot?false
+
+visiting :$46([1])@INI{none}<21>,isRoot?false
+
+visiting :$47([t16])@add{^INI[$i],^INI[1]}<21>,isRoot?false
+
+
+------------------------
+重构根节点:$48([t17, $i])@add{^add[t16],^INI[1]}<6>
+
+------------------------
+重构根节点:$47([t16])@add{^INI[$i],^INI[1]}<21>
+
+------------------------
+重构根节点:$45([$i])@INI{none}<21>
+重构根节点 $45([$i])@INI{none}<21> 结束
+------------------------
+
+
+------------------------
+重构根节点:$46([1])@INI{none}<21>
+重构根节点 $46([1])@INI{none}<21> 结束
+------------------------
+
+(L13) I77 :	 t16 = $i + 1
+重构根节点 $47([t16])@add{^INI[$i],^INI[1]}<21> 结束
+------------------------
+
+
+------------------------
+重构根节点:$46([1])@INI{none}<21>
+重构根节点 $46([1])@INI{none}<21> 结束
+------------------------
+
+     I78 :	 t17 = t16 + 1
+     I79 :	 $i = t17
+重构根节点 $48([t17, $i])@add{^add[t16],^INI[1]}<6> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L13) I77 :	 t16 = $i + 1                       	@21       
+
+     I78 :	 t17 = t16 + 1                       	@6        
+     I79 :	 $i = t17                            	@6        
+指令数:3
+
+--------------------------</B8>-----------------------------
+
+
+
+--------------------------<B9>------------------------------
+Entry 	[$a, $i]            
+Exit  	[$a, $i]            
+
+(L4) I41 :	 if_jump $i < 10   L3	@@6
+#create: $49([$i])@INI{none}<6>
+#create: $50([10])@INI{none}<6>
+$buildNode:$51([L3])@if_jump{^INI[$i],^INI[10]}<6>
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$49([$i])@INI{none}<6>,isRoot?false
+
+visiting :$50([10])@INI{none}<6>,isRoot?false
+
+visiting :$51([L3])@if_jump{^INI[$i],^INI[10]}<6>,isRoot?true
+
+#add $51([L3])@if_jump{^INI[$i],^INI[10]}<6>
+
+***Turn:2
+visiting :$49([$i])@INI{none}<6>,isRoot?false
+
+visiting :$50([10])@INI{none}<6>,isRoot?false
+
+
+------------------------
+重构根节点:$51([L3])@if_jump{^INI[$i],^INI[10]}<6>
+
+------------------------
+重构根节点:$49([$i])@INI{none}<6>
+重构根节点 $49([$i])@INI{none}<6> 结束
+------------------------
+
+
+------------------------
+重构根节点:$50([10])@INI{none}<6>
+重构根节点 $50([10])@INI{none}<6> 结束
+------------------------
+
+(L4) I80 :	 if_jump $i < 10   L3
+重构根节点 $51([L3])@if_jump{^INI[$i],^INI[10]}<6> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+(L4) I80 :	 if_jump $i < 10   L3                	@6        
+指令数:1
+
+--------------------------</B9>-----------------------------
+
+
+
+--------------------------<B10>------------------------------
+Entry 	[$a, $i]            
+Exit  	[]                  
+
+     I42 :	 param "hello,out of loops\n"	@@24
+#create: $52(["hello,out of loops\n"])@INI{none}<24>
+$buildNode:$53([])@param{^INI["hello,out of loops\n"]}<>
+
+     I43 :	 t18 = call @printf	@@24
+#$killAllNodes
+
+     I44 :	 t19 = $i * 4	@@25
+#create: $54([$i])@INI{none}<25>
+#create: $55([4])@INI{none}<25>
+$buildNode:$56([t19])@mul{^INI[$i],^INI[4]}<25>
+
+     I45 :	 t20 = 0 + t19	@@25
+#create: $57([0])@INI{none}<25>
+$useNode:$56([t19])@mul{^INI[$i],^INI[4]}<25>
+
+     I46 :	 t21 = $a[t20]	@@25
+#create: $58([$a])@INI{none}<25>
+$buildNode:$59([t21])@Array_Assigning{^INI[$a],^mul[t19, t20]}<25>
+creating new entry:$a
+
+     I47 :	 param t21	@@25
+$buildNode:$60([])@param{^Array_Assigning[t21]}<>
+
+     I48 :	 param "a[0][i]=%d\n"	@@25
+#create: $61(["a[0][i]=%d\n"])@INI{none}<25>
+$buildNode:$62([])@param{^INI["a[0][i]=%d\n"]}<>
+
+     I49 :	 t22 = call @printf	@@25
+#$killAllNodes
+
+     I50 :	 ret	@@-2
+
+----------------------
+Rebuilding:
+***Turn:1
+visiting :$52(["hello,out of loops\n"])@INI{none}<24>,isRoot?false
+
+visiting :$53([])@param{^INI["hello,out of loops\n"]}<>,isRoot?true
+
+#add $53([])@param{^INI["hello,out of loops\n"]}<>
+
+visiting :$54([$i])@INI{none}<25>,isRoot?false
+
+visiting :$55([4])@INI{none}<25>,isRoot?false
+
+visiting :$56([t19, t20])@mul{^INI[$i],^INI[4]}<25>,isRoot?false
+
+visiting :$57([0])@INI{none}<25>,isRoot?true
+
+visiting :$58([$a])@INI{none}<25>,isRoot?false
+
+visiting :$59([t21])@Array_Assigning{^INI[$a],^mul[t19, t20]}<25>,isRoot?false
+
+visiting :$60([])@param{^Array_Assigning[t21]}<>,isRoot?true
+
+#add $60([])@param{^Array_Assigning[t21]}<>
+
+visiting :$61(["a[0][i]=%d\n"])@INI{none}<25>,isRoot?false
+
+visiting :$62([])@param{^INI["a[0][i]=%d\n"]}<>,isRoot?true
+
+#add $62([])@param{^INI["a[0][i]=%d\n"]}<>
+
+***Turn:2
+visiting :$52(["hello,out of loops\n"])@INI{none}<24>,isRoot?false
+
+visiting :$54([$i])@INI{none}<25>,isRoot?false
+
+visiting :$55([4])@INI{none}<25>,isRoot?false
+
+visiting :$56([t19, t20])@mul{^INI[$i],^INI[4]}<25>,isRoot?false
+
+visiting :$58([$a])@INI{none}<25>,isRoot?false
+
+visiting :$59([t21])@Array_Assigning{^INI[$a],^mul[t19, t20]}<25>,isRoot?false
+
+visiting :$61(["a[0][i]=%d\n"])@INI{none}<25>,isRoot?false
+
+
+------------------------
+重构根节点:$53([])@param{^INI["hello,out of loops\n"]}<>
+
+------------------------
+重构根节点:$52(["hello,out of loops\n"])@INI{none}<24>
+重构根节点 $52(["hello,out of loops\n"])@INI{none}<24> 结束
+------------------------
+
+     I81 :	 param "hello,out of loops\n"
+重构根节点 $53([])@param{^INI["hello,out of loops\n"]}<> 结束
+------------------------
+
+
+------------------------
+重构根节点:$60([])@param{^Array_Assigning[t21]}<>
+
+------------------------
+重构根节点:$59([t21])@Array_Assigning{^INI[$a],^mul[t19, t20]}<25>
+
+------------------------
+重构根节点:$58([$a])@INI{none}<25>
+重构根节点 $58([$a])@INI{none}<25> 结束
+------------------------
+
+
+------------------------
+重构根节点:$56([t19, t20])@mul{^INI[$i],^INI[4]}<25>
+
+------------------------
+重构根节点:$54([$i])@INI{none}<25>
+重构根节点 $54([$i])@INI{none}<25> 结束
+------------------------
+
+
+------------------------
+重构根节点:$55([4])@INI{none}<25>
+重构根节点 $55([4])@INI{none}<25> 结束
+------------------------
+
+     I82 :	 t19 = $i * 4
+重构根节点 $56([t19, t20])@mul{^INI[$i],^INI[4]}<25> 结束
+------------------------
+
+     I83 :	 t21 = $a[t19]
+重构根节点 $59([t21])@Array_Assigning{^INI[$a],^mul[t19, t20]}<25> 结束
+------------------------
+
+     I84 :	 param t21
+重构根节点 $60([])@param{^Array_Assigning[t21]}<> 结束
+------------------------
+
+
+------------------------
+重构根节点:$62([])@param{^INI["a[0][i]=%d\n"]}<>
+
+------------------------
+重构根节点:$61(["a[0][i]=%d\n"])@INI{none}<25>
+重构根节点 $61(["a[0][i]=%d\n"])@INI{none}<25> 结束
+------------------------
+
+     I85 :	 param "a[0][i]=%d\n"
+重构根节点 $62([])@param{^INI["a[0][i]=%d\n"]}<> 结束
+------------------------
+
+
+----------------------
+New Instructions:
+
+     I81 :	 param "hello,out of loops\n"        	@24       
+     I43 :	 t18 = call @printf                  	@24       
+
+     I82 :	 t19 = $i * 4                        	@25       
+     I83 :	 t21 = $a[t19]                       	@25       
+     I84 :	 param t21                           	@25       
+     I85 :	 param "a[0][i]=%d\n"                	@25       
+     I49 :	 t22 = call @printf                  	@25       
+
+     I50 :	 ret                                 	@-2       
+指令数:8
+
+--------------------------</B10>-----------------------------
+
+
+
+--------------------------<(ENTER)B0>------------------------------
+Entry 	[$a]                
+Exit  	[$a]                
+
+--------------------------</(ENTER)B0>-----------------------------
+
+
+
+--------------------------<(EXIT)B1>------------------------------
+Entry 	[]                  
+Exit  	[]                  
+
+--------------------------</(EXIT)B1>-----------------------------
+
+
+
+--------------------------<B13>------------------------------
+Entry 	[]                  
+Exit  	[]                  
+
+     I51 :	 exit	@@-2
+
+----------------------
+Rebuilding:
+***Turn:1
+
+----------------------
+New Instructions:
+
+     I51 :	 exit                                	@-2       
+指令数:1
+
+--------------------------</B13>-----------------------------
+
+
+
+-------------------------全局活跃性分析-------------------------
+
+Turn 0
+
+B2
+Exit:[$a, $i]
+
+--------------------------------------
+指令:     I3  :	 jump L4
+
+--------------------------------------
+指令:     I52 :	 $i = 0
+#info[2]填入$i的活跃信息:true
+#flag=false,$i在此指令前是否活跃?:false
+#指令     I52 :	 $i = 0的下一次使用:-1
+
+--------------------------------------
+指令:     I0  :	 enter asmMain
+
+--------------------------------------
+指令:     I0  :	 enter asmMain
+nextUsed:-1
+
+--------------------------------------
+指令:     I52 :	 $i = 0
+result:$i,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I3  :	 jump L4
+result:L4,active:false
+nextUsed:-1
+Use:  	[$a]                
+
+B3
+Exit:[$a, $j, $i, $x]
+
+--------------------------------------
+指令:     I6  :	 jump L9
+
+--------------------------------------
+指令:     I54 :	 $j = 0
+#info[2]填入$j的活跃信息:true
+#flag=false,$j在此指令前是否活跃?:false
+#指令     I54 :	 $j = 0的下一次使用:-1
+
+--------------------------------------
+指令:(L3) I53 :	 $x = 1
+#info[2]填入$x的活跃信息:true
+#flag=false,$x在此指令前是否活跃?:false
+#指令(L3) I53 :	 $x = 1的下一次使用:-1
+
+--------------------------------------
+指令:(L3) I53 :	 $x = 1
+result:$x,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I54 :	 $j = 0
+result:$j,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I6  :	 jump L9
+result:L9,active:false
+nextUsed:-1
+Use:  	[$a, $i]            
+
+B4
+Exit:[$a, $x, $j, $i]
+
+--------------------------------------
+指令:     I63 :	 $j = t8
+#info[2]填入$j的活跃信息:true
+#flag=false,$j在此指令前是否活跃?:false
+#指令     I63 :	 $j = t8的下一次使用:-1
+#info[0]填入t8的活跃信息:false
+#flag=true,t8在此指令前是否活跃?:true
+#t8的下一次使用位置:63
+
+--------------------------------------
+指令:     I62 :	 t8 = $j + 1
+#info[2]填入t8的活跃信息:true
+#flag=false,t8在此指令前是否活跃?:false
+#指令     I62 :	 t8 = $j + 1的下一次使用:-1
+#info[0]填入$j的活跃信息:false
+#flag=true,$j在此指令前是否活跃?:true
+#$j的下一次使用位置:62
+
+--------------------------------------
+指令:     I59 :	 $x = 0
+#info[2]填入$x的活跃信息:true
+#flag=false,$x在此指令前是否活跃?:false
+#指令     I59 :	 $x = 0的下一次使用:-1
+
+--------------------------------------
+指令:     I61 :	 t3 = 0
+#info[2]填入t3的活跃信息:false
+#flag=true,t3在此指令前是否活跃?:true
+#指令     I61 :	 t3 = 0的下一次使用:-1
+
+--------------------------------------
+指令:     I60 :	 t3 = offset $a[t2]
+#info[2]填入t3的活跃信息:true
+#flag=false,t3在此指令前是否活跃?:false
+#指令     I60 :	 t3 = offset $a[t2]的下一次使用:-1
+#info[0]填入$a的活跃信息:true
+#flag=true,$a在此指令前是否活跃?:true
+#$a的下一次使用位置:60
+#info[1]填入t2的活跃信息:false
+#flag=true,t2在此指令前是否活跃?:true
+#t2的下一次使用位置:60
+
+--------------------------------------
+指令:     I57 :	 t2 = t0 + t1
+#info[2]填入t2的活跃信息:true
+#flag=false,t2在此指令前是否活跃?:false
+#指令     I57 :	 t2 = t0 + t1的下一次使用:-1
+#info[0]填入t0的活跃信息:false
+#flag=true,t0在此指令前是否活跃?:true
+#t0的下一次使用位置:57
+#info[1]填入t1的活跃信息:false
+#flag=true,t1在此指令前是否活跃?:true
+#t1的下一次使用位置:57
+
+--------------------------------------
+指令:     I56 :	 t1 = $j * 4
+#info[2]填入t1的活跃信息:true
+#flag=false,t1在此指令前是否活跃?:false
+#指令     I56 :	 t1 = $j * 4的下一次使用:-1
+#info[0]填入$j的活跃信息:true
+#flag=true,$j在此指令前是否活跃?:true
+#$j的下一次使用位置:56
+
+--------------------------------------
+指令:(L8) I55 :	 t0 = $i * 40
+#info[2]填入t0的活跃信息:true
+#flag=false,t0在此指令前是否活跃?:false
+#指令(L8) I55 :	 t0 = $i * 40的下一次使用:-1
+#info[0]填入$i的活跃信息:true
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:55
+
+--------------------------------------
+指令:(L8) I55 :	 t0 = $i * 40
+arg1:$i,active:true
+result:t0,active:true
+nextUsed:57
+
+--------------------------------------
+指令:     I56 :	 t1 = $j * 4
+arg1:$j,active:true
+result:t1,active:true
+nextUsed:57
+
+--------------------------------------
+指令:     I57 :	 t2 = t0 + t1
+arg1:t0,active:false
+arg2:t1,active:false
+result:t2,active:true
+nextUsed:60
+
+--------------------------------------
+指令:     I60 :	 t3 = offset $a[t2]
+arg1:$a,active:true
+arg2:t2,active:false
+result:t3,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I61 :	 t3 = 0
+result:t3,active:false
+nextUsed:-1
+
+--------------------------------------
+指令:     I59 :	 $x = 0
+result:$x,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I62 :	 t8 = $j + 1
+arg1:$j,active:false
+result:t8,active:true
+nextUsed:63
+
+--------------------------------------
+指令:     I63 :	 $j = t8
+arg1:t8,active:false
+result:$j,active:true
+nextUsed:-1
+Use:  	[$a, $i, $j]        
+
+B5
+Exit:[$a, $j, $i, $x]
+
+--------------------------------------
+指令:(L9) I64 :	 if_jump $j < $i   L8
+#info[0]填入$j的活跃信息:true
+#flag=true,$j在此指令前是否活跃?:true
+#$j的下一次使用位置:64
+#info[1]填入$i的活跃信息:true
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:64
+
+--------------------------------------
+指令:(L9) I64 :	 if_jump $j < $i   L8
+arg1:$j,active:true
+arg2:$i,active:true
+result:L8,active:false
+nextUsed:-1
+Use:  	[$a, $i, $j, $x]    
+
+B6
+Exit:[$a, $i, $x]
+
+--------------------------------------
+指令:     I67 :	 if_jump t11 > 10   L13
+#info[0]填入t11的活跃信息:false
+#flag=true,t11在此指令前是否活跃?:true
+#t11的下一次使用位置:67
+
+--------------------------------------
+指令:     I66 :	 t11 = $a[t9]
+#info[2]填入t11的活跃信息:true
+#flag=false,t11在此指令前是否活跃?:false
+#指令     I66 :	 t11 = $a[t9]的下一次使用:-1
+#info[0]填入$a的活跃信息:true
+#flag=true,$a在此指令前是否活跃?:true
+#$a的下一次使用位置:66
+#info[1]填入t9的活跃信息:false
+#flag=true,t9在此指令前是否活跃?:true
+#t9的下一次使用位置:66
+
+--------------------------------------
+指令:(L7) I65 :	 t9 = $i * 4
+#info[2]填入t9的活跃信息:true
+#flag=false,t9在此指令前是否活跃?:false
+#指令(L7) I65 :	 t9 = $i * 4的下一次使用:-1
+#info[0]填入$i的活跃信息:true
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:65
+
+--------------------------------------
+指令:(L7) I65 :	 t9 = $i * 4
+arg1:$i,active:true
+result:t9,active:true
+nextUsed:66
+
+--------------------------------------
+指令:     I66 :	 t11 = $a[t9]
+arg1:$a,active:true
+arg2:t9,active:false
+result:t11,active:true
+nextUsed:67
+
+--------------------------------------
+指令:     I67 :	 if_jump t11 > 10   L13
+arg1:t11,active:false
+result:L13,active:false
+nextUsed:-1
+Use:  	[$a, $i, $x]        
+
+B7
+Exit:[$a, $i, $x]
+
+--------------------------------------
+指令:     I36 :	 jump L7
+
+--------------------------------------
+指令:     I35 :	 t15 = call @printf
+#info[2]填入t15的活跃信息:false
+#flag=false,t15在此指令前是否活跃?:false
+#指令     I35 :	 t15 = call @printf的下一次使用:-1
+
+--------------------------------------
+指令:     I76 :	 param "i=%d,x%d\n,a=%p"
+
+--------------------------------------
+指令:     I75 :	 param $i
+#info[0]填入$i的活跃信息:true
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:75
+
+--------------------------------------
+指令:     I74 :	 param $x
+#info[0]填入$x的活跃信息:true
+#flag=true,$x在此指令前是否活跃?:true
+#$x的下一次使用位置:74
+
+--------------------------------------
+指令:     I73 :	 param $a
+#info[0]填入$a的活跃信息:true
+#flag=true,$a在此指令前是否活跃?:true
+#$a的下一次使用位置:73
+
+--------------------------------------
+指令:     I30 :	 t14 = call @printf
+#info[2]填入t14的活跃信息:false
+#flag=false,t14在此指令前是否活跃?:false
+#指令     I30 :	 t14 = call @printf的下一次使用:-1
+
+--------------------------------------
+指令:     I72 :	 param "hello\n"
+
+--------------------------------------
+指令:     I71 :	 $i = t13
+#info[2]填入$i的活跃信息:true
+#flag=false,$i在此指令前是否活跃?:false
+#指令     I71 :	 $i = t13的下一次使用:-1
+#info[0]填入t13的活跃信息:false
+#flag=true,t13在此指令前是否活跃?:true
+#t13的下一次使用位置:71
+
+--------------------------------------
+指令:     I70 :	 t13 = $i + 1
+#info[2]填入t13的活跃信息:true
+#flag=false,t13在此指令前是否活跃?:false
+#指令     I70 :	 t13 = $i + 1的下一次使用:-1
+#info[0]填入$i的活跃信息:false
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:70
+
+--------------------------------------
+指令:     I69 :	 $x = t12
+#info[2]填入$x的活跃信息:true
+#flag=false,$x在此指令前是否活跃?:false
+#指令     I69 :	 $x = t12的下一次使用:-1
+#info[0]填入t12的活跃信息:false
+#flag=true,t12在此指令前是否活跃?:true
+#t12的下一次使用位置:69
+
+--------------------------------------
+指令:(L14) I68 :	 t12 = $x + 1
+#info[2]填入t12的活跃信息:true
+#flag=false,t12在此指令前是否活跃?:false
+#指令(L14) I68 :	 t12 = $x + 1的下一次使用:-1
+#info[0]填入$x的活跃信息:false
+#flag=true,$x在此指令前是否活跃?:true
+#$x的下一次使用位置:68
+
+--------------------------------------
+指令:(L14) I68 :	 t12 = $x + 1
+arg1:$x,active:false
+result:t12,active:true
+nextUsed:69
+
+--------------------------------------
+指令:     I69 :	 $x = t12
+arg1:t12,active:false
+result:$x,active:true
+nextUsed:74
+
+--------------------------------------
+指令:     I70 :	 t13 = $i + 1
+arg1:$i,active:false
+result:t13,active:true
+nextUsed:71
+
+--------------------------------------
+指令:     I71 :	 $i = t13
+arg1:t13,active:false
+result:$i,active:true
+nextUsed:75
+
+--------------------------------------
+指令:     I72 :	 param "hello\n"
+nextUsed:-1
+
+--------------------------------------
+指令:     I30 :	 t14 = call @printf
+result:t14,active:false
+nextUsed:-1
+
+--------------------------------------
+指令:     I73 :	 param $a
+arg1:$a,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I74 :	 param $x
+arg1:$x,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I75 :	 param $i
+arg1:$i,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I76 :	 param "i=%d,x%d\n,a=%p"
+nextUsed:-1
+
+--------------------------------------
+指令:     I35 :	 t15 = call @printf
+result:t15,active:false
+nextUsed:-1
+
+--------------------------------------
+指令:     I36 :	 jump L7
+result:L7,active:false
+nextUsed:-1
+Use:  	[$a, $i, $x]        
+
+B8
+Exit:[$a, $i]
+
+--------------------------------------
+指令:     I79 :	 $i = t17
+#info[2]填入$i的活跃信息:true
+#flag=false,$i在此指令前是否活跃?:false
+#指令     I79 :	 $i = t17的下一次使用:-1
+#info[0]填入t17的活跃信息:false
+#flag=true,t17在此指令前是否活跃?:true
+#t17的下一次使用位置:79
+
+--------------------------------------
+指令:     I78 :	 t17 = t16 + 1
+#info[2]填入t17的活跃信息:true
+#flag=false,t17在此指令前是否活跃?:false
+#指令     I78 :	 t17 = t16 + 1的下一次使用:-1
+#info[0]填入t16的活跃信息:false
+#flag=true,t16在此指令前是否活跃?:true
+#t16的下一次使用位置:78
+
+--------------------------------------
+指令:(L13) I77 :	 t16 = $i + 1
+#info[2]填入t16的活跃信息:true
+#flag=false,t16在此指令前是否活跃?:false
+#指令(L13) I77 :	 t16 = $i + 1的下一次使用:-1
+#info[0]填入$i的活跃信息:false
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:77
+
+--------------------------------------
+指令:(L13) I77 :	 t16 = $i + 1
+arg1:$i,active:false
+result:t16,active:true
+nextUsed:78
+
+--------------------------------------
+指令:     I78 :	 t17 = t16 + 1
+arg1:t16,active:false
+result:t17,active:true
+nextUsed:79
+
+--------------------------------------
+指令:     I79 :	 $i = t17
+arg1:t17,active:false
+result:$i,active:true
+nextUsed:-1
+Use:  	[$a, $i]            
+
+B9
+Exit:[$a, $i]
+
+--------------------------------------
+指令:(L4) I80 :	 if_jump $i < 10   L3
+#info[0]填入$i的活跃信息:true
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:80
+
+--------------------------------------
+指令:(L4) I80 :	 if_jump $i < 10   L3
+arg1:$i,active:true
+result:L3,active:false
+nextUsed:-1
+Use:  	[$a, $i]            
+
+B10
+Exit:[]
+
+--------------------------------------
+指令:     I50 :	 ret
+
+--------------------------------------
+指令:     I49 :	 t22 = call @printf
+#info[2]填入t22的活跃信息:false
+#flag=false,t22在此指令前是否活跃?:false
+#指令     I49 :	 t22 = call @printf的下一次使用:-1
+
+--------------------------------------
+指令:     I85 :	 param "a[0][i]=%d\n"
+
+--------------------------------------
+指令:     I84 :	 param t21
+#info[0]填入t21的活跃信息:true
+#flag=true,t21在此指令前是否活跃?:true
+#t21的下一次使用位置:84
+
+--------------------------------------
+指令:     I83 :	 t21 = $a[t19]
+#info[2]填入t21的活跃信息:true
+#flag=false,t21在此指令前是否活跃?:false
+#指令     I83 :	 t21 = $a[t19]的下一次使用:-1
+#info[0]填入$a的活跃信息:false
+#flag=true,$a在此指令前是否活跃?:true
+#$a的下一次使用位置:83
+#info[1]填入t19的活跃信息:false
+#flag=true,t19在此指令前是否活跃?:true
+#t19的下一次使用位置:83
+
+--------------------------------------
+指令:     I82 :	 t19 = $i * 4
+#info[2]填入t19的活跃信息:true
+#flag=false,t19在此指令前是否活跃?:false
+#指令     I82 :	 t19 = $i * 4的下一次使用:-1
+#info[0]填入$i的活跃信息:false
+#flag=true,$i在此指令前是否活跃?:true
+#$i的下一次使用位置:82
+
+--------------------------------------
+指令:     I43 :	 t18 = call @printf
+#info[2]填入t18的活跃信息:false
+#flag=false,t18在此指令前是否活跃?:false
+#指令     I43 :	 t18 = call @printf的下一次使用:-1
+
+--------------------------------------
+指令:     I81 :	 param "hello,out of loops\n"
+
+--------------------------------------
+指令:     I81 :	 param "hello,out of loops\n"
+nextUsed:-1
+
+--------------------------------------
+指令:     I43 :	 t18 = call @printf
+result:t18,active:false
+nextUsed:-1
+
+--------------------------------------
+指令:     I82 :	 t19 = $i * 4
+arg1:$i,active:false
+result:t19,active:true
+nextUsed:83
+
+--------------------------------------
+指令:     I83 :	 t21 = $a[t19]
+arg1:$a,active:false
+arg2:t19,active:false
+result:t21,active:true
+nextUsed:84
+
+--------------------------------------
+指令:     I84 :	 param t21
+arg1:t21,active:true
+nextUsed:-1
+
+--------------------------------------
+指令:     I85 :	 param "a[0][i]=%d\n"
+nextUsed:-1
+
+--------------------------------------
+指令:     I49 :	 t22 = call @printf
+result:t22,active:false
+nextUsed:-1
+
+--------------------------------------
+指令:     I50 :	 ret
+nextUsed:-1
+Use:  	[$a, $i]            
+
+(ENTER)B0
+Exit:[$a]
+Use:  	[$a]                
+
+(EXIT)B1
+Exit:[]
+Use:  	[]                  
+
+B13
+Exit:[]
+
+--------------------------------------
+指令:     I51 :	 exit
+
+--------------------------------------
+指令:     I51 :	 exit
+nextUsed:-1
+Use:  	[]                  

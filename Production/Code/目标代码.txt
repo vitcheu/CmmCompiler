@@ -1,0 +1,1128 @@
+curLoop=null
+
+--------------------------<B2>------------------------------
+#延续父基本块的内容
+#Loaded vars:null
+#加载后,寄存器的内容:
+寄存器内容:
+暂时不可分配寄存器:
+
+-------------------------------------------------------------------------------
+翻译指令:     I0  :	 enter asmMain	@@3     
+##setAddrForLocalVars,base=0,tableSize=404
+$a相对于rbp的偏移量:-400
+$i相对于rbp的偏移量:-404
+total size=404
+$x相对于rbp的偏移量:-408
+total size=4
+$j相对于rbp的偏移量:-412
+total size=4
+total size=0
+total size=0
+RSP=0
+寄存器内容:
+暂时不可分配寄存器:
+变量地址:
+
+-------------------------------------------------------------------------------
+翻译指令:     I52 :	 $i = 0       	@@6     
+#addrY=0
+#$i的类型:int32
+#findGeneralReg,prefer=[]
+选择空闲寄存器EAX,PreState=EMPTY, state=D,content=EAX:	null
+#addrX=eax
+$创建指令:xor	eax	eax	(52)
+RAX装入$i
+$创建指令:mov	dword ptr i$[rbp]	eax	(52)
+将$i溢出到内存:dword ptr i$[RBP]
+寄存器内容:
+EAX:	[$i]
+暂时不可分配寄存器:
+EAX:	[$i]
+变量地址:
+Addr of $i:	[eax, dword ptr i$[RBP]]
+
+#传递 $a 至eax
+##moveReg,RAX:	[$i],the var=$a
+#findGeneralReg,prefer=[]
+选择空闲寄存器ECX,PreState=EMPTY, state=D,content=ECX:	null
+##newR chosen, newR=ecx
+RCX添加$i的值,类型:int32,当前状态:D
+寄存器描述符:[$i]
+$创建指令:mov	ecx	eax	(52)
+#$a的类型:pointer
+#findGeneralReg,prefer=[rax]
+选择空闲寄存器RAX,PreState=Q, state=Q,content=RAX:	null
+$创建指令:lea	rax	qword ptr a$[rbp]	(52)
+RAX装入$a
+#传递 $a 至rax结束
+
+#传递 $j 至rdx
+##moveReg,EDX:	null,the var=$j
+#$j的类型:int32
+#findGeneralReg,prefer=[edx]
+选择空闲寄存器EDX,PreState=D, state=D,content=EDX:	null
+$创建指令:mov	edx	dword ptr j$2[rbp]	(52)
+RDX装入$j
+$创建指令:movsxd	rdx	edx	(52)
+#传递 $j 至rdx结束
+
+#传递 $i 至ecx
+$创建指令:movsxd	rcx	ecx	(52)
+#传递 $i 至rcx结束
+
+#传递 $x 至r8
+##moveReg,R8D:	null,the var=$x
+#$x的类型:int32
+#findGeneralReg,prefer=[r8d]
+选择空闲寄存器R8D,PreState=D, state=D,content=R8D:	null
+$创建指令:mov	r8d	dword ptr x$1[rbp]	(52)
+R8装入$x
+$创建指令:movsxd	r8	r8d	(52)
+#传递 $x 至r8结束
+
+-------------------------------------------------------------------------------
+翻译指令:     I3  :	 jump L4      	@@6     
+$创建指令:jmp	L4	null	(3)
+寄存器内容:
+RAX:	[$a]
+RCX:	[$i]
+RDX:	[$j]
+R8:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+RCX:	[$i]
+RDX:	[$j]
+R8:	[$x]
+变量地址:
+curLoop=@2[B9, B8, B6, B5, B4, B3, B7]
+
+--------------------------<B3 (L3)>------------------------------
+#延续父基本块的内容
+#Loaded vars:{$a=rax, $j=rdx, $i=rcx, $x=r8}
+RAX装入$a
+RDX装入$j
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L3) I53 :	 $x = 1       	@@7     
+#addrY=1
+#addrX=r8d
+$创建指令:L3mov	r8d	1	(53)
+R8装入$x
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $x:	[r8d]
+
+-------------------------------------------------------------------------------
+翻译指令:     I54 :	 $j = 0       	@@8     
+#addrY=0
+#addrX=edx
+$创建指令:xor	edx	edx	(54)
+RDX装入$j
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $j:	[edx]
+
+-------------------------------------------------------------------------------
+翻译指令:     I6  :	 jump L9      	@@8     
+$创建指令:jmp	L9	null	(6)
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+curLoop=@1[B5, B4]
+
+--------------------------<B4 (L8)>------------------------------
+#延续父基本块的内容
+#Loaded vars:{$a=rax, $j=rdx, $i=rcx, $x=r8}
+RDX装入$j
+RAX装入$a
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L8) I55 :	 t0 = $i * 40 	@@9     
+##getReg,addrOf$i=[ecx],addrOf40=null
+##moveReg,ECX:	[$i],the var=$i
+#findGeneralReg,prefer=[]
+选择空闲寄存器R9D,PreState=EMPTY, state=D,content=R9D:	null
+##newR chosen, newR=r9d
+R9添加$i的值,类型:int32,当前状态:D
+寄存器描述符:[$i]
+$创建指令:L8mov	r9d	ecx	(55)
+srcR=40
+desAddr=r9d
+$创建指令:imul	r9d	40	(55)
+R9装入t0
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t0]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t0]
+变量地址:
+Addr of $i:	[ecx]
+Addr of t0:	[r9d]
+
+-------------------------------------------------------------------------------
+翻译指令:     I56 :	 t1 = $j * 4  	@@9     
+##getReg,addrOf$j=[edx],addrOf4=null
+##moveReg,EDX:	[$j],the var=$j
+#findGeneralReg,prefer=[]
+选择空闲寄存器R10D,PreState=EMPTY, state=D,content=R10D:	null
+##newR chosen, newR=r10d
+R10添加$j的值,类型:int32,当前状态:D
+寄存器描述符:[$j]
+$创建指令:mov	r10d	edx	(56)
+srcR=4
+desAddr=r10d
+$创建指令:imul	r10d	4	(56)
+R10装入t1
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t0]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t0]
+R10D:	[t1]
+变量地址:
+Addr of $j:	[edx]
+Addr of t1:	[r10d]
+
+-------------------------------------------------------------------------------
+翻译指令:     I57 :	 t2 = t0 + t1 	@@9     
+##getReg,addrOft0=[r9d],addrOft1=[r10d]
+##moveReg,R9D:	[t0],the var=t0
+##moveReg,R9D:	[t0],the var=t0
+srcR=r10d
+desAddr=r9d
+$创建指令:add	r9d	r10d	(57)
+R9装入t2
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t2]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t2]
+变量地址:
+Addr of t0:	
+Addr of t1:	[r10d]
+Addr of t2:	[r9d]
+
+-------------------------------------------------------------------------------
+翻译指令:     I60 :	 t3 = offset $a[t2]	@@9     
+#array,src=r9d,baseAddr=rax
+#isLeftValue?: true, isArrayAddr?: false
+$创建指令:mov	r9d	r9d	(60)
+#array,desAddr=dword ptr[rax+r9]
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t2]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $a:	[rax]
+Addr of t2:	[r9d]
+Addr of t3:	[dword ptr[rax+r9]]	needWriteBack?: false
+
+-------------------------------------------------------------------------------
+翻译指令:     I61 :	 t3 = 0       	@@9     
+#addrY=0
+#addrX=dword ptr[rax+r9]
+$创建指令:mov	dword ptr[rax+r9]	0	(61)
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t2]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of t3:	[dword ptr[rax+r9]]	needWriteBack?: false
+
+-------------------------------------------------------------------------------
+翻译指令:     I59 :	 $x = 0       	@@10    
+#addrY=0
+#addrX=r8d
+$创建指令:xor	r8d	r8d	(59)
+R8装入$x
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t2]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $x:	[r8d]
+
+-------------------------------------------------------------------------------
+翻译指令:     I62 :	 t8 = $j + 1  	@@8     
+##getReg,addrOf$j=[edx],addrOf1=null
+##moveReg,EDX:	[$j],the var=$j
+##moveReg,EDX:	[$j],the var=$j
+srcR=1
+desAddr=edx
+$创建指令:inc	edx	null	(62)
+RDX装入t8
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[t8]
+R8D:	[$x]
+R9D:	[t2]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[t8]
+R8D:	[$x]
+变量地址:
+Addr of $j:	
+Addr of t8:	[edx]
+
+-------------------------------------------------------------------------------
+翻译指令:     I63 :	 $j = t8      	@@8     
+#addrY=edx
+RDX添加$j的值,类型:int32,当前状态:D
+寄存器描述符:[t8, $j]
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[t8, $j]
+R8D:	[$x]
+R9D:	[t2]
+R10D:	[t1]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[t8, $j]
+R8D:	[$x]
+变量地址:
+Addr of t8:	[edx]
+Addr of $j:	[edx]
+curLoop=@1[B5, B4]
+
+--------------------------<B5 (L9)>------------------------------
+#清除所有寄存器的内容
+#Loaded vars:{$a=rax, $j=rdx, $i=rcx, $x=r8}
+RDX装入$j
+RAX装入$a
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L9) I64 :	 if_jump $j < $i   L8	@@8     
+$创建指令:L9cmp	edx	ecx	(64)
+$创建指令:jl	L8	null	(64)
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $j:	[edx]
+Addr of $i:	[ecx]
+curLoop=@0[B6, B7]
+
+--------------------------<B6 (L7)>------------------------------
+#清除所有寄存器的内容
+#Loaded vars:{$a=rax, $j=rdx, $i=rcx, $x=r8}
+RDX装入$j
+RAX装入$a
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L7) I65 :	 t9 = $i * 4  	@@14    
+##getReg,addrOf$i=[ecx],addrOf4=null
+srcR=4
+desAddr=ecx
+RCX添加t9的值,类型:int32,当前状态:D
+寄存器描述符:[$i, t9]
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i, t9]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i, t9]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $i:	[ecx]
+Addr of t9:	[ecx]
+
+-------------------------------------------------------------------------------
+翻译指令:     I66 :	 t11 = $a[t9] 	@@14    
+#array,src=ecx,baseAddr=rax
+#isLeftValue?: false, isArrayAddr?: false
+#array,desAddr=dword ptr[rax+rcx*4]
+#findGeneralReg,prefer=[]
+选择空闲寄存器R9D,PreState=EMPTY, state=D,content=R9D:	null
+$创建指令:L7mov	r9d	dword ptr[rax+rcx*4]	(66)
+R9装入t11
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i, t9]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i, t9]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+变量地址:
+Addr of $a:	[rax]
+Addr of t9:	[ecx]
+Addr of t11:	[r9d,dword ptr[rax+rcx*4]]	needWriteBack?: false
+
+-------------------------------------------------------------------------------
+翻译指令:     I67 :	 if_jump t11 > 10   L13	@@14    
+$创建指令:cmp	r9d	10	(67)
+$创建指令:jg	L13	null	(67)
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i, t9]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i, t9]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of t11:	[r9d,dword ptr[rax+rcx*4]]	needWriteBack?: false
+curLoop=@0[B6, B7]
+
+--------------------------<B7 (L14)>------------------------------
+#延续父基本块的内容
+#Loaded vars:{$a=rax, $j=edx, $i=ecx, $x=r8d}
+RDX装入$j
+RAX装入$a
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L14) I68 :	 t12 = $x + 1	@@16    
+##getReg,addrOf$x=[r8d],addrOf1=null
+##moveReg,R8D:	[$x],the var=$x
+##moveReg,R8D:	[$x],the var=$x
+srcR=1
+desAddr=r8d
+$创建指令:L14inc	r8d	null	(68)
+R8装入t12
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[t12]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[t12]
+变量地址:
+Addr of $x:	
+Addr of t12:	[r8d]
+
+-------------------------------------------------------------------------------
+翻译指令:     I69 :	 $x = t12     	@@16    
+#addrY=r8d
+R8添加$x的值,类型:int32,当前状态:D
+寄存器描述符:[t12, $x]
+$创建指令:mov	dword ptr x$1[rbp]	r8d	(69)
+将$x溢出到内存:dword ptr x$1[RBP]
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[t12, $x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[t12, $x]
+变量地址:
+Addr of t12:	[r8d]
+Addr of $x:	[r8d, dword ptr x$1[RBP]]
+
+-------------------------------------------------------------------------------
+翻译指令:     I70 :	 t13 = $i + 1 	@@17    
+##getReg,addrOf$i=[ecx],addrOf1=null
+##moveReg,ECX:	[$i],the var=$i
+##moveReg,ECX:	[$i],the var=$i
+srcR=1
+desAddr=ecx
+$创建指令:inc	ecx	null	(70)
+RCX装入t13
+寄存器内容:
+RAX:	[$a]
+ECX:	[t13]
+EDX:	[$j]
+R8D:	[t12, $x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[t13]
+EDX:	[$j]
+R8D:	[t12, $x]
+变量地址:
+Addr of $i:	
+Addr of t13:	[ecx]
+
+-------------------------------------------------------------------------------
+翻译指令:     I71 :	 $i = t13     	@@17    
+#addrY=ecx
+RCX添加$i的值,类型:int32,当前状态:D
+寄存器描述符:[t13, $i]
+$创建指令:mov	dword ptr i$[rbp]	ecx	(71)
+将$i溢出到内存:dword ptr i$[RBP]
+寄存器内容:
+RAX:	[$a]
+ECX:	[t13, $i]
+EDX:	[$j]
+R8D:	[t12, $x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[t13, $i]
+EDX:	[$j]
+R8D:	[t12, $x]
+变量地址:
+Addr of t13:	[ecx]
+Addr of $i:	[ecx, dword ptr i$[RBP]]
+
+-------------------------------------------------------------------------------
+翻译指令:     I72 :	 param "hello\n"	@@18    
+#     I72 :	 param "hello\n",storeInstrs:
+寄存器内容:
+RAX:	[$a]
+ECX:	[t13, $i]
+EDX:	[$j]
+R8D:	[t12, $x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[t13, $i]
+EDX:	[$j]
+R8D:	[t12, $x]
+变量地址:
+
+-------------------------------------------------------------------------------
+翻译指令:     I30 :	 t14 = call @printf	@@18    
+#call,paramList=["hello\n"]
+RSP=412
+#Store before call
+$创建指令:mov	dword ptr j$2[rbp]	edx	(30)
+将$j溢出到内存:dword ptr j$2[RBP]
+storeRegsize=0,RSP=412
+$stackSize=32
+$maxSize=32
+
+---------传递"hello\n"-------------
+
+#logdToReg,Value v="hello\n",Register r=rcx
+#r.decorator=[],v.decorator=null
+##moveReg,RCX:	null,the var=null
+$创建指令:lea	rcx	__str0	(30)
+$创建指令:call	"printf"	null	(30)
+RSP=412
+RAX装入t14
+清空后,paramList=[]
+寄存器内容:
+EAX:	[t14]
+暂时不可分配寄存器:
+变量地址:
+Addr of t14:	[eax]
+
+-------------------------------------------------------------------------------
+翻译指令:     I73 :	 param $a     	@@19    
+#     I73 :	 param $a,storeInstrs:
+寄存器内容:
+EAX:	[t14]
+暂时不可分配寄存器:
+变量地址:
+Addr of $a:	
+
+-------------------------------------------------------------------------------
+翻译指令:     I74 :	 param $x     	@@19    
+#     I74 :	 param $x,storeInstrs:
+寄存器内容:
+EAX:	[t14]
+暂时不可分配寄存器:
+变量地址:
+Addr of $x:	[dword ptr x$1[RBP]]
+
+-------------------------------------------------------------------------------
+翻译指令:     I75 :	 param $i     	@@19    
+#     I75 :	 param $i,storeInstrs:
+寄存器内容:
+EAX:	[t14]
+暂时不可分配寄存器:
+变量地址:
+Addr of $i:	[dword ptr i$[RBP]]
+
+-------------------------------------------------------------------------------
+翻译指令:     I76 :	 param "i=%d,x%d\n,a=%p"	@@19    
+#     I76 :	 param "i=%d,x%d\n,a=%p",storeInstrs:
+寄存器内容:
+EAX:	[t14]
+暂时不可分配寄存器:
+变量地址:
+
+-------------------------------------------------------------------------------
+翻译指令:     I35 :	 t15 = call @printf	@@19    
+#call,paramList=[$a, $x, $i, "i=%d,x%d\n,a=%p"]
+RSP=412
+storeRegsize=0,RSP=412
+$stackSize=32
+$maxSize=32
+
+---------传递$a-------------
+
+#logdToReg,Value v=$a,Register r=r9
+#r.decorator=[],v.decorator=[]
+
+#传递 $a 至r9
+##moveReg,R9:	null,the var=$a
+#$a的类型:pointer
+#findGeneralReg,prefer=[r9]
+选择空闲寄存器R9,PreState=Q, state=Q,content=R9:	null
+$创建指令:lea	r9	qword ptr a$[rbp]	(35)
+R9装入$a
+#传递 $a 至r9结束
+
+---------传递$x-------------
+
+#logdToReg,Value v=$x,Register r=r8
+#r.decorator=[],v.decorator=[dword ptr x$1[RBP]]
+
+#传递 $x 至r8
+##moveReg,R8D:	null,the var=$x
+$创建指令:mov	r8d	dword ptr x$1[rbp]	(35)
+R8装入$x
+#传递 $x 至r8d结束
+
+---------传递$i-------------
+
+#logdToReg,Value v=$i,Register r=rdx
+#r.decorator=[],v.decorator=[dword ptr i$[RBP]]
+
+#传递 $i 至rdx
+##moveReg,EDX:	null,the var=$i
+#$i的类型:int32
+#findGeneralReg,prefer=[edx]
+选择空闲寄存器EDX,PreState=D, state=D,content=EDX:	null
+$创建指令:mov	edx	dword ptr i$[rbp]	(35)
+RDX装入$i
+#传递 $i 至edx结束
+
+---------传递"i=%d,x%d\n,a=%p"-------------
+
+#logdToReg,Value v="i=%d,x%d\n,a=%p",Register r=rcx
+#r.decorator=[],v.decorator=null
+##moveReg,RCX:	null,the var=null
+$创建指令:lea	rcx	__str1	(35)
+$创建指令:call	"printf"	null	(35)
+RSP=412
+RAX装入t15
+清空后,paramList=[]
+寄存器内容:
+EAX:	[t15]
+暂时不可分配寄存器:
+变量地址:
+Addr of t15:	[eax]
+
+#传递 $a 至eax
+##moveReg,RAX:	[t15],the var=$a
+#$a的类型:pointer
+#findGeneralReg,prefer=[rax]
+选择空闲寄存器RAX,PreState=Q, state=Q,content=RAX:	null
+$创建指令:lea	rax	qword ptr a$[rbp]	(35)
+RAX装入$a
+#传递 $a 至rax结束
+
+#传递 $j 至edx
+##moveReg,EDX:	null,the var=$j
+#$j的类型:int32
+#findGeneralReg,prefer=[edx]
+选择空闲寄存器EDX,PreState=D, state=D,content=EDX:	null
+$创建指令:mov	edx	dword ptr j$2[rbp]	(35)
+RDX装入$j
+#传递 $j 至edx结束
+
+#传递 $i 至rcx
+##moveReg,ECX:	null,the var=$i
+#$i的类型:int32
+#findGeneralReg,prefer=[ecx]
+选择空闲寄存器ECX,PreState=D, state=D,content=ECX:	null
+$创建指令:mov	ecx	dword ptr i$[rbp]	(35)
+RCX装入$i
+#传递 $i 至ecx结束
+
+#传递 $x 至r8d
+##moveReg,R8D:	null,the var=$x
+#$x的类型:int32
+#findGeneralReg,prefer=[r8d]
+选择空闲寄存器R8D,PreState=D, state=D,content=R8D:	null
+$创建指令:mov	r8d	dword ptr x$1[rbp]	(35)
+R8装入$x
+#传递 $x 至r8d结束
+
+-------------------------------------------------------------------------------
+翻译指令:     I36 :	 jump L7      	@@13    
+$创建指令:jmp	L7	null	(36)
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+变量地址:
+curLoop=@2[B9, B8, B6, B5, B4, B3, B7]
+
+--------------------------<B8 (L13)>------------------------------
+#延续父基本块的内容
+#Loaded vars:{$a=rax, $j=edx, $i=ecx, $x=r8d}
+RAX装入$a
+RDX装入$j
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L13) I77 :	 t16 = $i + 1	@@21    
+##getReg,addrOf$i=[ecx],addrOf1=null
+##moveReg,ECX:	[$i],the var=$i
+##moveReg,ECX:	[$i],the var=$i
+srcR=1
+desAddr=ecx
+$创建指令:L13inc	ecx	null	(77)
+RCX装入t16
+寄存器内容:
+RAX:	[$a]
+ECX:	[t16]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[t16]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $i:	
+Addr of t16:	[ecx]
+
+-------------------------------------------------------------------------------
+翻译指令:     I78 :	 t17 = t16 + 1	@@6     
+##getReg,addrOft16=[ecx],addrOf1=null
+##moveReg,ECX:	[t16],the var=t16
+##moveReg,ECX:	[t16],the var=t16
+srcR=1
+desAddr=ecx
+$创建指令:inc	ecx	null	(78)
+RCX装入t17
+寄存器内容:
+RAX:	[$a]
+ECX:	[t17]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[t17]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of t16:	
+Addr of t17:	[ecx]
+
+-------------------------------------------------------------------------------
+翻译指令:     I79 :	 $i = t17     	@@6     
+#addrY=ecx
+RCX添加$i的值,类型:int32,当前状态:D
+寄存器描述符:[t17, $i]
+寄存器内容:
+RAX:	[$a]
+ECX:	[t17, $i]
+EDX:	[$j]
+R8D:	[$x]
+R9D:	[t11]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[t17, $i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of t17:	[ecx]
+Addr of $i:	[ecx]
+curLoop=@2[B9, B8, B6, B5, B4, B3, B7]
+
+--------------------------<B9 (L4)>------------------------------
+#清除所有寄存器的内容
+#Loaded vars:{$a=rax, $j=rdx, $i=rcx, $x=r8}
+RAX装入$a
+RDX装入$j
+RCX装入$i
+R8装入$x
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+
+-------------------------------------------------------------------------------
+翻译指令:(L4) I80 :	 if_jump $i < 10   L3	@@6     
+$创建指令:L4cmp	ecx	10	(80)
+$创建指令:jl	L3	null	(80)
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+变量地址:
+Addr of $i:	[ecx]
+curLoop=null
+
+--------------------------<B10>------------------------------
+#延续父基本块的内容
+#StoreVars, allocRegs={$j=edx, $x=r8d}
+#Loaded vars:null
+#加载后,寄存器的内容:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+
+-------------------------------------------------------------------------------
+翻译指令:     I81 :	 param "hello,out of loops\n"	@@24    
+#     I81 :	 param "hello,out of loops\n",storeInstrs:
+寄存器内容:
+RAX:	[$a]
+ECX:	[$i]
+EDX:	[$j]
+R8D:	[$x]
+暂时不可分配寄存器:
+RAX:	[$a]
+ECX:	[$i]
+变量地址:
+
+-------------------------------------------------------------------------------
+翻译指令:     I43 :	 t18 = call @printf	@@24    
+#call,paramList=["hello,out of loops\n"]
+RSP=412
+#Store before call
+$创建指令:mov	dword ptr i$[rbp]	ecx	(43)
+将$i溢出到内存:dword ptr i$[RBP]
+storeRegsize=0,RSP=412
+$stackSize=32
+$maxSize=32
+
+---------传递"hello,out of loops\n"-------------
+
+#logdToReg,Value v="hello,out of loops\n",Register r=rcx
+#r.decorator=[],v.decorator=null
+##moveReg,RCX:	null,the var=null
+$创建指令:lea	rcx	__str2	(43)
+$创建指令:call	"printf"	null	(43)
+RSP=412
+RAX装入t18
+清空后,paramList=[]
+寄存器内容:
+EAX:	[t18]
+暂时不可分配寄存器:
+变量地址:
+Addr of t18:	[eax]
+
+-------------------------------------------------------------------------------
+翻译指令:     I84 :	 param t21    	@@25    
+#     I84 :	 param t21,storeInstrs:
+#     I82 :	 t19 = $i * 4
+#     I83 :	 t21 = $a[t19]
+寄存器内容:
+EAX:	[t18]
+暂时不可分配寄存器:
+变量地址:
+Addr of t21:	
+
+-------------------------------------------------------------------------------
+翻译指令:     I85 :	 param "a[0][i]=%d\n"	@@25    
+#     I85 :	 param "a[0][i]=%d\n",storeInstrs:
+寄存器内容:
+EAX:	[t18]
+暂时不可分配寄存器:
+变量地址:
+
+-------------------------------------------------------------------------------
+翻译指令:     I49 :	 t22 = call @printf	@@25    
+#call,paramList=[t21, "a[0][i]=%d\n"]
+RSP=412
+storeRegsize=0,RSP=412
+$stackSize=32
+$maxSize=32
+
+---------传递t21-------------
+
+-------------------------------------------------------------------------------
+翻译指令:     I82 :	 t19 = $i * 4 	@@25    
+##getReg,addrOf$i=[dword ptr i$[RBP]],addrOf4=null
+srcR=4
+desAddr=dword ptr i$[RBP]
+#findGeneralReg,prefer=[]
+选择空闲寄存器EAX,PreState=EMPTY, state=D,content=EAX:	null
+$创建指令:mov	eax	dword ptr i$[rbp]	(82)
+RAX装入$i
+RAX添加t19的值,类型:int32,当前状态:D
+寄存器描述符:[$i, t19]
+寄存器内容:
+EAX:	[$i, t19]
+暂时不可分配寄存器:
+EAX:	[$i, t19]
+变量地址:
+Addr of $i:	[dword ptr i$[RBP], eax]
+Addr of t19:	[eax, dword ptr i$[RBP]]
+
+-------------------------------------------------------------------------------
+翻译指令:     I83 :	 t21 = $a[t19]	@@25    
+#array,src=eax,baseAddr=qword ptr a$[RBP]
+#isLeftValue?: false, isArrayAddr?: false
+$创建指令:mov	eax	eax	(83)
+#array,desAddr=qword ptr a$[rbp+rax*4]
+#findGeneralReg,prefer=[]
+选择空闲寄存器ECX,PreState=Q, state=D,content=ECX:	null
+$创建指令:mov	ecx	dword ptr a$[rbp+rax*4]	(83)
+RCX装入t21
+寄存器内容:
+EAX:	[$i, t19,&$a]
+ECX:	[t21]
+暂时不可分配寄存器:
+ECX:	[t21]
+变量地址:
+Addr of $a:	
+Addr of t19:	[eax, dword ptr i$[RBP]]
+Addr of t21:	[ecx,dword ptr a$[rbp+rax*4]]	needWriteBack?: false
+
+#logdToReg,Value v=t21,Register r=rdx
+#r.decorator=[],v.decorator=[ecx]
+
+#传递 t21 至rdx
+##moveReg,EDX:	null,the var=t21
+$创建指令:mov	edx	ecx	(83)
+RDX装入t21
+#传递 t21 至edx结束
+
+---------传递"a[0][i]=%d\n"-------------
+
+#logdToReg,Value v="a[0][i]=%d\n",Register r=ecx
+#r.decorator=[t21],v.decorator=null
+##moveReg,RCX:	[t21],the var=null
+$创建指令:lea	rcx	__str3	(83)
+$创建指令:call	"printf"	null	(83)
+RSP=412
+RAX装入t22
+清空后,paramList=[]
+寄存器内容:
+EAX:	[t22]
+暂时不可分配寄存器:
+变量地址:
+Addr of t22:	[eax]
+
+-------------------------------------------------------------------------------
+翻译指令:     I50 :	 ret          	@@-2    
+$maxCallerAllocedStackSize=32,temp variable size=0,local variable size=412
+#位置5,加入sub	rsp	456	(0)
+$创建指令:add	rsp	456	(50)
+#popRegs,maxAllocSize=32,tableSize=412allocSize=456
+$创建指令:ret	null	null	(50)
+#位置3,加入a$ = 56
+#位置3,加入i$ = 52
+#位置3,加入x$1 = 48
+#位置3,加入j$2 = 44
+#位置3,加入_TEXT	SEGMENT
+寄存器内容:
+EAX:	[t22]
+暂时不可分配寄存器:
+变量地址:
+curLoop=null
+
+--------------------------<(ENTER)B0>------------------------------
+#清除所有寄存器的内容
+#Loaded vars:null
+#加载后,寄存器的内容:
+寄存器内容:
+暂时不可分配寄存器:
+curLoop=null
+
+--------------------------<B13>------------------------------
+#Loaded vars:null
+#加载后,寄存器的内容:
+寄存器内容:
+暂时不可分配寄存器:
+
+-------------------------------------------------------------------------------
+翻译指令:     I51 :	 exit         	@@-2    
+寄存器内容:
+暂时不可分配寄存器:
+变量地址:
